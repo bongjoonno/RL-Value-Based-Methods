@@ -1,5 +1,4 @@
-from imports import choice
-
+from imports import choice, pd
 class Board:
     def __init__(self, limit=5):
         self.limit = limit
@@ -11,6 +10,10 @@ class Board:
         self.finish_pos = len(self.grid)
 
         self.reward = 0
+
+        self.penalty = -1
+
+        self.trajectories = pd.DataFrame(columns=['state', 'action', 'reward'])
     
     def get_valid_moves(self):
         self.valid_moves = [1]
@@ -35,7 +38,11 @@ class Board:
 
         self.grid[self.cur_pos] = 'P'
 
-        self.display_grid()
+        self.trajectories.loc[len(self.trajectories)] = [self.cur_pos, random_chosen_move, self.penalty]
+
+        #self.display_grid()
     
     def display_grid(self):
         print(self.grid)
+
+# log trajectories
