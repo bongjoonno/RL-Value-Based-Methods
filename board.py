@@ -1,9 +1,10 @@
 from imports import choice, pd
+
 class Board:
-    def __init__(self, limit=5):
+    def __init__(self, limit=25):
         self.limit = limit
 
-        self.grid = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+        self.grid = [0 for i in range(10)] + [1]
         
         self.cur_pos = 0
         
@@ -34,15 +35,15 @@ class Board:
 
         random_chosen_move = choice(self.valid_moves)
 
+        self.trajectories.loc[len(self.trajectories)] = [self.cur_pos, random_chosen_move, self.penalty]
+
         self.cur_pos += random_chosen_move
 
         self.grid[self.cur_pos] = 'P'
 
-        self.trajectories.loc[len(self.trajectories)] = [self.cur_pos, random_chosen_move, self.penalty]
+        self.limit -= 1
 
-        #self.display_grid()
+        self.perform_random_move()
     
     def display_grid(self):
         print(self.grid)
-
-# log trajectories
