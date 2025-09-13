@@ -1,7 +1,7 @@
 from imports import choice, pd
 
 class Board:
-    def __init__(self, limit=25):
+    def __init__(self, limit=20):
         self.limit = limit
 
         self.grid = [0 for i in range(10)] + [1]
