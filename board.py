@@ -1,4 +1,4 @@
-from imports import pd, np, sleep
+from imports import pd, np, sleep, choices
 from constants import COURSE_LENGTH
 
 class Board:
@@ -13,8 +13,6 @@ class Board:
         
         self.finish_pos = len(self.grid) - 1
 
-        self.reward = 0
-
         self.penalty = -1
 
         self.trajectories = pd.DataFrame(columns=['state', 'action', 'reward'])
@@ -25,9 +23,9 @@ class Board:
         
     def perform_move(self):
         if self.cur_pos == self.finish_pos:
-            return 'Reached end!', self.reward
+            return 'Reached end!'
         elif self.limit == 0:
-            return f"Ran out of trials", self.reward
+            return f"Ran out of trials"
 
         self.grid[self.cur_pos] = 0
 
@@ -42,7 +40,7 @@ class Board:
         self.limit -= 1
 
         #self.display_grid()
-        #sleep(0.01)
+        #sleep(1)
         self.perform_move()
     
     def display_grid(self):
@@ -54,12 +52,11 @@ class Board:
         
         if self.cur_pos > 0:
             opposite_move = self.get_opposite_move[max_reward_move]
-
             self.move_probabilities[max_reward_move] = 1 - self.epsilon
             self.move_probabilities[opposite_move]= self.epsilon
 
-            move = np.random.choice(list(self.move_probabilities.keys()), p=list(self.move_probabilities.values()))
-            print(self.move_probabilities, move)
-            return int(move)
+            move = choices(list(self.move_probabilities.keys()), weights = list(self.move_probabilities.values()))
+            #print(self.move_probabilities, move)
+            return move.pop()
         else:
             return 1
