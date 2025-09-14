@@ -59,7 +59,7 @@ class Board:
             self.move_probabilities[opposite_move]= self.epsilon
 
             move = np.random.choice(list(self.move_probabilities.keys()), p=list(self.move_probabilities.values()))
-            #print(self.move_probabilities, move)
+            print(self.move_probabilities, move)
             return int(move)
         else:
             return 1

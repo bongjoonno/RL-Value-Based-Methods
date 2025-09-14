@@ -8,8 +8,8 @@ trajectories_arr = []
 state_action_average_reward = {0: {1: 0}} | {i: {-1: 0, 1: 0} for i in range(1, COURSE_LENGTH)}
 alpha = 0.1
 
-epsilon = 0.5
-epochs = 100
+epsilon = 0.25
+epochs = 1000
 
 decrease_rate = epsilon / epochs
 
