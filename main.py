@@ -9,9 +9,9 @@ state_action_average_reward = {0: {1: 0}} | {i: {-1: 0, 1: 0} for i in range(1, 
 alpha = 0.1
 
 epsilon = 0.5
-epochs = 5_000
+epochs = 2_500
 
-decrease_rate = epsilon / epochs
+decrease_rate = (epsilon / epochs)
 
 for _ in range(epochs):
     board = Board(state_action_average_reward, epsilon)

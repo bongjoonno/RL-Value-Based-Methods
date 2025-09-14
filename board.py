@@ -56,7 +56,7 @@ class Board:
             self.move_probabilities[opposite_move]= self.epsilon
 
             move = choices(list(self.move_probabilities.keys()), weights = list(self.move_probabilities.values()))
-            #print(self.move_probabilities, move)
+            print(self.move_probabilities)
             return move.pop()
         else:
             return 1
