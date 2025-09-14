@@ -6,12 +6,14 @@ from constants import COURSE_LENGTH
 trajectories_arr = []
 state_action_average_reward = {0: {1: 0}} | {i: {-1: 0, 1: 0} for i in range(1, COURSE_LENGTH-1)}
 
-alpha = 0.1
+alpha = 0.001
 
-epsilon = 0.5
-epochs = 2_500
+epsilon = 0.50
+epochs = 20
 
-decrease_rate = (epsilon / epochs)
+decrease_rate = epsilon / epochs
+
+#best settings so far, alpha 0.01, epsilon 0.5,  epochs = 25
 
 for _ in range(epochs):
     board = Board(state_action_average_reward, epsilon)
@@ -31,6 +33,7 @@ for _ in range(epochs):
         state_action_average_reward[cur_state][cur_action] += alpha * (cur_discounted_reward - target)
     
     epsilon -= decrease_rate
+    epsilon = max(epsilon, 0)
 
 for i, dict in state_action_average_reward.items():
     print(i, dict)
