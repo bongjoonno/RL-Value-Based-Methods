@@ -1,5 +1,6 @@
-from imports import choice, pd, np
+from imports import pd, np
 from time import sleep
+from constants import COURSE_LENGTH
 
 class Board:
     def __init__(self, state_action_average_reward, epsilon, limit=20):
@@ -7,7 +8,7 @@ class Board:
         self.state_action_average_reward = state_action_average_reward
         self.epsilon = epsilon 
 
-        self.grid = [0 for i in range(10)] + [1]
+        self.grid = [0 for _ in range(COURSE_LENGTH-1)] + [1]
         
         self.cur_pos = 0
         
@@ -39,7 +40,7 @@ class Board:
 
         self.limit -= 1
 
-        #self.display_grid()
+        self.display_grid()
         sleep(0.01)
         self.perform_move()
     
