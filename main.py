@@ -6,7 +6,7 @@ from discounted_reward import get_discounted_reward
 trajectories_arr = []
 state_action_average_reward = {i: {-1 : 0, 1 : 0} for i in range(11)}
 
-for i in range(10):
+for i in range(1):
     board = Board()
     board.perform_random_move()
 
