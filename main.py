@@ -1,4 +1,4 @@
-from imports import pd
+from imports import pd, sleep
 from board import Board
 from discounted_reward import get_discounted_reward
 from constants import COURSE_LENGTH
@@ -32,5 +32,5 @@ for _ in range(epochs):
     
     epsilon -= decrease_rate
 
-#for i, dict in state_action_average_reward.items():
-    #print(i, dict)
+for i, dict in state_action_average_reward.items():
+    print(i, dict)

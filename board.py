@@ -1,9 +1,8 @@
-from imports import pd, np
-from time import sleep
+from imports import pd, np, sleep
 from constants import COURSE_LENGTH
 
 class Board:
-    def __init__(self, state_action_average_reward, epsilon, limit=20):
+    def __init__(self, state_action_average_reward, epsilon, limit=COURSE_LENGTH):
         self.limit = limit
         self.state_action_average_reward = state_action_average_reward
         self.epsilon = epsilon 
@@ -21,6 +20,8 @@ class Board:
         self.trajectories = pd.DataFrame(columns=['state', 'action', 'reward'])
 
         self.get_opposite_move = {1 : -1, -1 : 1}
+
+        self.move_probabilities = {}
         
     def perform_move(self):
         if self.cur_pos == self.finish_pos:
@@ -40,8 +41,8 @@ class Board:
 
         self.limit -= 1
 
-        self.display_grid()
-        sleep(0.01)
+        #self.display_grid()
+        #sleep(0.01)
         self.perform_move()
     
     def display_grid(self):
@@ -49,17 +50,16 @@ class Board:
     
     def policy(self):
         avg_rewards_for_state_action = self.state_action_average_reward[self.cur_pos]
-        max_reward_move = max(avg_rewards_for_state_action)
+        max_reward_move = max(avg_rewards_for_state_action, key=avg_rewards_for_state_action.get)
         
         if self.cur_pos > 0:
             opposite_move = self.get_opposite_move[max_reward_move]
-            move_probabilities = {}
 
-            move_probabilities[max_reward_move] = 1 - self.epsilon
-            move_probabilities[opposite_move]= self.epsilon
+            self.move_probabilities[max_reward_move] = 1 - self.epsilon
+            self.move_probabilities[opposite_move]= self.epsilon
 
-            move = np.random.choice(list(move_probabilities.keys()), p=list(move_probabilities.values()))
-            print(move_probabilities, move)
+            move = np.random.choice(list(self.move_probabilities.keys()), p=list(self.move_probabilities.values()))
+            #print(self.move_probabilities, move)
             return int(move)
         else:
             return 1
