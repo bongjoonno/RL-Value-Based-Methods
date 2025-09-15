@@ -1,8 +1,8 @@
 from imports import pd, np, sleep, choices
-from constants import COURSE_LENGTH
+from constants import COURSE_LENGTH, TRAINING_TRIAL_LIMIT
 
 class Board:
-    def __init__(self, state_action_average_reward, epsilon, limit=COURSE_LENGTH*2):
+    def __init__(self, state_action_average_reward, epsilon, limit=TRAINING_TRIAL_LIMIT):
         self.limit = limit
         self.state_action_average_reward = state_action_average_reward
         self.epsilon = epsilon 
@@ -11,7 +11,7 @@ class Board:
         
         self.cur_pos = 0
         
-        self.finish_pos = len(self.grid) - 1
+        self.finish_pos = COURSE_LENGTH-1
 
         self.penalty = -1
 
@@ -23,9 +23,11 @@ class Board:
         
     def perform_move(self):
         if self.cur_pos == self.finish_pos:
-            return 'Reached end!'
+            print("you made it")
+            return 100 
         elif self.limit == 0:
-            return f"Ran out of trials"
+            print("you ran out of time")
+            return -100
 
         self.grid[self.cur_pos] = 0
 
@@ -39,7 +41,7 @@ class Board:
 
         self.limit -= 1
 
-        #self.display_grid()
+        self.display_grid()
         #sleep(1)
         self.perform_move()
     
