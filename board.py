@@ -18,8 +18,6 @@ class Board:
         self.trajectories = pd.DataFrame(columns=['state', 'action', 'reward'])
 
         self.get_opposite_move = {1 : -1, -1 : 1}
-
-        self.move_probabilities = {}
         
     def perform_move(self):
         if self.cur_pos == self.finish_pos:
