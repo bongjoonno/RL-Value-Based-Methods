@@ -1,4 +1,4 @@
-from imports import pd, np, sleep, choices
+from imports import pd, np, sleep
 from constants import COURSE_LENGTH, TRAINING_TRIAL_LIMIT
 
 class Board:
@@ -52,11 +52,9 @@ class Board:
         
         if self.cur_pos > 0:
             opposite_move = self.get_opposite_move[max_reward_move]
-            self.move_probabilities[max_reward_move] = 1 - self.epsilon
-            self.move_probabilities[opposite_move]= self.epsilon
-
-            move = choices(list(self.move_probabilities.keys()), weights = list(self.move_probabilities.values()))
-            #print(self.move_probabilities)
-            return move.pop()
+            move_probs = {max_reward_move: 1 - self.epsilon, opposite_move : self.epsilon}
+            move = np.random.choice(list(move_probs.keys()), p = list(move_probs.values()))
+            #print(self.move_probs)
+            return move
         else:
             return 1

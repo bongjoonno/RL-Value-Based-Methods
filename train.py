@@ -10,9 +10,9 @@ state_action_average_reward = {0: {1: 0}} | {i: {-1: 0, 1: 0} for i in range(1, 
 alpha = 0.05
 
 epsilon = 0.5
-epochs = 500
+epochs = 20_000
 
-#cut off for training being perfect is 
+#cut off for training being perfect is 500 epochs
 
 for _ in range(epochs):
     board = Board(state_action_average_reward, epsilon)
@@ -35,5 +35,5 @@ for _ in range(epochs):
 for i, dict in state_action_average_reward.items():
     print(i, dict)
 
-with open('/workspaces/monte-carlo/state_action_average_reward.pkl', 'wb') as f:
+with open('/workspaces/monte-carlo/state_action_average_reward_2.pkl', 'wb') as f:
     pickle.dump(state_action_average_reward, f)
