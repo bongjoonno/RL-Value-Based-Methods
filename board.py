@@ -2,7 +2,7 @@ from imports import pd, np, sleep, choices
 from constants import COURSE_LENGTH
 
 class Board:
-    def __init__(self, state_action_average_reward, epsilon, limit=COURSE_LENGTH):
+    def __init__(self, state_action_average_reward, epsilon, limit=COURSE_LENGTH*2):
         self.limit = limit
         self.state_action_average_reward = state_action_average_reward
         self.epsilon = epsilon 
@@ -30,7 +30,7 @@ class Board:
         self.grid[self.cur_pos] = 0
 
         move = int(self.policy())
-
+        
         self.trajectories.loc[len(self.trajectories)] = [self.cur_pos, move, self.penalty]
 
         self.cur_pos += move
@@ -56,7 +56,7 @@ class Board:
             self.move_probabilities[opposite_move]= self.epsilon
 
             move = choices(list(self.move_probabilities.keys()), weights = list(self.move_probabilities.values()))
-            print(self.move_probabilities)
+            #print(self.move_probabilities)
             return move.pop()
         else:
             return 1
