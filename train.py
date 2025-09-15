@@ -2,6 +2,7 @@ from imports import pd, sleep
 from board import Board
 from discounted_reward import get_discounted_reward
 from constants import COURSE_LENGTH
+from imports import pickle
 
 trajectories_arr = []
 state_action_average_reward = {0: {1: 0}} | {i: {-1: 0, 1: 0} for i in range(1, COURSE_LENGTH-1)}
@@ -35,3 +36,6 @@ for _ in range(epochs):
 
 for i, dict in state_action_average_reward.items():
     print(i, dict)
+
+with open('/workspaces/monte-carlo/state_action_average_reward.pkl', 'wb') as f:
+    pickle.dump(state_action_average_reward)
