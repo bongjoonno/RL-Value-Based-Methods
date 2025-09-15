@@ -2,7 +2,7 @@ from imports import pickle
 from board import Board
 from constants import COURSE_LENGTH
 
-with open('/workspaces/monte-carlo/state_action_average_reward.pkl', 'rb') as f:
+with open('/workspaces/monte-carlo/state_action_average_reward_2.pkl', 'rb') as f:
     state_action_average_reward = pickle.load(f)
 
 trials = 1_000
