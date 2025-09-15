@@ -23,11 +23,9 @@ class Board:
         
     def perform_move(self):
         if self.cur_pos == self.finish_pos:
-            print("you made it")
-            return 100 
+            return 1
         elif self.limit == 0:
-            print("you ran out of time")
-            return -100
+            return 0
 
         self.grid[self.cur_pos] = 0
 
@@ -41,9 +39,9 @@ class Board:
 
         self.limit -= 1
 
-        self.display_grid()
+        #self.display_grid()
         #sleep(1)
-        self.perform_move()
+        return self.perform_move()
     
     def display_grid(self):
         print(self.grid)

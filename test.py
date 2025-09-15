@@ -5,12 +5,13 @@ from constants import COURSE_LENGTH
 with open('/workspaces/monte-carlo/state_action_average_reward.pkl', 'rb') as f:
     state_action_average_reward = pickle.load(f)
 
-for i, dict in state_action_average_reward.items():
-    print(i, dict)
+trials = 10_000
 
-
-trials = 100
+trial_results = []
 
 for _ in range(trials):
     board = Board(state_action_average_reward, epsilon = 0, limit=COURSE_LENGTH-1)
-    print(board.perform_move())
+    trial_results.append(board.perform_move())
+
+accuracy = sum(trial_results) / len(trial_results)
+print(accuracy)
