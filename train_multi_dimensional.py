@@ -1,7 +1,6 @@
 from imports import pd, sleep, plt
 from board_multi_dimensional import BoardMultiDimensional
 from discounted_reward import get_discounted_reward
-from constants import COURSE_LENGTH_X, COURSE_LENGTH_Y, GAMMA_DISCOUNTED_REWARD
 from imports import pickle
 
 
@@ -11,7 +10,7 @@ epsilon = 1
 
 alpha = 0.05
 
-epochs = 1_000
+epochs = 5_000
 
 undiscounted_rewards = []
 
@@ -41,5 +40,5 @@ for i, dict in board.state_action_average_reward.items():
 with open('/workspaces/monte-carlo/state_action_average_reward_multi.pkl', 'wb') as f:
     pickle.dump(board.state_action_average_reward, f)
 
-plt.plot([i for i in range(len(undiscounted_rewards))], undiscounted_rewards)
+plt.plot([i for i in range(100)], undiscounted_rewards[4900:5000])
 plt.savefig('plot.png')
