@@ -36,7 +36,7 @@ class BoardMultiDimensional:
 
         self.trajectories = pd.DataFrame(columns=['state', 'action', 'reward'])
 
-        self.y_moves = {'W' : 1, 'S' : -1}
+        self.y_moves = {'W' : -1, 'S' : 1}
         self.x_moves = {'D' : 1, 'A' : -1}
     
     def perform_move(self):
@@ -59,13 +59,15 @@ class BoardMultiDimensional:
         self.limit -= 1
 
         #self.display_grid()
+        #print(move)
         #sleep(1)
         return self.perform_move()
     
     def display_grid(self):
         for row in self.grid:
             print(row)
-    
+        print('\n')
+
     def policy(self):
         avg_rewards_for_state_action = self.state_action_average_reward[(self.cur_pos_y, self.cur_pos_x)]
 

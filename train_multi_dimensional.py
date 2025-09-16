@@ -7,12 +7,14 @@ from imports import pickle
 
 trajectories_arr = []
 
+epsilon = 1
+
 alpha = 0.05
 
-epochs = 1
+epochs = 10_000
 
 for _ in range(epochs):
-    board = BoardMultiDimensional()
+    board = BoardMultiDimensional(1)
     board.perform_move()
 
     rewards = list(board.trajectories['reward'])
@@ -32,5 +34,5 @@ for _ in range(epochs):
 for i, dict in board.state_action_average_reward.items():
     print(i, dict)
 
-#with open('/workspaces/monte-carlo/state_action_average_reward_2.pkl', 'wb') as f:
-   # pickle.dump(state_action_average_reward, f)
+with open('/workspaces/monte-carlo/state_action_average_reward_multi.pkl', 'wb') as f:
+    pickle.dump(board.state_action_average_reward, f)
