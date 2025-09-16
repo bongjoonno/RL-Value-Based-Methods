@@ -2,12 +2,24 @@ from imports import pd, np, sleep
 from constants import COURSE_LENGTH, TRAINING_TRIAL_LIMIT, COURSE_LENGTH_X, COURSE_LENGTH_Y
 
 class BoardMultiDimensional:
-    def __init__(self, state_action_average_reward, epsilon=0.5, limit=TRAINING_TRIAL_LIMIT):
-        self.limit = limit
-        self.state_action_average_reward = state_action_average_reward
+    def __init__(self, epsilon=1, limit=TRAINING_TRIAL_LIMIT):
         self.epsilon = epsilon 
+        self.limit = limit
 
         self.grid = [[0 for i in range(COURSE_LENGTH_X)] for j in range(COURSE_LENGTH_Y)]
+
+        self.state_action_average_reward = {(i, j): {} for i in range(COURSE_LENGTH_Y) for j in range(COURSE_LENGTH_X)}
+
+        for i, row in enumerate(self.grid):
+            for j in range(len(row)):
+                if j < len(row) - 1:
+                    self.state_action_average_reward[(i, j)]['D'] = 0
+                if j > 0:
+                    self.state_action_average_reward[(i, j)]['A'] = 0
+                if i < len(self.grid) - 1:
+                    self.state_action_average_reward[(i, j)]['S'] = 0
+                if i > 0:
+                    self.state_action_average_reward[(i, j)]['W'] = 0
         
         self.start_pos = [0, 0]
 
@@ -18,41 +30,31 @@ class BoardMultiDimensional:
         
         self.valid_moves = []
 
-        self.finish_pos = COURSE_LENGTH-1
+        self.finish_pos = [COURSE_LENGTH_Y, COURSE_LENGTH_X]
 
         self.penalty = -1
 
         self.trajectories = pd.DataFrame(columns=['state', 'action', 'reward'])
 
-        self.get_opposite_move = {1 : -1, -1 : 1}
+        self.y_moves = {'W' : 1, 'S' : -1}
+        self.x_moves = {'D' : 1, 'A' : -1}
     
-    def get_valid_moves(self):
-        self.valid_moves = []
-
-        if self.cur_pos_y > 0: 
-            self.valid_moves.append('W')
-        if self.cur_pos_x > 0:
-            self.valid_moves.append('A')
-        if self.cur_pos_y < 2:
-            self.valid_moves.append('S')
-        if self.cur_pos_x < 2:
-            self.valid_moves.append('D')
-
     def perform_move(self):
-        if self.cur_pos == self.finish_pos:
+        if [self.cur_pos_y, self.cur_pos_x] == self.finish_pos:
             return 1
         elif self.limit == 0:
             return 0
 
-        self.grid[self.cur_pos] = 0
+        self.grid[self.cur_pos_y][self.cur_pos_x] = 0
 
-        move = int(self.policy())
+        move = self.policy()
         
         self.trajectories.loc[len(self.trajectories)] = [(self.cur_pos_y, self.cur_pos_x), move, self.penalty]
 
-        self.cur_pos += move
+        self.cur_pos_y += self.y_moves.get(move, 0)
+        self.cur_pos_x += self.x_moves.get(move, 0)
 
-        self.grid[self.cur_pos] = 'P'
+        self.grid[self.cur_pos_y][self.cur_pos_x] = 'P'
 
         self.limit -= 1
 
@@ -61,17 +63,32 @@ class BoardMultiDimensional:
         return self.perform_move()
     
     def display_grid(self):
-        print(self.grid)
+        for row in self.grid:
+            print(row)
     
     def policy(self):
         avg_rewards_for_state_action = self.state_action_average_reward[(self.cur_pos_y, self.cur_pos_x)]
+
         max_reward_move = max(avg_rewards_for_state_action, key=avg_rewards_for_state_action.get)
+
+        max_reward = avg_rewards_for_state_action[max_reward_move]
+
+        if max_reward == 0:
+            move = np.random.choice(list(avg_rewards_for_state_action.keys()))
         
-        if self.cur_pos > 0:
-            opposite_move = self.get_opposite_move[max_reward_move]
-            move_probs = {max_reward_move: 1 - self.epsilon, opposite_move : self.epsilon}
-            move = np.random.choice(list(move_probs.keys()), p = list(move_probs.values()))
-            #print(self.move_probs)
-            return move
+        elif len(avg_rewards_for_state_action) == 1:
+            move = avg_rewards_for_state_action.keys()[0]
+        
         else:
-            return 1
+            move_probs = {}
+
+            move_probs[max_reward_move] = 1 - self.epsilon
+
+            for move in avg_rewards_for_state_action.keys():
+                if move != max_reward_move:
+                    move_probs[move] = abs(self.epsilon) - 1
+
+            move = np.random.choice(list(move_probs.keys()), p = list(move_probs.values()))
+        
+        return move
+        
