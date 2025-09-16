@@ -11,7 +11,7 @@ epsilon = 1
 
 alpha = 0.05
 
-epochs = 25_000
+epochs = 1_000
 
 undiscounted_rewards = []
 
