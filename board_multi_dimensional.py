@@ -1,5 +1,5 @@
 from imports import pd, np, sleep
-from constants import COURSE_LENGTH, TRAINING_TRIAL_LIMIT, COURSE_LENGTH_X, COURSE_LENGTH_Y
+from constants import TRAINING_TRIAL_LIMIT, COURSE_LENGTH_X, COURSE_LENGTH_Y
 
 class BoardMultiDimensional:
     def __init__(self, epsilon=1, limit=TRAINING_TRIAL_LIMIT):
@@ -30,9 +30,11 @@ class BoardMultiDimensional:
         
         self.valid_moves = []
 
-        self.finish_pos = [COURSE_LENGTH_Y, COURSE_LENGTH_X]
+        self.finish_pos = [COURSE_LENGTH_Y-1, COURSE_LENGTH_X-1]
 
         self.penalty = -1
+
+        self.reward = 0
 
         self.trajectories = pd.DataFrame(columns=['state', 'action', 'reward'])
 
@@ -57,6 +59,7 @@ class BoardMultiDimensional:
         self.grid[self.cur_pos_y][self.cur_pos_x] = 'P'
 
         self.limit -= 1
+        self.reward += self.penalty
 
         #self.display_grid()
         #print(move)
@@ -73,9 +76,7 @@ class BoardMultiDimensional:
 
         max_reward_move = max(avg_rewards_for_state_action, key=avg_rewards_for_state_action.get)
 
-        max_reward = avg_rewards_for_state_action[max_reward_move]
-
-        if max_reward == 0:
+        if sum(avg_rewards_for_state_action.values()) == 0:
             move = np.random.choice(list(avg_rewards_for_state_action.keys()))
         
         elif len(avg_rewards_for_state_action) == 1:
