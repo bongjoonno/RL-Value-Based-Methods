@@ -74,24 +74,29 @@ class BoardMultiDimensional:
     def policy(self):
         avg_rewards_for_state_action = self.state_action_average_reward[(self.cur_pos_y, self.cur_pos_x)]
 
+        moves = list(avg_rewards_for_state_action.keys())
+        moves_q_scores = list(avg_rewards_for_state_action.values())
+
         max_reward_move = max(avg_rewards_for_state_action, key=avg_rewards_for_state_action.get)
 
-        if sum(avg_rewards_for_state_action.values()) == 0:
-            move = np.random.choice(list(avg_rewards_for_state_action.keys()))
-        
-        elif len(avg_rewards_for_state_action) == 1:
-            move = avg_rewards_for_state_action.keys()[0]
+        if len(avg_rewards_for_state_action) == 1:
+            move = moves[0]
+
+        elif all(x == 0 for x in moves_q_scores):
+            move = np.random.choice(moves)
         
         else:
             move_probs = {}
 
             move_probs[max_reward_move] = 1 - self.epsilon
 
-            for move in avg_rewards_for_state_action.keys():
-                if move != max_reward_move:
-                    move_probs[move] = abs(self.epsilon) - 1
+            moves_besides_max = len(moves) - 1
 
-            move = np.random.choice(list(move_probs.keys()), p = list(move_probs.values()))
+            for move in moves:
+                if move != max_reward_move:
+                    move_probs[move] = self.epsilon / moves_besides_max
+
+            move = np.random.choice(moves, p = move_probs)
         
         return move
         

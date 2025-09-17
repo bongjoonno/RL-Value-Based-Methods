@@ -6,7 +6,7 @@ from imports import pickle
 
 trajectories_arr = []
 
-epsilon = 1
+epsilon = 0.5
 
 alpha = 0.05
 
@@ -15,7 +15,7 @@ epochs = 1_000
 undiscounted_rewards = []
 
 for _ in range(epochs):
-    board = BoardMultiDimensional(1)
+    board = BoardMultiDimensional(epsilon=epsilon)
     board.perform_move()
 #RL value based methods have two things consists of two things, Q function and update rule
     undiscounted_rewards.append(board.reward)
@@ -30,7 +30,7 @@ for _ in range(epochs):
         cur_discounted_reward = board.trajectories.loc[i, 'Gt_reward']
 
         target = board.state_action_average_reward[cur_state][cur_action]
-        board.state_action_average_reward[cur_state][cur_action] += alpha * (cur_discounted_reward - target)
+        board.state_action_average_reward[cur_state][cur_action] += alpha * (target - cur_discounted_reward)
     
     epsilon = max(0.01, epsilon * 0.999)
 
