@@ -79,7 +79,10 @@ class BoardMultiDimensional:
 
         max_reward_move = max(avg_rewards_for_state_action, key=avg_rewards_for_state_action.get)
 
-        if len(avg_rewards_for_state_action) == 1:
+        if self.epsilon == 0:
+            return max_reward_move
+        
+        elif len(avg_rewards_for_state_action) == 1:
             return moves[0]
 
         elif all(x == 0 for x in moves_q_scores):

@@ -15,8 +15,11 @@ for i, dict in state_action_average_reward.items():
 trial_limit = (COURSE_LENGTH_Y-1) + (COURSE_LENGTH_X-1)
 
 for _ in range(trials):
-    board = BoardMultiDimensional(epsilon = 0, limit=trial_limit)
+    board = BoardMultiDimensional(epsilon = 0, limit=100)
     trial_results.append(board.perform_move())
+
+print('\n')
+print(board.display_grid())
 
 accuracy = sum(trial_results) / len(trial_results)
 print(accuracy)
