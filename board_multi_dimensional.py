@@ -80,23 +80,21 @@ class BoardMultiDimensional:
         max_reward_move = max(avg_rewards_for_state_action, key=avg_rewards_for_state_action.get)
 
         if len(avg_rewards_for_state_action) == 1:
-            move = moves[0]
+            return moves[0]
 
         elif all(x == 0 for x in moves_q_scores):
-            move = np.random.choice(moves)
+            return np.random.choice(moves)
         
-        else:
-            move_probs = {}
+        move_probs_dict = {}
 
-            move_probs[max_reward_move] = 1 - self.epsilon
+        move_probs_dict[max_reward_move] = 1 - self.epsilon
 
-            moves_besides_max = len(moves) - 1
+        moves_besides_max = len(moves) - 1
 
-            for move in moves:
-                if move != max_reward_move:
-                    move_probs[move] = self.epsilon / moves_besides_max
+        for move in moves:
+            if move != max_reward_move:
+                move_probs_dict[move] = self.epsilon / moves_besides_max
 
-            move = np.random.choice(moves, p = move_probs)
-        
-        return move
-        
+        move_probs = list(move_probs.values())
+
+        return np.random.choice(moves, p = move_probs)
