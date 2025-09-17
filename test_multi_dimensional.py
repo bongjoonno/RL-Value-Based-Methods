@@ -1,0 +1,25 @@
+from imports import pickle
+from board_multi_dimensional import BoardMultiDimensional
+from constants import COURSE_LENGTH_X, COURSE_LENGTH_Y
+
+with open('/workspaces/monte-carlo/state_action_average_reward_multi.pkl', 'rb') as f:
+    state_action_average_reward = pickle.load(f)
+
+trials = 100
+
+trial_results = []
+
+for i, dict in state_action_average_reward.items():
+    print(i, dict)
+
+trial_limit = (COURSE_LENGTH_Y-1) + (COURSE_LENGTH_X-1)
+
+for _ in range(trials):
+    board = BoardMultiDimensional(epsilon = 0, limit=trial_limit)
+    trial_results.append(board.perform_move())
+
+print('\n')
+print(board.display_grid())
+
+accuracy = sum(trial_results) / len(trial_results)
+print(accuracy)

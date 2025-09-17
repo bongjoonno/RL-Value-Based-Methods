@@ -1,2 +1,6 @@
-from secrets import choice
 import pandas as pd
+import numpy as np
+from time import sleep
+import pickle
+
+import matplotlib.pyplot as plt
