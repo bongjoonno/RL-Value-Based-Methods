@@ -40,5 +40,5 @@ for i, dict in board.state_action_average_reward.items():
 with open('/workspaces/monte-carlo/state_action_average_reward_multi.pkl', 'wb') as f:
     pickle.dump(board.state_action_average_reward, f)
 
-plt.plot([i for i in range(100)], undiscounted_rewards[4900:5000])
-plt.savefig('plot.png')
+#plt.plot([i for i in range(100)], undiscounted_rewards[4900:5000])
+#plt.savefig('plot.png')
