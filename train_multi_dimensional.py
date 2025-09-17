@@ -10,7 +10,7 @@ epsilon = 1
 
 alpha = 0.05
 
-epochs = 5_000
+epochs = 1_000
 
 undiscounted_rewards = []
 
@@ -30,7 +30,7 @@ for _ in range(epochs):
         cur_discounted_reward = board.trajectories.loc[i, 'Gt_reward']
 
         target = board.state_action_average_reward[cur_state][cur_action]
-        board.state_action_average_reward[cur_state][cur_action] += alpha * (cur_discounted_reward - target)
+        board.state_action_average_reward[cur_state][cur_action] += alpha * (target - cur_discounted_reward)
     
     epsilon = max(0.01, epsilon * 0.999)
 
