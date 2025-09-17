@@ -82,6 +82,9 @@ class BoardMultiDimensional:
         if self.epsilon == 0:
             return max_reward_move
         
+        elif self.epsilon == 1:
+            return np.random.choice(moves)
+        
         elif len(avg_rewards_for_state_action) == 1:
             return moves[0]
 

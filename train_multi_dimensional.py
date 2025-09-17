@@ -6,11 +6,11 @@ from imports import pickle
 
 trajectories_arr = []
 
-epsilon = 0.5
+epsilon = 1
 
 alpha = 0.05
 
-epochs = 2_500
+epochs = 5_000
 
 undiscounted_rewards = []
 
