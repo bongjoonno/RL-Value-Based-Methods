@@ -8,9 +8,9 @@ trajectories_arr = []
 
 epsilon = 1
 
-alpha = 0.05
+alpha = 0.1
 
-epochs = 10_000
+epochs = 20_000
 
 undiscounted_rewards = []
 
@@ -34,6 +34,7 @@ for _ in range(epochs):
         board.state_action_average_reward[cur_state][cur_action] += alpha * (target - Q)
     
     epsilon = max(0.01, epsilon * 0.999)
+    print(epsilon)
 
 for state, actions in board.state_action_average_reward.items():
     print(state, actions)
