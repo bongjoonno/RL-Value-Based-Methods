@@ -3,7 +3,6 @@ from constants import TRAINING_TRIAL_LIMIT, COURSE_LENGTH_X, COURSE_LENGTH_Y
 
 class BoardMultiDimensional:
     def __init__(self, state_action_average_reward, epsilon=1, limit=TRAINING_TRIAL_LIMIT):
-        
         self.state_action_average_reward = state_action_average_reward
         self.epsilon = epsilon 
         self.limit = limit
@@ -54,7 +53,7 @@ class BoardMultiDimensional:
 
         #self.display_grid()
         #print(move)
-        #sleep(1)
+        #sleep(0.5)
         return self.perform_move()
     
     def display_grid(self):
@@ -64,7 +63,6 @@ class BoardMultiDimensional:
 
     def policy(self):
         avg_rewards_for_state_action = self.state_action_average_reward[(self.cur_pos_y, self.cur_pos_x)]
-
         moves = list(avg_rewards_for_state_action.keys())
         moves_q_scores = list(avg_rewards_for_state_action.values())
 
@@ -76,7 +74,7 @@ class BoardMultiDimensional:
         elif self.epsilon == 1:
             return np.random.choice(moves)
         
-        elif len(avg_rewards_for_state_action) == 1:
+        elif len(moves) == 1:
             return moves[0]
 
         elif all(x == 0 for x in moves_q_scores):
@@ -93,5 +91,4 @@ class BoardMultiDimensional:
                 move_probs_dict[move] = self.epsilon / moves_besides_max
 
         move_probs = list(move_probs_dict.values())
-
         return np.random.choice(moves, p = move_probs)

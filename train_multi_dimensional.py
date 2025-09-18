@@ -24,14 +24,14 @@ for _ in range(epochs):
     rewards = list(board.trajectories['reward'])
     discounted_rewards = get_discounted_reward(rewards, discounted_rewards = [])
 
-    for i in range(len(board.trajectories)):
+    for i in range(len(board.trajectories['state'])):
         cur_state = board.trajectories['state'][i]
         cur_action = board.trajectories['action'][i]
         target = discounted_rewards[i]
 
-        Q = board.state_action_average_reward[cur_state][cur_action]
+        q = board.state_action_average_reward[cur_state][cur_action]
 
-        board.state_action_average_reward[cur_state][cur_action] += alpha * (target - Q)
+        board.state_action_average_reward[cur_state][cur_action] += alpha * (target - q)
     
     epsilon = max(0.01, epsilon * 0.999)
     q_scores_table = board.state_action_average_reward
