@@ -8,7 +8,7 @@ trajectories_arr = []
 
 epsilon = 1
 
-alpha = 0.1
+alpha = 0.3
 
 epochs = 20_000
 
