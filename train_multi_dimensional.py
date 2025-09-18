@@ -10,7 +10,7 @@ epsilon = 0.5
 
 alpha = 0.05
 
-epochs = 5_000
+epochs = 10_000
 
 undiscounted_rewards = []
 
