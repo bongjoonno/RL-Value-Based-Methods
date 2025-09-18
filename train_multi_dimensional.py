@@ -10,7 +10,7 @@ epsilon = 1
 
 alpha = 0.3
 
-epochs = 15_000
+epochs = 30_000
 
 undiscounted_rewards = []
 
@@ -22,12 +22,11 @@ for _ in range(epochs):
 
     rewards = list(board.trajectories['reward'])
     discounted_rewards = get_discounted_reward(rewards, discounted_rewards = [])
-    board.trajectories['Gt_reward'] = discounted_rewards
 
     for i in range(len(board.trajectories)):
-        cur_state = board.trajectories.loc[i, 'state']
-        cur_action = board.trajectories.loc[i, 'action']
-        target = board.trajectories.loc[i, 'Gt_reward']
+        cur_state = board.trajectories['state'][i]
+        cur_action = board.trajectories['action'][i]
+        target = discounted_rewards[i]
 
         Q = board.state_action_average_reward[cur_state][cur_action]
 

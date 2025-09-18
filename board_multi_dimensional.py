@@ -2,24 +2,25 @@ from imports import pd, np, sleep
 from constants import TRAINING_TRIAL_LIMIT, COURSE_LENGTH_X, COURSE_LENGTH_Y
 
 class BoardMultiDimensional:
-    def __init__(self, epsilon=1, limit=TRAINING_TRIAL_LIMIT):
+    def __init__(self, epsilon=1, limit=TRAINING_TRIAL_LIMIT, state_action_average_reward={}):
         self.epsilon = epsilon 
         self.limit = limit
-
+        self.state_action_average_reward = state_action_average_reward
         self.grid = [[0 for i in range(COURSE_LENGTH_X)] for j in range(COURSE_LENGTH_Y)]
 
-        self.state_action_average_reward = {(i, j): {} for i in range(COURSE_LENGTH_Y) for j in range(COURSE_LENGTH_X)}
+        if self.state_action_average_reward == {}:
+            self.state_action_average_reward = {(i, j): {} for i in range(COURSE_LENGTH_Y) for j in range(COURSE_LENGTH_X)}
 
-        for i, row in enumerate(self.grid):
-            for j in range(len(row)):
-                if j < len(row) - 1:
-                    self.state_action_average_reward[(i, j)]['D'] = 0
-                if j > 0:
-                    self.state_action_average_reward[(i, j)]['A'] = 0
-                if i < len(self.grid) - 1:
-                    self.state_action_average_reward[(i, j)]['S'] = 0
-                if i > 0:
-                    self.state_action_average_reward[(i, j)]['W'] = 0
+            for i, row in enumerate(self.grid):
+                for j in range(len(row)):
+                    if j < len(row) - 1:
+                        self.state_action_average_reward[(i, j)]['D'] = 0
+                    if j > 0:
+                        self.state_action_average_reward[(i, j)]['A'] = 0
+                    if i < len(self.grid) - 1:
+                        self.state_action_average_reward[(i, j)]['S'] = 0
+                    if i > 0:
+                        self.state_action_average_reward[(i, j)]['W'] = 0
         
         self.start_pos = [0, 0]
 
@@ -36,7 +37,7 @@ class BoardMultiDimensional:
 
         self.reward = 0
 
-        self.trajectories = pd.DataFrame(columns=['state', 'action', 'reward'])
+        self.trajectories = {'state' : [], 'action' : [], 'reward' : []}
 
         self.y_moves = {'W' : -1, 'S' : 1}
         self.x_moves = {'D' : 1, 'A' : -1}
@@ -51,7 +52,9 @@ class BoardMultiDimensional:
 
         move = self.policy()
         
-        self.trajectories.loc[len(self.trajectories)] = [(self.cur_pos_y, self.cur_pos_x), move, self.penalty]
+        self.trajectories['state'].append((self.cur_pos_y, self.cur_pos_x))
+        self.trajectories['action'].append(move)
+        self.trajectories['reward'].append(self.penalty)
 
         self.cur_pos_y += self.y_moves.get(move, 0)
         self.cur_pos_x += self.x_moves.get(move, 0)
