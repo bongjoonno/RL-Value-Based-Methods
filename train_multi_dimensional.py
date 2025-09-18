@@ -6,7 +6,7 @@ from imports import pickle
 
 trajectories_arr = []
 
-epsilon = 1
+epsilon = 0.5
 
 alpha = 0.05
 

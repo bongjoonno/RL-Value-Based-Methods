@@ -101,6 +101,6 @@ class BoardMultiDimensional:
             if move != max_reward_move:
                 move_probs_dict[move] = self.epsilon / moves_besides_max
 
-        move_probs = list(move_probs.values())
+        move_probs = list(move_probs_dict.values())
 
         return np.random.choice(moves, p = move_probs)
