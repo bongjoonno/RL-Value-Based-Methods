@@ -2,25 +2,13 @@ from imports import pd, np, sleep
 from constants import TRAINING_TRIAL_LIMIT, COURSE_LENGTH_X, COURSE_LENGTH_Y
 
 class BoardMultiDimensional:
-    def __init__(self, epsilon=1, limit=TRAINING_TRIAL_LIMIT, state_action_average_reward={}):
+    def __init__(self, state_action_average_reward, epsilon=1, limit=TRAINING_TRIAL_LIMIT):
+        
+        self.state_action_average_reward = state_action_average_reward
         self.epsilon = epsilon 
         self.limit = limit
-        self.state_action_average_reward = state_action_average_reward
+        
         self.grid = [[0 for i in range(COURSE_LENGTH_X)] for j in range(COURSE_LENGTH_Y)]
-
-        if self.state_action_average_reward == {}:
-            self.state_action_average_reward = {(i, j): {} for i in range(COURSE_LENGTH_Y) for j in range(COURSE_LENGTH_X)}
-
-            for i, row in enumerate(self.grid):
-                for j in range(len(row)):
-                    if j < len(row) - 1:
-                        self.state_action_average_reward[(i, j)]['D'] = 0
-                    if j > 0:
-                        self.state_action_average_reward[(i, j)]['A'] = 0
-                    if i < len(self.grid) - 1:
-                        self.state_action_average_reward[(i, j)]['S'] = 0
-                    if i > 0:
-                        self.state_action_average_reward[(i, j)]['W'] = 0
         
         self.start_pos = [0, 0]
 
