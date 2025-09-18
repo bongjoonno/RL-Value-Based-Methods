@@ -29,16 +29,16 @@ for _ in range(epochs):
         cur_action = board.trajectories.loc[i, 'action']
         cur_discounted_reward = board.trajectories.loc[i, 'Gt_reward']
 
-        target = board.state_action_average_reward[cur_state][cur_action]
-        board.state_action_average_reward[cur_state][cur_action] += alpha * (target - cur_discounted_reward)
+        Q = board.state_action_average_reward[cur_state][cur_action]
+        board.state_action_average_reward[cur_state][cur_action] += alpha * (cur_discounted_reward - Q)
     
     epsilon = max(0.01, epsilon * 0.999)
 
-for i, dict in board.state_action_average_reward.items():
-    print(i, dict)
+for state, actions in board.state_action_average_reward.items():
+    print(state, actions)
 
 with open('/workspaces/monte-carlo/state_action_average_reward_multi.pkl', 'wb') as f:
     pickle.dump(board.state_action_average_reward, f)
 
-plt.plot([i for i in range(len(undiscounted_rewards))], undiscounted_rewards)
+plt.plot([range(len(undiscounted_rewards))], undiscounted_rewards)
 plt.savefig('plot.png')
