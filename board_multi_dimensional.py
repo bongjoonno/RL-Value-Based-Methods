@@ -1,11 +1,10 @@
 from imports import pd, np, sleep
-from constants import TRAINING_TRIAL_LIMIT, COURSE_LENGTH_X, COURSE_LENGTH_Y
+from constants import COURSE_LENGTH_X, COURSE_LENGTH_Y
 
 class BoardMultiDimensional:
-    def __init__(self, state_action_average_reward, epsilon=1, limit=TRAINING_TRIAL_LIMIT):
+    def __init__(self, state_action_average_reward, epsilon=1):
         self.state_action_average_reward = state_action_average_reward
         self.epsilon = epsilon 
-        self.limit = limit
         
         self.grid = [[0 for i in range(COURSE_LENGTH_X)] for j in range(COURSE_LENGTH_Y)]
         
@@ -15,8 +14,6 @@ class BoardMultiDimensional:
         self.cur_pos_x = self.start_pos[1]
 
         self.grid[self.cur_pos_y][self.cur_pos_x] = 'P'
-        
-        self.valid_moves = []
 
         self.finish_pos = [COURSE_LENGTH_Y-1, COURSE_LENGTH_X-1]
 
@@ -29,32 +26,30 @@ class BoardMultiDimensional:
         self.y_moves = {'W' : -1, 'S' : 1}
         self.x_moves = {'D' : 1, 'A' : -1}
     
-    def perform_move(self):
-        if [self.cur_pos_y, self.cur_pos_x] == self.finish_pos:
-            return 1
-        elif self.limit == 0:
-            return 0
+        self.avg_rewards_for_state_action = {}
 
+        self.move = ''
+
+    def perform_move(self):
         self.grid[self.cur_pos_y][self.cur_pos_x] = 0
 
-        move = self.policy()
+        self.move = self.policy()
         
         self.trajectories['state'].append((self.cur_pos_y, self.cur_pos_x))
-        self.trajectories['action'].append(move)
+        self.trajectories['action'].append(self.move)
         self.trajectories['reward'].append(self.penalty)
 
-        self.cur_pos_y += self.y_moves.get(move, 0)
-        self.cur_pos_x += self.x_moves.get(move, 0)
+        self.cur_pos_y += self.y_moves.get(self.move, 0)
+        self.cur_pos_x += self.x_moves.get(self.move, 0)
 
         self.grid[self.cur_pos_y][self.cur_pos_x] = 'P'
 
-        self.limit -= 1
         self.reward += self.penalty
 
-        #self.display_grid()
-        #print(move)
-        #sleep(0.5)
-        return self.perform_move()
+        if [self.cur_pos_y, self.cur_pos_x] == self.finish_pos:
+            return 'finished course'
+        
+        else: return 'continue'
     
     def display_grid(self):
         for row in self.grid:
@@ -62,11 +57,11 @@ class BoardMultiDimensional:
         print('\n')
 
     def policy(self):
-        avg_rewards_for_state_action = self.state_action_average_reward[(self.cur_pos_y, self.cur_pos_x)]
-        moves = list(avg_rewards_for_state_action.keys())
-        moves_q_scores = list(avg_rewards_for_state_action.values())
+        self.avg_rewards_for_state_action = self.state_action_average_reward[(self.cur_pos_y, self.cur_pos_x)]
+        moves = list(self.avg_rewards_for_state_action.keys())
+        moves_q_scores = list(self.avg_rewards_for_state_action.values())
 
-        max_reward_move = max(avg_rewards_for_state_action, key=avg_rewards_for_state_action.get)
+        max_reward_move = max(self.avg_rewards_for_state_action, key=self.avg_rewards_for_state_action.get)
 
         if self.epsilon == 0:
             return max_reward_move
@@ -92,3 +87,7 @@ class BoardMultiDimensional:
 
         move_probs = list(move_probs_dict.values())
         return np.random.choice(moves, p = move_probs)
+    
+    def policy_q_learning(self):
+        max_move = self.policy()
+        return self.avg_rewards_for_state_action[max_move]
