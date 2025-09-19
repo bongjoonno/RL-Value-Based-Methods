@@ -15,8 +15,13 @@ for state, actions in state_action_average_reward.items():
 trial_limit = (COURSE_LENGTH_Y-1) + (COURSE_LENGTH_X-1)
 
 for _ in range(trials):
-    board = BoardMultiDimensional(state_action_average_reward=state_action_average_reward, epsilon = 0, limit=trial_limit)
-    trial_results.append(board.perform_move())
+    board = BoardMultiDimensional(state_action_average_reward=state_action_average_reward, epsilon = 0)
+    
+    for i in range(trial_limit):
+        res = board.perform_move()
+        print(res)
+    
+    trial_results.append(res)
 
 print('\n')
 print(board.display_grid())

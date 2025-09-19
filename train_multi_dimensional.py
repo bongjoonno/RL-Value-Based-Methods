@@ -2,6 +2,7 @@ from imports import pd, sleep, plt
 from board_multi_dimensional import BoardMultiDimensional
 from discounted_reward import get_discounted_reward
 from generate_q_score_table import gen_q_score_table
+from constants import TRAINING_TRIAL_LIMIT
 
 from imports import pickle
 
@@ -13,21 +14,23 @@ epsilon = 1
 
 alpha = 0.3
 
-epochs = 30_000
+epochs = 10_000
 
 q_scores_table = gen_q_score_table()
 
 for _ in range(epochs):
     board = BoardMultiDimensional(state_action_average_reward=q_scores_table, epsilon=epsilon)
-    board.perform_move()
+
+    for i in range(TRAINING_TRIAL_LIMIT):
+        board.perform_move()
 
     rewards = list(board.trajectories['reward'])
     discounted_rewards = get_discounted_reward(rewards, discounted_rewards = [])
 
-    for i in range(len(board.trajectories['state'])):
-        cur_state = board.trajectories['state'][i]
-        cur_action = board.trajectories['action'][i]
-        target = discounted_rewards[i]
+    for j in range(len(board.trajectories['state'])):
+        cur_state = board.trajectories['state'][j]
+        cur_action = board.trajectories['action'][j]
+        target = discounted_rewards[j]
 
         q = board.state_action_average_reward[cur_state][cur_action]
 

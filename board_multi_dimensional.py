@@ -2,10 +2,9 @@ from imports import pd, np, sleep
 from constants import TRAINING_TRIAL_LIMIT, COURSE_LENGTH_X, COURSE_LENGTH_Y
 
 class BoardMultiDimensional:
-    def __init__(self, state_action_average_reward, epsilon=1, limit=TRAINING_TRIAL_LIMIT):
+    def __init__(self, state_action_average_reward, epsilon=1):
         self.state_action_average_reward = state_action_average_reward
         self.epsilon = epsilon 
-        self.limit = limit
         
         self.grid = [[0 for i in range(COURSE_LENGTH_X)] for j in range(COURSE_LENGTH_Y)]
         
@@ -32,8 +31,6 @@ class BoardMultiDimensional:
     def perform_move(self):
         if [self.cur_pos_y, self.cur_pos_x] == self.finish_pos:
             return 1
-        elif self.limit == 0:
-            return 0
 
         self.grid[self.cur_pos_y][self.cur_pos_x] = 0
 
@@ -54,7 +51,8 @@ class BoardMultiDimensional:
         #self.display_grid()
         #print(move)
         #sleep(0.5)
-        return self.perform_move()
+        
+        return 0
     
     def display_grid(self):
         for row in self.grid:
