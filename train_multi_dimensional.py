@@ -23,17 +23,8 @@ q_scores_table = gen_q_score_table()
 for _ in range(epochs):
     board = BoardMultiDimensional(state_action_average_reward=q_scores_table, epsilon=epsilon)
 
-    for i in range(TRAINING_TRIAL_LIMIT):
-        cur_state = (board.cur_pos_y, board.cur_pos_x)
-        outcome = board.perform_move()
-        cur_action = board.move
-
-        if outcome == 'finished course':
-            break
-        else:
-            q_learning_update(board, cur_state, cur_action, alpha)
-        
-    #monte_carlo_update(board, alpha)
+    #monte_carlo_update(board= board, trial_limit= TRAINING_TRIAL_LIMIT, alpha= alpha)
+    q_learning_update(board= board, alpha= alpha)
     
     epsilon = max(0.01, epsilon * 0.999)
     q_scores_table = board.state_action_average_reward
