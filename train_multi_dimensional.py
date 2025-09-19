@@ -4,6 +4,7 @@ from discounted_reward import get_discounted_reward
 from generate_q_score_table import gen_q_score_table
 from monte_carlo_update import monte_carlo_update
 from q_learning_update import q_learning_update
+from sarsa_update import sarsa_update
 from constants import TRAINING_TRIAL_LIMIT
 
 from imports import pickle
@@ -16,7 +17,7 @@ epsilon = 1
 
 alpha = 0.3
 
-epochs = 10_000
+epochs = 25_000
 
 q_scores_table = gen_q_score_table()
 
@@ -24,7 +25,7 @@ for _ in range(epochs):
     board = BoardMultiDimensional(state_action_average_reward=q_scores_table, epsilon=epsilon)
 
     #monte_carlo_update(board= board, trial_limit= TRAINING_TRIAL_LIMIT, alpha= alpha)
-    q_learning_update(board= board, alpha= alpha)
+    sarsa_update(board= board, alpha= alpha)
     
     epsilon = max(0.01, epsilon * 0.999)
     q_scores_table = board.state_action_average_reward

@@ -8,14 +8,14 @@ class BoardMultiDimensional:
         
         self.grid = [[0 for i in range(COURSE_LENGTH_X)] for j in range(COURSE_LENGTH_Y)]
         
-        self.start_pos = [0, 0]
+        self.start_pos = (0, 0)
 
         self.cur_pos_y = self.start_pos[0]
         self.cur_pos_x = self.start_pos[1]
 
         self.grid[self.cur_pos_y][self.cur_pos_x] = 'P'
 
-        self.finish_pos = [COURSE_LENGTH_Y-1, COURSE_LENGTH_X-1]
+        self.finish_pos = (COURSE_LENGTH_Y-1, COURSE_LENGTH_X-1)
 
         self.penalty = -1
 
@@ -28,16 +28,22 @@ class BoardMultiDimensional:
     
         self.avg_rewards_for_state_action = {}
 
-        self.move = ''
+        self.prev_move = None
+        self.move = None
+
+        self.prev_position = self.start_pos
 
     def perform_move(self):
         self.grid[self.cur_pos_y][self.cur_pos_x] = 0
 
         self.move = self.policy()
-        
+        self.prev_move = self.move
+
         self.trajectories['state'].append((self.cur_pos_y, self.cur_pos_x))
         self.trajectories['action'].append(self.move)
         self.trajectories['reward'].append(self.penalty)
+
+        self.prev_position = (self.cur_pos_y, self.cur_pos_x)
 
         self.cur_pos_y += self.y_moves.get(self.move, 0)
         self.cur_pos_x += self.x_moves.get(self.move, 0)
@@ -46,7 +52,7 @@ class BoardMultiDimensional:
 
         self.reward += self.penalty
 
-        if [self.cur_pos_y, self.cur_pos_x] == self.finish_pos:
+        if (self.cur_pos_y, self.cur_pos_x) == self.finish_pos:
             return 'finished course'
         
         else: return 'continue'
