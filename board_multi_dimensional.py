@@ -1,5 +1,5 @@
 from imports import pd, np, sleep
-from constants import TRAINING_TRIAL_LIMIT, COURSE_LENGTH_X, COURSE_LENGTH_Y
+from constants import COURSE_LENGTH_X, COURSE_LENGTH_Y
 
 class BoardMultiDimensional:
     def __init__(self, state_action_average_reward, epsilon=1):

@@ -3,7 +3,8 @@ from board_multi_dimensional import BoardMultiDimensional
 from discounted_reward import get_discounted_reward
 from generate_q_score_table import gen_q_score_table
 from monte_carlo_update import monte_carlo_update
-from constants import TRAINING_TRIAL_LIMIT, GAMMA_DISCOUNTED_REWARD
+from q_learning_update import q_learning_update
+from constants import TRAINING_TRIAL_LIMIT
 
 from imports import pickle
 
@@ -30,13 +31,9 @@ for _ in range(epochs):
         if outcome == 'finished course':
             break
         else:
-            max_move_avg_reward = board.policy_q_learning()
-            target = -1 + (GAMMA_DISCOUNTED_REWARD * max_move_avg_reward)
-            
-            q = board.state_action_average_reward[cur_state][cur_action]
-
-            board.state_action_average_reward[cur_state][cur_action] += alpha * (target - q)
-
+            q_learning_update(board, cur_state, cur_action, alpha)
+        
+    #monte_carlo_update(board, alpha)
     
     epsilon = max(0.01, epsilon * 0.999)
     q_scores_table = board.state_action_average_reward
