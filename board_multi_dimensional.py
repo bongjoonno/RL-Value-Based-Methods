@@ -26,17 +26,21 @@ class BoardMultiDimensional:
         self.y_moves = {'W' : -1, 'S' : 1}
         self.x_moves = {'D' : 1, 'A' : -1}
     
+        self.avg_rewards_for_state_action = {}
+
+        self.move = ''
+
     def perform_move(self):
         self.grid[self.cur_pos_y][self.cur_pos_x] = 0
 
-        move = self.policy()
+        self.move = self.policy()
         
         self.trajectories['state'].append((self.cur_pos_y, self.cur_pos_x))
-        self.trajectories['action'].append(move)
+        self.trajectories['action'].append(self.move)
         self.trajectories['reward'].append(self.penalty)
 
-        self.cur_pos_y += self.y_moves.get(move, 0)
-        self.cur_pos_x += self.x_moves.get(move, 0)
+        self.cur_pos_y += self.y_moves.get(self.move, 0)
+        self.cur_pos_x += self.x_moves.get(self.move, 0)
 
         self.grid[self.cur_pos_y][self.cur_pos_x] = 'P'
 
@@ -53,11 +57,11 @@ class BoardMultiDimensional:
         print('\n')
 
     def policy(self):
-        avg_rewards_for_state_action = self.state_action_average_reward[(self.cur_pos_y, self.cur_pos_x)]
-        moves = list(avg_rewards_for_state_action.keys())
-        moves_q_scores = list(avg_rewards_for_state_action.values())
+        self.avg_rewards_for_state_action = self.state_action_average_reward[(self.cur_pos_y, self.cur_pos_x)]
+        moves = list(self.avg_rewards_for_state_action.keys())
+        moves_q_scores = list(self.avg_rewards_for_state_action.values())
 
-        max_reward_move = max(avg_rewards_for_state_action, key=avg_rewards_for_state_action.get)
+        max_reward_move = max(self.avg_rewards_for_state_action, key=self.avg_rewards_for_state_action.get)
 
         if self.epsilon == 0:
             return max_reward_move
@@ -83,3 +87,7 @@ class BoardMultiDimensional:
 
         move_probs = list(move_probs_dict.values())
         return np.random.choice(moves, p = move_probs)
+    
+    def policy_q_learning(self):
+        max_move = self.policy()
+        return self.avg_rewards_for_state_action[max_move]

@@ -2,7 +2,8 @@ from imports import pd, sleep, plt
 from board_multi_dimensional import BoardMultiDimensional
 from discounted_reward import get_discounted_reward
 from generate_q_score_table import gen_q_score_table
-from constants import TRAINING_TRIAL_LIMIT
+from monte_carlo_update import monte_carlo_update
+from constants import TRAINING_TRIAL_LIMIT, GAMMA_DISCOUNTED_REWARD
 
 from imports import pickle
 
@@ -14,7 +15,7 @@ epsilon = 1
 
 alpha = 0.3
 
-epochs = 20_000
+epochs = 10_000
 
 q_scores_table = gen_q_score_table()
 
@@ -22,21 +23,20 @@ for _ in range(epochs):
     board = BoardMultiDimensional(state_action_average_reward=q_scores_table, epsilon=epsilon)
 
     for i in range(TRAINING_TRIAL_LIMIT):
+        cur_state = (board.cur_pos_y, board.cur_pos_x)
         outcome = board.perform_move()
+        cur_action = board.move
+
         if outcome == 'finished course':
             break
+        else:
+            max_move_avg_reward = board.policy_q_learning()
+            target = -1 + (GAMMA_DISCOUNTED_REWARD * max_move_avg_reward)
+            
+            q = board.state_action_average_reward[cur_state][cur_action]
 
-    rewards = list(board.trajectories['reward'])
-    discounted_rewards = get_discounted_reward(rewards, discounted_rewards = [])
+            board.state_action_average_reward[cur_state][cur_action] += alpha * (target - q)
 
-    for j in range(len(board.trajectories['state'])):
-        cur_state = board.trajectories['state'][j]
-        cur_action = board.trajectories['action'][j]
-        target = discounted_rewards[j]
-
-        q = board.state_action_average_reward[cur_state][cur_action]
-
-        board.state_action_average_reward[cur_state][cur_action] += alpha * (target - q)
     
     epsilon = max(0.01, epsilon * 0.999)
     q_scores_table = board.state_action_average_reward
