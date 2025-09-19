@@ -14,7 +14,7 @@ epsilon = 1
 
 alpha = 0.3
 
-epochs = 10_000
+epochs = 20_000
 
 q_scores_table = gen_q_score_table()
 
@@ -22,7 +22,9 @@ for _ in range(epochs):
     board = BoardMultiDimensional(state_action_average_reward=q_scores_table, epsilon=epsilon)
 
     for i in range(TRAINING_TRIAL_LIMIT):
-        board.perform_move()
+        outcome = board.perform_move()
+        if outcome == 'finished course':
+            break
 
     rewards = list(board.trajectories['reward'])
     discounted_rewards = get_discounted_reward(rewards, discounted_rewards = [])

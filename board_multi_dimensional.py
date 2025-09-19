@@ -14,8 +14,6 @@ class BoardMultiDimensional:
         self.cur_pos_x = self.start_pos[1]
 
         self.grid[self.cur_pos_y][self.cur_pos_x] = 'P'
-        
-        self.valid_moves = []
 
         self.finish_pos = [COURSE_LENGTH_Y-1, COURSE_LENGTH_X-1]
 
@@ -29,9 +27,6 @@ class BoardMultiDimensional:
         self.x_moves = {'D' : 1, 'A' : -1}
     
     def perform_move(self):
-        if [self.cur_pos_y, self.cur_pos_x] == self.finish_pos:
-            return 1
-
         self.grid[self.cur_pos_y][self.cur_pos_x] = 0
 
         move = self.policy()
@@ -45,14 +40,12 @@ class BoardMultiDimensional:
 
         self.grid[self.cur_pos_y][self.cur_pos_x] = 'P'
 
-        self.limit -= 1
         self.reward += self.penalty
 
-        #self.display_grid()
-        #print(move)
-        #sleep(0.5)
+        if [self.cur_pos_y, self.cur_pos_x] == self.finish_pos:
+            return 'finished course'
         
-        return 0
+        else: return 'continue'
     
     def display_grid(self):
         for row in self.grid:
