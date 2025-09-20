@@ -1,7 +1,14 @@
-from board_multi_dimensional import BoardMultiDimensional
-from discounted_reward import get_discounted_reward
+from board import Board
+from utils.discounted_reward import get_discounted_reward
+from constants import TRAINING_TRIAL_LIMIT, ALPHA, GAMMA
 
-def monte_carlo_update(board: BoardMultiDimensional, trial_limit, alpha=0.1, gamma=0.9):
+def monte_carlo(
+    board: Board, 
+    trial_limit = TRAINING_TRIAL_LIMIT, 
+    alpha = ALPHA, 
+    gamma = GAMMA
+) -> None:
+    
     for _ in range(trial_limit):
         cur_state = (board.cur_pos_y, board.cur_pos_x)
         outcome = board.perform_move()
