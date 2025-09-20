@@ -1,4 +1,5 @@
 from board import Board
+from imports import sleep
 
 def test(q_scores, trial_limit):
     trial_results = []
@@ -9,6 +10,8 @@ def test(q_scores, trial_limit):
 
     for i in range(trial_limit):
         res = board.perform_move()
+        board.display_grid()
+        sleep(1)
 
     trial_results.append(results_mappings[res])
 
