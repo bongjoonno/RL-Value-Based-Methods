@@ -6,6 +6,7 @@ from board_multi_dimensional import BoardMultiDimensional
 
 # utils
 from utils.generate_q_score_table import gen_q_score_table
+from utils.save_parameters import save_parameters_to_pkl
 
 # learning methods
 from learning_methods.monte_carlo import monte_carlo
@@ -39,8 +40,7 @@ def main():
     for state, actions in q_scores.items():
         print(state, actions)
 
-    with open('/workspaces/monte-carlo/state_action_average_reward.pkl', 'wb') as f:
-        pickle.dump(q_scores, f)
+    save_parameters_to_pkl()
     
     accuracy = test_multi_dim(q_scores, TESTING_TRIAL_LIMIT)
 
