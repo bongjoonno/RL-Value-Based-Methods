@@ -1,7 +1,7 @@
 from imports import pd, np, sleep
 from constants import COURSE_LENGTH_X, COURSE_LENGTH_Y
 
-class BoardMultiDimensional:
+class Board:
     def __init__(self, state_action_average_reward, epsilon=1, randomized=True):
         self.state_action_average_reward = state_action_average_reward
         self.epsilon = epsilon 

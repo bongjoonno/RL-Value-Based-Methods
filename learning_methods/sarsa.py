@@ -1,8 +1,8 @@
-from board_multi_dimensional import BoardMultiDimensional
+from board import Board
 from constants import TRAINING_TRIAL_LIMIT, ALPHA, GAMMA
 
 def sarsa(
-    board: BoardMultiDimensional, 
+    board: Board, 
     trial_limit = TRAINING_TRIAL_LIMIT, 
     alpha = ALPHA, 
     gamma = GAMMA
