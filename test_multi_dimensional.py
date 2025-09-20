@@ -16,7 +16,7 @@ trial_limit = (COURSE_LENGTH_Y-1) + (COURSE_LENGTH_X-1)
 
 results_mappings = {'finished course' : 1, 'continue' : 0}
 
-board = BoardMultiDimensional(state_action_average_reward=state_action_average_reward, epsilon = 0)
+board = BoardMultiDimensional(state_action_average_reward=state_action_average_reward, epsilon = 0, randomized=False)
 
 for i in range(trial_limit):
     res = board.perform_move()
