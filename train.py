@@ -1,6 +1,3 @@
-# normal imports
-from imports import pd, sleep, pickle
-
 # board
 from board_multi_dimensional import BoardMultiDimensional
 
@@ -37,10 +34,7 @@ def main():
         q_scores = board.state_action_average_reward
         #print(epsilon)
 
-    for state, actions in q_scores.items():
-        print(state, actions)
-
-    save_parameters_to_pkl()
+    #save_parameters_to_pkl()
     
     accuracy = test_multi_dim(q_scores, TESTING_TRIAL_LIMIT)
 
