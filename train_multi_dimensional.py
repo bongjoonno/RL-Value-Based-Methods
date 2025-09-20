@@ -17,15 +17,15 @@ epsilon = 1
 
 alpha = 0.3
 
-epochs = 25_000
+epochs = 20_000
 
 q_scores_table = gen_q_score_table()
 
 for _ in range(epochs):
-    board = BoardMultiDimensional(state_action_average_reward=q_scores_table, epsilon=epsilon)
+    board = BoardMultiDimensional(state_action_average_reward=q_scores_table, epsilon=epsilon, randomized=True)
 
     #monte_carlo_update(board= board, trial_limit= TRAINING_TRIAL_LIMIT, alpha= alpha)
-    sarsa_update(board= board, alpha= alpha)
+    q_learning_update(board= board, alpha= alpha)
     
     epsilon = max(0.01, epsilon * 0.999)
     q_scores_table = board.state_action_average_reward

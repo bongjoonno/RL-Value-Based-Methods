@@ -2,20 +2,22 @@ from imports import pd, np, sleep
 from constants import COURSE_LENGTH_X, COURSE_LENGTH_Y
 
 class BoardMultiDimensional:
-    def __init__(self, state_action_average_reward, epsilon=1):
+    def __init__(self, state_action_average_reward, epsilon=1, randomized=True):
         self.state_action_average_reward = state_action_average_reward
         self.epsilon = epsilon 
         
         self.grid = [[0 for i in range(COURSE_LENGTH_X)] for j in range(COURSE_LENGTH_Y)]
-        
-        self.start_pos = (0, 0)
 
-        self.cur_pos_y = self.start_pos[0]
-        self.cur_pos_x = self.start_pos[1]
+        if randomized:
+            self.cur_pos_y = np.random.randint(1, COURSE_LENGTH_Y-1)
+            self.cur_pos_x = np.random.randint(1, COURSE_LENGTH_X-1)
+        else: self.cur_pos_y, self.cur_pos_x = 0, 0
 
-        self.grid[self.cur_pos_y][self.cur_pos_x] = 'P'
+        self.start_pos = (self.cur_pos_y, self.cur_pos_x)
 
         self.finish_pos = (COURSE_LENGTH_Y-1, COURSE_LENGTH_X-1)
+
+        self.grid[self.cur_pos_y][self.cur_pos_x] = 'P'
 
         self.penalty = -1
 
@@ -34,6 +36,9 @@ class BoardMultiDimensional:
         self.prev_position = self.start_pos
 
     def perform_move(self):
+        if self.start_pos == self.finish_pos:
+            return 'finished course'
+        
         self.grid[self.cur_pos_y][self.cur_pos_x] = 0
 
         self.move = self.policy()
