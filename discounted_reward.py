@@ -1,6 +1,4 @@
-from constants import GAMMA_DISCOUNTED_REWARD
-
-def get_discounted_reward(rewards, gamma=GAMMA_DISCOUNTED_REWARD, Gt_reward=0, discounted_rewards=[]):
+def get_discounted_reward(rewards, gamma, Gt_reward=0, discounted_rewards=[]):
     if not rewards: return discounted_rewards[::-1]
     
     Gt_reward = Gt_reward * gamma + rewards[-1]

@@ -1,17 +1,15 @@
-from constants import COURSE_LENGTH_Y, COURSE_LENGTH_X
+def gen_q_score_table(course_length_y, course_length_x):
+    q_scores = {(i, j): {} for i in range(course_length_y) for j in range(course_length_x)}
 
-def gen_q_score_table():
-    state_action_average_reward = {(i, j): {} for i in range(COURSE_LENGTH_Y) for j in range(COURSE_LENGTH_X)}
-
-    for i in range(COURSE_LENGTH_Y):
-        for j in range(COURSE_LENGTH_X):
-            if j < COURSE_LENGTH_X - 1:
-                state_action_average_reward[(i, j)]['D'] = 0
+    for i in range(course_length_y):
+        for j in range(course_length_x):
+            if j < course_length_x - 1:
+                q_scores[(i, j)]['D'] = 0
             if j > 0:
-                state_action_average_reward[(i, j)]['A'] = 0
-            if i < COURSE_LENGTH_Y - 1:
-                state_action_average_reward[(i, j)]['S'] = 0
+                q_scores[(i, j)]['A'] = 0
+            if i < course_length_y - 1:
+                q_scores[(i, j)]['S'] = 0
             if i > 0:
-                state_action_average_reward[(i, j)]['W'] = 0
+                q_scores[(i, j)]['W'] = 0
     
-    return state_action_average_reward
+    return q_scores
