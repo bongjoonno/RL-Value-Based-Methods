@@ -1,9 +1,5 @@
-# board
-from board import Board
-
 # utils
 from utils.generate_q_score_table import gen_q_score_table
-from utils.save_parameters import save_parameters_to_pkl
 
 # training
 from train import train
@@ -12,7 +8,7 @@ from train import train
 from test import test
 
 #constants
-from constants import COURSE_LENGTH_Y, COURSE_LENGTH_X, TRAINING_TRIAL_LIMIT, TESTING_TRIAL_LIMIT, ALPHA, EPSILON, GAMMA
+from constants import COURSE_LENGTH_Y, COURSE_LENGTH_X, TESTING_TRIAL_LIMIT, EPSILON
 
 def main():
     epochs = 20_000
