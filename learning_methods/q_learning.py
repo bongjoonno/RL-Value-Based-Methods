@@ -1,11 +1,11 @@
 from board_multi_dimensional import BoardMultiDimensional
-from constants import GAMMA_DISCOUNTED_REWARD, TRAINING_TRIAL_LIMIT
+from constants import TRAINING_TRIAL_LIMIT, ALPHA, GAMMA
 
-def q_learning_update(
+def q_learning(
     board: BoardMultiDimensional, 
-    trial_limit= TRAINING_TRIAL_LIMIT, 
-    alpha=0.1, 
-    gamma=GAMMA_DISCOUNTED_REWARD
+    trial_limit = TRAINING_TRIAL_LIMIT, 
+    alpha = ALPHA, 
+    gamma = GAMMA
 ) -> None:
 
     for _ in range(trial_limit):

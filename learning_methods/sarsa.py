@@ -1,7 +1,13 @@
 from board_multi_dimensional import BoardMultiDimensional
-from constants import GAMMA_DISCOUNTED_REWARD, TRAINING_TRIAL_LIMIT
+from constants import TRAINING_TRIAL_LIMIT, ALPHA, GAMMA
 
-def sarsa_update(board: BoardMultiDimensional, trial_limit= TRAINING_TRIAL_LIMIT, alpha=0.1, gamma=GAMMA_DISCOUNTED_REWARD):
+def sarsa(
+    board: BoardMultiDimensional, 
+    trial_limit = TRAINING_TRIAL_LIMIT, 
+    alpha = ALPHA, 
+    gamma = GAMMA
+) -> None:
+    
     for _ in range(trial_limit):
         cur_state = (board.cur_pos_y, board.cur_pos_x)
         outcome = board.perform_move()

@@ -9,8 +9,8 @@ class BoardMultiDimensional:
         self.grid = [[0 for i in range(COURSE_LENGTH_X)] for j in range(COURSE_LENGTH_Y)]
 
         if randomized:
-            self.cur_pos_y = np.random.randint(1, COURSE_LENGTH_Y-1)
-            self.cur_pos_x = np.random.randint(1, COURSE_LENGTH_X-1)
+            self.cur_pos_y = np.random.randint(0, COURSE_LENGTH_Y-1)
+            self.cur_pos_x = np.random.randint(0, COURSE_LENGTH_X-1)
         else: self.cur_pos_y, self.cur_pos_x = 0, 0
 
         self.start_pos = (self.cur_pos_y, self.cur_pos_x)
