@@ -86,17 +86,16 @@ class Board:
         elif all(x == 0 for x in moves_q_scores):
             return np.random.choice(moves)
         
-        move_probs_dict = {}
+        move_probs = []
 
-        move_probs_dict[max_reward_move] = 1 - self.epsilon
-
-        moves_besides_max = len(moves) - 1
+        random_move_prob = self.epsilon / len(moves)
 
         for move in moves:
-            if move != max_reward_move:
-                move_probs_dict[move] = self.epsilon / moves_besides_max
+            if move == max_reward_move:
+                move_probs.append(1 - self.epsilon + random_move_prob)
+            else:
+                move_probs.append(random_move_prob)
 
-        move_probs = list(move_probs_dict.values())
         return np.random.choice(moves, p = move_probs)
     
     def policy_q_learning(self):
