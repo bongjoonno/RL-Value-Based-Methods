@@ -11,7 +11,7 @@ from test import test
 from constants import COURSE_LENGTH_Y, COURSE_LENGTH_X, TESTING_TRIAL_LIMIT, EPSILON
 
 def main():
-    epochs = 30_000
+    epochs = 20_000
 
     q_scores = gen_q_score_table(COURSE_LENGTH_Y, COURSE_LENGTH_X)
 

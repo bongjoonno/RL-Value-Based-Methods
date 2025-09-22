@@ -6,7 +6,7 @@ def test(q_scores, trial_limit):
 
     results_mappings = {'finished course' : 1, 'continue' : 0}
 
-    board = Board(state_action_average_reward = q_scores, epsilon = 0, randomized=False)
+    board = Board(q_table = q_scores, epsilon = 0, randomized=False)
 
     for i in range(trial_limit):
         res = board.perform_move()

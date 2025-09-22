@@ -1,3 +1,7 @@
-x = None
+from imports import np
 
-print(not x)
+x = np.str_('W')
+
+dic = {(0,1) : {'W' : 1 }}
+
+print(dic[(0,1)][x])
