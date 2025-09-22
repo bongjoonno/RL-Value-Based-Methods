@@ -11,11 +11,11 @@ from test import test
 from constants import COURSE_LENGTH_Y, COURSE_LENGTH_X, TESTING_TRIAL_LIMIT, EPSILON
 
 def main():
-    epochs = 20_000
+    epochs = 30_000
 
     q_scores = gen_q_score_table(COURSE_LENGTH_Y, COURSE_LENGTH_X)
 
-    finished_params = train(epochs = epochs, q_scores = q_scores, method = 'q learning', epsilon = EPSILON)
+    finished_params = train(epochs = epochs, q_scores = q_scores, method = 'sarsa', epsilon = EPSILON)
     
     accuracy = test(finished_params, TESTING_TRIAL_LIMIT)
 

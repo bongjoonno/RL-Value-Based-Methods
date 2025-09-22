@@ -13,13 +13,14 @@ def sarsa(
         outcome = board.perform_move()
         cur_action = board.move
 
-        if outcome == 'finished course': break
-        elif not board.prev_move:
+        if outcome == 'finished course': 
+            break
+        elif board.move_number == 1:
             continue
 
-        q = board.state_action_average_reward[board.prev_position][board.prev_move]
-        cur_avg_reward = board.state_action_average_reward[cur_state][cur_action]
+        q = board.q_scores[board.prev_position][board.prev_move]
+        cur_avg_reward = board.q_scores[cur_state][cur_action]
 
         target = -1 + (gamma * cur_avg_reward)
 
-        board.state_action_average_reward[board.prev_position][board.prev_move] += alpha * (target - q)
+        board.q_scores[board.prev_position][board.prev_move] += alpha * (target - q)

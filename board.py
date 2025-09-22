@@ -3,7 +3,7 @@ from constants import COURSE_LENGTH_X, COURSE_LENGTH_Y
 
 class Board:
     def __init__(self, state_action_average_reward, epsilon=1, randomized=True):
-        self.state_action_average_reward = state_action_average_reward
+        self.q_scores = state_action_average_reward
         self.epsilon = epsilon 
         
         self.grid = [[0 for i in range(COURSE_LENGTH_X)] for j in range(COURSE_LENGTH_Y)]
@@ -27,13 +27,15 @@ class Board:
 
         self.y_moves = {'W' : -1, 'S' : 1}
         self.x_moves = {'D' : 1, 'A' : -1}
-    
-        self.avg_rewards_for_state_action = {}
 
-        self.prev_move = None
         self.move = None
+        self.prev_move = None
+
+        self.move_number = 0
 
         self.prev_position = self.start_pos
+
+        self.cur_state_q_scores = {}
 
     def perform_move(self):
         if self.start_pos == self.finish_pos:
@@ -44,35 +46,49 @@ class Board:
         self.move = self.policy()
         self.prev_move = self.move
 
+        self.prev_position = (self.cur_pos_y, self.cur_pos_x)
+
+        self.log_trajectory()
+
+        self.update_cur_position()
+
+        self.reward += self.penalty
+        self.move_number += 1
+
+        if (self.cur_pos_y, self.cur_pos_x) == self.finish_pos:
+            return 'finished course'
+        else: 
+            return 'continue'
+    
+    def log_trajectory(self):
         self.trajectories['state'].append((self.cur_pos_y, self.cur_pos_x))
         self.trajectories['action'].append(self.move)
         self.trajectories['reward'].append(self.penalty)
 
-        self.prev_position = (self.cur_pos_y, self.cur_pos_x)
-
+    def update_cur_position(self):
         self.cur_pos_y += self.y_moves.get(self.move, 0)
         self.cur_pos_x += self.x_moves.get(self.move, 0)
-
         self.grid[self.cur_pos_y][self.cur_pos_x] = 'P'
 
-        self.reward += self.penalty
-
-        if (self.cur_pos_y, self.cur_pos_x) == self.finish_pos:
-            return 'finished course'
-        
-        else: return 'continue'
-    
     def display_grid(self):
         for row in self.grid:
             print(row)
         print('\n')
 
-    def policy(self):
-        self.avg_rewards_for_state_action = self.state_action_average_reward[(self.cur_pos_y, self.cur_pos_x)]
-        moves = list(self.avg_rewards_for_state_action.keys())
-        moves_q_scores = list(self.avg_rewards_for_state_action.values())
+    def get_current_state_q_score(self):
+        self.cur_state_q_scores = self.q_scores[(self.cur_pos_y, self.cur_pos_x)]
+        print(self.cur_state_q_scores)
+    
+    def get_max_reward_move_for_state(self):
+        return max(self.cur_state_q_scores, key = self.cur_state_q_scores.get)
 
-        max_reward_move = max(self.avg_rewards_for_state_action, key=self.avg_rewards_for_state_action.get)
+    def policy(self):
+        self.get_current_state_q_score()
+
+        moves = list(self.cur_state_q_scores.keys())
+        moves_q_scores = list(self.cur_state_q_scores.values())
+
+        max_reward_move = self.get_max_reward_move_for_state()
 
         if self.epsilon == 0:
             return max_reward_move
@@ -97,7 +113,3 @@ class Board:
                 move_probs.append(random_move_prob)
 
         return np.random.choice(moves, p = move_probs)
-    
-    def policy_q_learning(self):
-        max_move = self.policy()
-        return self.avg_rewards_for_state_action[max_move]

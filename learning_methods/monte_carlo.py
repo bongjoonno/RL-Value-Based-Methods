@@ -24,6 +24,6 @@ def monte_carlo(
         cur_action = board.trajectories['action'][i]
         target = discounted_rewards[i]
 
-        q = board.state_action_average_reward[cur_state][cur_action]
+        q = board.q_scores[cur_state][cur_action]
 
-        board.state_action_average_reward[cur_state][cur_action] += alpha * (target - q)
+        board.q_scores[cur_state][cur_action] += alpha * (target - q)

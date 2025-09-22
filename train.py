@@ -22,6 +22,6 @@ def train(epochs, q_scores: dict, method: str, epsilon = EPSILON):
         else:
             return "Invalid learning method\n Please pick 'monte carlo', 'q learning', or 'sarsa'"
         epsilon = max(0.01, epsilon * 0.999)
-        q_scores = board.state_action_average_reward
+        q_scores = board.q_scores
 
     return q_scores

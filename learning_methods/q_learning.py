@@ -15,9 +15,13 @@ def q_learning(
 
         if outcome == 'finished course': break
 
-        max_move_avg_reward = board.policy_q_learning()
-        target = -1 + (gamma * max_move_avg_reward)
+        board.get_current_state_q_score()
         
-        q = board.state_action_average_reward[cur_state][cur_action]
+        max_move = board.get_max_reward_move_for_state()
+        max_move_q_score = board.cur_state_q_scores[max_move]
 
-        board.state_action_average_reward[cur_state][cur_action] += alpha * (target - q)
+        target = -1 + (gamma * max_move_q_score)
+        
+        q = board.q_scores[cur_state][cur_action]
+
+        board.q_scores[cur_state][cur_action] += alpha * (target - q)
