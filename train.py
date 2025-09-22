@@ -12,7 +12,7 @@ from constants import EPSILON
 # custom errors
 from custom_errors import NonexistentLearningMethod
 
-def train(epochs, q_scores: dict, method: str, epsilon = EPSILON):
+def train(epochs, q_table: dict, method: str, epsilon = EPSILON):
     learning_methods_map = {'monte carlo' : monte_carlo,
                             'q-learning' : q_learning,
                             'sarsa' : sarsa}
@@ -23,11 +23,11 @@ def train(epochs, q_scores: dict, method: str, epsilon = EPSILON):
         raise NonexistentLearningMethod()
     
     for _ in range(epochs):
-        board = Board(q_table = q_scores, epsilon = epsilon, randomized=True)
+        board = Board(q_table = q_table, epsilon = epsilon, randomized=True)
 
         chosen_learning_method(board)
         
         epsilon = max(0.01, epsilon * 0.999)
-        q_scores = board.q_table
+        q_table = board.q_table
 
-    return q_scores
+    return q_table

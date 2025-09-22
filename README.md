@@ -1,2 +1,2 @@
-# RL value-based methods
-produces a VERY simple monte carlo reinforcement learning simulation
+# RL Value-Based Methods
+An RL sim with Q-learning, Monte Carlo and SARSA
