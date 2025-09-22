@@ -1,7 +1,10 @@
-from imports import np
+def add_2(x):
+    print('called')
+    return x + 2
 
-x = np.str_('W')
+y = 5
+x = {'yes' : add_2}
 
-dic = {(0,1) : {'W' : 1 }}
+chosen_func = x['yes']
 
-print(dic[(0,1)][x])
+print(chosen_func(y))
