@@ -10,9 +10,9 @@ def monte_carlo(
 ) -> None:
     
     for _ in range(trial_limit):
-        cur_state = (board.cur_pos_y, board.cur_pos_x)
+        cur_state = (board.agent_position_y, board.agent_position_x)
         outcome = board.perform_move()
-        cur_action = board.move
+        cur_action = board.chosen_action
 
         if outcome == 'finished course': break
 
@@ -24,6 +24,6 @@ def monte_carlo(
         cur_action = board.trajectories['action'][i]
         target = discounted_rewards[i]
 
-        q = board.state_action_average_reward[cur_state][cur_action]
+        q = board.q_table[cur_state][cur_action]
 
-        board.state_action_average_reward[cur_state][cur_action] += alpha * (target - q)
+        board.q_table[cur_state][cur_action] += alpha * (target - q)

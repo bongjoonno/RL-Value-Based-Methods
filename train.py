@@ -1,3 +1,4 @@
+# board
 from board import Board
 
 # learning methods
@@ -5,23 +6,28 @@ from learning_methods.monte_carlo import monte_carlo
 from learning_methods.q_learning import q_learning
 from learning_methods.sarsa import sarsa
 
-
 # constants
 from constants import EPSILON
 
-def train(epochs, q_scores: dict, method: str, epsilon = EPSILON):
+# custom errors
+from custom_errors import NonexistentLearningMethod
+
+def train(epochs, q_table: dict, method: str, epsilon = EPSILON):
+    learning_methods_map = {'monte carlo' : monte_carlo,
+                            'q-learning' : q_learning,
+                            'sarsa' : sarsa}
+    
+    chosen_learning_method = learning_methods_map.get(method, None)
+
+    if chosen_learning_method is None:
+        raise NonexistentLearningMethod()
+    
     for _ in range(epochs):
-        board = Board(state_action_average_reward = q_scores, epsilon = epsilon, randomized=True)
+        board = Board(q_table = q_table, epsilon = epsilon, randomized=True)
 
-        if method == 'monte carlo':
-            monte_carlo(board = board)
-        elif method == 'q learning': 
-            q_learning(board = board)
-        elif method == 'sarsa':
-            sarsa(board = board)
-        else:
-            return "Invalid learning method\n Please pick 'monte carlo', 'q learning', or 'sarsa'"
+        chosen_learning_method(board)
+        
         epsilon = max(0.01, epsilon * 0.999)
-        q_scores = board.state_action_average_reward
+        q_table = board.q_table
 
-    return q_scores
+    return q_table

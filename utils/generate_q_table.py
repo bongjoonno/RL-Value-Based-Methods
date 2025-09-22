@@ -1,4 +1,4 @@
-def gen_q_score_table(course_length_y, course_length_x):
+def gen_q_table(course_length_y, course_length_x):
     q_scores = {(i, j): {} for i in range(course_length_y) for j in range(course_length_x)}
 
     for i in range(course_length_y):
@@ -13,3 +13,6 @@ def gen_q_score_table(course_length_y, course_length_x):
                 q_scores[(i, j)]['W'] = 0
     
     return q_scores
+
+if __name__ == '__main__':
+    print(gen_q_table(4, 4))
