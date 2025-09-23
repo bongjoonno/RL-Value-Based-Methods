@@ -81,6 +81,9 @@ class Board:
     def set_max_reward_move_for_state(self):
         self.max_reward_move_for_state = max(self.current_state_q_scores, key = self.current_state_q_scores.get)
 
+    def set_available_moves(self):
+        self.available_moves = list(self.current_state_q_scores.keys())
+
     def policy(self):
         self.current_moves_probabilities =  []
 
@@ -92,13 +95,15 @@ class Board:
             else:
                 self.current_moves_probabilities.append(random_move_prob)
 
-    def get_next_move(self):
+    def get_next_move_prep(self):
         self.set_current_state_q_score()
-
-        self.available_moves = list(self.current_state_q_scores.keys())
-        moves_q_scores = list(self.current_state_q_scores.values())
-
         self.set_max_reward_move_for_state()
+        self.set_available_moves()
+
+    def get_next_move(self):
+        self.get_next_move_prep()
+
+        moves_q_scores = list(self.current_state_q_scores.values())
 
         if self.epsilon == 0:
             return self.max_reward_move_for_state

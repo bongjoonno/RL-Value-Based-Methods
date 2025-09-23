@@ -1,29 +1,33 @@
 from board import Board
 from constants import TRAINING_TRIAL_LIMIT, ALPHA, GAMMA
 
-def q_learning(
+def expected_sarsa(
     board: Board, 
     trial_limit = TRAINING_TRIAL_LIMIT, 
     alpha = ALPHA, 
     gamma = GAMMA
 ) -> None:
-
+    
     for _ in range(trial_limit):
-        cur_state = (board.agent_position_y, board.agent_position_x)
+        previous_state = board.previous_state
+        previous_action = board.chosen_action
+
+        current_state = (board.agent_position_y, board.agent_position_x)
         outcome = board.perform_move()
-        cur_action = board.chosen_action
+        current_action = board.chosen_action
 
-        if outcome == 'finished course': break
+        if outcome == 'finished course': 
+            break
+        elif board.move_number == 1:
+            continue
 
-        board.set_current_state_q_score()
+        q = board.q_table[previous_state][previous_action]
+
+        board.get_next_move_prep()
+        board.policy()
         
-        max_move = board.set_max_reward_move_for_state()
-        max_move_q_score = board.current_state_q_scores[max_move]
+        expected_value_of_current_state = -1 * sum(board.current_moves_probabilities)
 
-        target = -1 + (gamma * max_move_q_score)
-        
-        q = board.q_table[cur_state][cur_action]
+        target = -1 + (gamma * expected_value_of_current_state)
 
-        board.q_table[cur_state][cur_action] += alpha * (target - q)
-
-        print(board.pro)
+        board.q_table[previous_state][previous_action] += alpha * (target - q)

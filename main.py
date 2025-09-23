@@ -13,7 +13,7 @@ from constants import COURSE_LENGTH_Y, COURSE_LENGTH_X, TESTING_TRIAL_LIMIT, EPO
 def main():
     q_scores = gen_q_table(COURSE_LENGTH_Y, COURSE_LENGTH_X)
 
-    finished_params = train(epochs = EPOCHS, q_table = q_scores, method = 'sarsa', epsilon = EPSILON)
+    finished_params = train(epochs = EPOCHS, q_table = q_scores, method = 'expected sarsa', epsilon = EPSILON)
     
     accuracy = test(finished_params, TESTING_TRIAL_LIMIT)
 
@@ -21,4 +21,4 @@ def main():
 
 
 if __name__ == '__main__':
-    print(main())
+    main()
