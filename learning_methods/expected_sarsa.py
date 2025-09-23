@@ -22,11 +22,12 @@ def expected_sarsa(
             continue
 
         q = board.q_table[previous_state][previous_action]
-
+        
         board.get_next_move_prep()
         board.policy()
-        
-        expected_value_of_current_state = -1 * sum(board.current_moves_probabilities)
+
+        print(board.current_state_q_scores, board.current_moves_probabilities)
+        expected_value_of_current_state = board.current_state_q_scores * board.current_moves_probabilities
 
         target = -1 + (gamma * expected_value_of_current_state)
 

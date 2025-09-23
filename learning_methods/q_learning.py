@@ -18,7 +18,7 @@ def q_learning(
         board.set_current_state_q_score()
         
         board.set_max_reward_move_for_state()
-        max_move_q_score = board.current_state_q_scores[board.max_reward_move_for_state]
+        max_move_q_score = board.current_state_q_table[board.max_reward_move_for_state]
 
         target = -1 + (gamma * max_move_q_score)
         

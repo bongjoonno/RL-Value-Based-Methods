@@ -33,11 +33,13 @@ class Board:
 
         self.move_number = 0
 
-        self.current_state_q_scores = {}
+        self.current_state_q_table = {}
 
         self.max_reward_move_for_state = None
 
-        self.current_moves_probabilities = None
+        self.current_moves_probabilities = []
+
+        self.current_state_q_scores = []
 
     def perform_move(self):
         if self.agent_starting_state == self.finish_pos:
@@ -76,13 +78,14 @@ class Board:
         print('\n')
 
     def set_current_state_q_score(self):
-        self.current_state_q_scores = self.q_table[(self.agent_position_y, self.agent_position_x)]
+        self.current_state_q_table = self.q_table[(self.agent_position_y, self.agent_position_x)]
+        self.current_state_q_scores = np.array(list(self.current_state_q_table.values()))
     
     def set_max_reward_move_for_state(self):
-        self.max_reward_move_for_state = max(self.current_state_q_scores, key = self.current_state_q_scores.get)
+        self.max_reward_move_for_state = max(self.current_state_q_table, key = self.current_state_q_table.get)
 
     def set_available_moves(self):
-        self.available_moves = list(self.current_state_q_scores.keys())
+        self.available_moves = list(self.current_state_q_table.keys())
 
     def policy(self):
         self.current_moves_probabilities =  []
@@ -94,6 +97,8 @@ class Board:
                 self.current_moves_probabilities.append(1 - self.epsilon + random_move_prob)
             else:
                 self.current_moves_probabilities.append(random_move_prob)
+        
+        self.current_moves_probabilities = np.array(self.current_moves_probabilities)
 
     def get_next_move_prep(self):
         self.set_current_state_q_score()
@@ -102,8 +107,6 @@ class Board:
 
     def get_next_move(self):
         self.get_next_move_prep()
-
-        moves_q_scores = list(self.current_state_q_scores.values())
 
         if self.epsilon == 0:
             return self.max_reward_move_for_state
@@ -114,7 +117,7 @@ class Board:
         elif len(self.available_moves) == 1:
             return self.available_moves[0]
 
-        elif all(x == 0 for x in moves_q_scores):
+        elif all(x == 0 for x in self.current_state_q_scores):
             return np.random.choice(self.available_moves)
 
         self.policy()
