@@ -35,13 +35,17 @@ class Board:
 
         self.current_state_q_scores = {}
 
+        self.max_reward_move_for_state = None
+
+        self.current_moves_probabilities = None
+
     def perform_move(self):
         if self.agent_starting_state == self.finish_pos:
             return 'finished course'
         
         self.grid[self.agent_position_y][self.agent_position_x] = 0
 
-        self.chosen_action = self.policy()
+        self.chosen_action = self.get_next_move()
 
         self.log_trajectory()
 
@@ -71,40 +75,43 @@ class Board:
             print(row)
         print('\n')
 
-    def get_current_state_q_score(self):
+    def set_current_state_q_score(self):
         self.current_state_q_scores = self.q_table[(self.agent_position_y, self.agent_position_x)]
     
-    def get_max_reward_move_for_state(self):
-        return max(self.current_state_q_scores, key = self.current_state_q_scores.get)
+    def set_max_reward_move_for_state(self):
+        self.max_reward_move_for_state = max(self.current_state_q_scores, key = self.current_state_q_scores.get)
 
     def policy(self):
-        self.get_current_state_q_score()
+        self.current_moves_probabilities =  []
 
-        moves = list(self.current_state_q_scores.keys())
+        random_move_prob = self.epsilon / len(self.available_moves)
+
+        for move in self.available_moves:
+            if move == self.max_reward_move_for_state:
+                self.current_moves_probabilities.append(1 - self.epsilon + random_move_prob)
+            else:
+                self.current_moves_probabilities.append(random_move_prob)
+
+    def get_next_move(self):
+        self.set_current_state_q_score()
+
+        self.available_moves = list(self.current_state_q_scores.keys())
         moves_q_scores = list(self.current_state_q_scores.values())
 
-        max_reward_move = self.get_max_reward_move_for_state()
+        self.set_max_reward_move_for_state()
 
         if self.epsilon == 0:
-            return max_reward_move
+            return self.max_reward_move_for_state
         
         elif self.epsilon == 1:
-            return np.random.choice(moves)
+            return np.random.choice(self.available_moves)
         
-        elif len(moves) == 1:
-            return moves[0]
+        elif len(self.available_moves) == 1:
+            return self.available_moves[0]
 
         elif all(x == 0 for x in moves_q_scores):
-            return np.random.choice(moves)
-        
-        move_probs = []
+            return np.random.choice(self.available_moves)
 
-        random_move_prob = self.epsilon / len(moves)
+        self.policy()
 
-        for move in moves:
-            if move == max_reward_move:
-                move_probs.append(1 - self.epsilon + random_move_prob)
-            else:
-                move_probs.append(random_move_prob)
-
-        return np.random.choice(moves, p = move_probs)
+        return np.random.choice(self.available_moves, p = self.current_moves_probabilities)
