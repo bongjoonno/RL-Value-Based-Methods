@@ -11,3 +11,6 @@ EPOCHS = 20_000
 ALPHA = 0.1
 EPSILON = 1
 GAMMA = 0.9
+
+# learning-methods
+LEARNING_METHODS = ['monte-carlo', 'q-learning', 'sarsa', 'expected-sarsa']

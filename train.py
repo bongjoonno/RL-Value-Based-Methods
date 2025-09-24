@@ -8,16 +8,14 @@ from learning_methods.sarsa import sarsa
 from learning_methods.expected_sarsa import expected_sarsa
 
 # constants
-from constants import EPSILON
+from constants import EPSILON, LEARNING_METHODS
 
 # custom errors
 from custom_errors import NonexistentLearningMethod
 
 def train(epochs, q_table: dict, method: str, epsilon = EPSILON):
-    learning_methods_map = {'monte carlo' : monte_carlo,
-                            'q-learning' : q_learning,
-                            'sarsa' : sarsa,
-                            'expected sarsa' : expected_sarsa}
+    learning_methods_functions = [monte_carlo, q_learning, sarsa, expected_sarsa]
+    learning_methods_map = {LEARNING_METHODS[i]:learning_methods_functions[i] for i in range(len(LEARNING_METHODS))}
     
     chosen_learning_method = learning_methods_map.get(method, None)
 
