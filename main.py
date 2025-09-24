@@ -5,8 +5,8 @@ from constants import LEARNING_METHODS
 from test_learning_methods import test_learning_methods
 
 
-def main():
-    methods_perfect_accuracy_dict = test_learning_methods(LEARNING_METHODS, 2, 3)
+def main(y_max, x_max, learning_methods):
+    methods_perfect_accuracy_dict = test_learning_methods(learning_methods, y_max, x_max)
 
     methods_accuracy_percentage_dict = {}
 
@@ -16,14 +16,17 @@ def main():
     return methods_accuracy_percentage_dict
 
 if __name__ == '__main__':
+    y_max = 5
+    x_max = 5
+
     profiler = cProfile.Profile()
     
     profiler.enable()
-    methods_accuracy_percentage_dict = main()
+    methods_accuracy_percentage_dict = main(y_max, x_max, LEARNING_METHODS)
     profiler.disable()
     
-    #for method, accuracy in methods_accuracy_percentage_dict.items():
-        #print(f"{method} accuracy: {accuracy*100:.2f}%")
+    for method, accuracy in methods_accuracy_percentage_dict.items():
+        print(f"{method} accuracy: {accuracy*100:.2f}%")
     
 
     stats = pstats.Stats(profiler).sort_stats("cumulative")

@@ -12,12 +12,16 @@ class Board:
         
         self.grid = [[0 for i in range(course_length_x)] for j in range(self.course_length_y)]
 
-        #if randomized:
-            #self.agent_position_y = np.random.randint(0, self.course_length_y-1)
-            #self.agent_position_x = np.random.randint(0, self.course_length_x-1)
-        #else: 
+        if randomized:
+            try:
+                self.agent_position_y = np.random.randint(0, self.course_length_y-1)
+            except ValueError:
+                self.agent_position_y = 0
+            
+            self.agent_position_x = np.random.randint(0, self.course_length_x-1)
         
-        self.agent_position_y, self.agent_position_x = 0, 0
+        else: 
+            self.agent_position_y, self.agent_position_x = 0, 0
 
         self.agent_starting_state = (self.agent_position_y, self.agent_position_x)
         self.previous_state = self.agent_starting_state
@@ -49,10 +53,7 @@ class Board:
 
         self.init_total_time = time.monotonic() - self.init_start
 
-    def perform_move(self):
-        if self.agent_starting_state == self.finish_pos:
-            return 'finished course'
-        
+    def perform_move(self):        
         self.grid[self.agent_position_y][self.agent_position_x] = 0
 
         self.chosen_action = self.get_next_move()
