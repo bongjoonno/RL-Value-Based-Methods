@@ -1,13 +1,11 @@
-# course-related
-COURSE_LENGTH_Y = 5
-COURSE_LENGTH_X = 3
-
+# course related
 TRAIN_FACTOR = 3
-TRAINING_TRIAL_LIMIT = ((COURSE_LENGTH_Y - 1) + (COURSE_LENGTH_X - 1)) * TRAIN_FACTOR
-TESTING_TRIAL_LIMIT = (COURSE_LENGTH_Y - 1) + (COURSE_LENGTH_X - 1)
 
 # hyper-parameters
 EPOCHS = 20_000
 ALPHA = 0.1
 EPSILON = 1
 GAMMA = 0.9
+
+# learning-methods
+LEARNING_METHODS = ['monte-carlo', 'q-learning', 'sarsa', 'expected-sarsa']

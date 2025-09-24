@@ -1,10 +1,10 @@
-def add_2(x):
-    print('called')
-    return x + 2
+def add(x, y):
+    return x + y
 
-y = 5
-x = {'yes' : add_2}
 
-chosen_func = x['yes']
 
-print(chosen_func(y))
+def multiply(func: add):
+    print(add) * 2
+
+
+print(multiply(add(3, 4)))

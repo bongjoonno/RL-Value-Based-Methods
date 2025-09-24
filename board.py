@@ -1,28 +1,31 @@
-from imports import pd, np, sleep
-from constants import COURSE_LENGTH_X, COURSE_LENGTH_Y
+from imports import np, time
 
 class Board:
-    def __init__(self, q_table, epsilon=1, randomized=True):
+    def __init__(self, course_length_y, course_length_x, q_table, epsilon=1, randomized=True):
+        self.init_start = time.monotonic()
+
         self.q_table = q_table
         self.epsilon = epsilon 
         
-        self.grid = [[0 for i in range(COURSE_LENGTH_X)] for j in range(COURSE_LENGTH_Y)]
+        self.course_length_y = course_length_y
+        self.course_length_x = course_length_x
+        
+        self.grid = [[0 for i in range(course_length_x)] for j in range(self.course_length_y)]
 
         if randomized:
-            self.agent_position_y = np.random.randint(0, COURSE_LENGTH_Y-1)
-            self.agent_position_x = np.random.randint(0, COURSE_LENGTH_X-1)
-        else: self.agent_position_y, self.agent_position_x = 0, 0
-
-        self.agent_starting_state = (self.agent_position_y, self.agent_position_x)
-        self.previous_state = self.agent_starting_state
+            try:
+                self.agent_position_y = np.random.randint(0, self.course_length_y-1)
+            except ValueError:
+                self.agent_position_y = 0
+            
+            self.agent_position_x = np.random.randint(0, self.course_length_x-1)
         
-        self.finish_pos = (COURSE_LENGTH_Y-1, COURSE_LENGTH_X-1)
+        else: 
+            self.agent_position_y, self.agent_position_x = 0, 0
+        
+        self.finish_position = (self.course_length_y-1, self.course_length_x-1)
 
         self.grid[self.agent_position_y][self.agent_position_x] = 'P'
-
-        self.penalty = -1
-
-        self.reward = 0
 
         self.trajectories = {'state' : [], 'action' : [], 'reward' : []}
 
@@ -31,27 +34,31 @@ class Board:
 
         self.chosen_action = None
 
+        self.penalty = -1
+        
         self.move_number = 0
 
-        self.current_state_q_scores = {}
+        self.current_state_q_table = {}
 
-    def perform_move(self):
-        if self.agent_starting_state == self.finish_pos:
-            return 'finished course'
-        
+        self.max_reward_move_for_state = None
+
+        self.current_moves_probabilities = []
+
+        self.current_state_q_scores = []
+
+        self.init_total_time = time.monotonic() - self.init_start
+
+    def perform_move(self):        
         self.grid[self.agent_position_y][self.agent_position_x] = 0
 
-        self.chosen_action = self.policy()
+        self.chosen_action = self.get_next_move()
 
         self.log_trajectory()
 
         self.previous_state = (self.agent_position_y, self.agent_position_x)
         self.update_cur_position()
 
-        self.reward += self.penalty
-        self.move_number += 1
-
-        if (self.agent_position_y, self.agent_position_x) == self.finish_pos:
+        if (self.agent_position_y, self.agent_position_x) == self.finish_position:
             return 'finished course'
         else: 
             return 'continue'
@@ -71,40 +78,47 @@ class Board:
             print(row)
         print('\n')
 
-    def get_current_state_q_score(self):
-        self.current_state_q_scores = self.q_table[(self.agent_position_y, self.agent_position_x)]
+    def set_current_state_q_score(self):
+        self.current_state_q_table = self.q_table[(self.agent_position_y, self.agent_position_x)]
+        self.current_state_q_scores = np.array(list(self.current_state_q_table.values()))
     
-    def get_max_reward_move_for_state(self):
-        return max(self.current_state_q_scores, key = self.current_state_q_scores.get)
+    def set_max_reward_move_for_state(self):
+        self.max_reward_move_for_state = max(self.current_state_q_table, key = self.current_state_q_table.get)
+
+    def set_available_moves(self):
+        self.available_moves = list(self.current_state_q_table.keys())
 
     def policy(self):
-        self.get_current_state_q_score()
+        self.current_moves_probabilities =  []
 
-        moves = list(self.current_state_q_scores.keys())
-        moves_q_scores = list(self.current_state_q_scores.values())
+        random_move_prob = self.epsilon / len(self.available_moves)
 
-        max_reward_move = self.get_max_reward_move_for_state()
+        for move in self.available_moves:
+            if move == self.max_reward_move_for_state:
+                self.current_moves_probabilities.append(1 - self.epsilon + random_move_prob)
+            else:
+                self.current_moves_probabilities.append(random_move_prob)
+        
+        self.current_moves_probabilities = np.array(self.current_moves_probabilities)
 
+    def get_next_move_prep(self):
+        self.set_current_state_q_score()
+        self.set_max_reward_move_for_state()
+        self.set_available_moves()
+
+    def get_next_move(self):
         if self.epsilon == 0:
-            return max_reward_move
+            return self.max_reward_move_for_state
         
         elif self.epsilon == 1:
-            return np.random.choice(moves)
+            return np.random.choice(self.available_moves)
         
-        elif len(moves) == 1:
-            return moves[0]
+        elif len(self.available_moves) == 1:
+            return self.available_moves[0]
 
-        elif all(x == 0 for x in moves_q_scores):
-            return np.random.choice(moves)
-        
-        move_probs = []
+        elif all(x == 0 for x in self.current_state_q_scores):
+            return np.random.choice(self.available_moves)
 
-        random_move_prob = self.epsilon / len(moves)
+        self.policy()
 
-        for move in moves:
-            if move == max_reward_move:
-                move_probs.append(1 - self.epsilon + random_move_prob)
-            else:
-                move_probs.append(random_move_prob)
-
-        return np.random.choice(moves, p = move_probs)
+        return np.random.choice(self.available_moves, p = self.current_moves_probabilities)
