@@ -18,7 +18,7 @@ from custom_errors import NonexistentLearningMethod
 
 def train(course_length_y, course_length_x, train_trial_limit, epochs, q_table: dict, method: str, epsilon = EPSILON):
     learning_methods_functions = [monte_carlo, q_learning, sarsa, expected_sarsa]
-    learning_methods_map = {LEARNING_METHODS[i]:learning_methods_functions[i] for i in range(len(LEARNING_METHODS))}
+    learning_methods_map = {learning_method: function for learning_method, function in zip(LEARNING_METHODS, learning_methods_functions)}
     
     chosen_learning_method = learning_methods_map.get(method, None)
 
