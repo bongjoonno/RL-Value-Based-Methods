@@ -1,10 +1,10 @@
 # course-related
-COURSE_LENGTH_Y = 5
-COURSE_LENGTH_X = 3
+course_length_y = 5
+course_length_x = 3
 
 TRAIN_FACTOR = 3
-TRAINING_TRIAL_LIMIT = ((COURSE_LENGTH_Y - 1) + (COURSE_LENGTH_X - 1)) * TRAIN_FACTOR
-TESTING_TRIAL_LIMIT = (COURSE_LENGTH_Y - 1) + (COURSE_LENGTH_X - 1)
+TRAINING_TRIAL_LIMIT = ((course_length_y - 1) + (course_length_x - 1)) * TRAIN_FACTOR
+TESTING_TRIAL_LIMIT = (course_length_y - 1) + (course_length_x - 1)
 
 # hyper-parameters
 EPOCHS = 20_000

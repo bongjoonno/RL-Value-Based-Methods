@@ -1,10 +1,3 @@
-def add_2(x):
-    print('called')
-    return x + 2
+dic = {4: [1,2,3]}
 
-y = 5
-x = {'yes' : add_2}
-
-chosen_func = x['yes']
-
-print(chosen_func(y))
+print(dic)

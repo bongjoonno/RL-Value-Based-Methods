@@ -1,22 +1,26 @@
 from imports import pd, np, sleep
-from constants import COURSE_LENGTH_X, COURSE_LENGTH_Y
 
 class Board:
-    def __init__(self, q_table, epsilon=1, randomized=True):
+    def __init__(self, course_length_y, course_length_x, q_table, epsilon=1, randomized=True):
         self.q_table = q_table
         self.epsilon = epsilon 
         
-        self.grid = [[0 for i in range(COURSE_LENGTH_X)] for j in range(COURSE_LENGTH_Y)]
+        self.course_length_y = course_length_y
+        self.course_length_x = course_length_x
+        
+        self.grid = [[0 for i in range(course_length_x)] for j in range(self.course_length_y)]
 
-        if randomized:
-            self.agent_position_y = np.random.randint(0, COURSE_LENGTH_Y-1)
-            self.agent_position_x = np.random.randint(0, COURSE_LENGTH_X-1)
-        else: self.agent_position_y, self.agent_position_x = 0, 0
+        #if randomized:
+            #self.agent_position_y = np.random.randint(0, self.course_length_y-1)
+            #self.agent_position_x = np.random.randint(0, self.course_length_x-1)
+        #else: 
+        
+        self.agent_position_y, self.agent_position_x = 0, 0
 
         self.agent_starting_state = (self.agent_position_y, self.agent_position_x)
         self.previous_state = self.agent_starting_state
         
-        self.finish_pos = (COURSE_LENGTH_Y-1, COURSE_LENGTH_X-1)
+        self.finish_pos = (self.course_length_y-1, self.course_length_x-1)
 
         self.grid[self.agent_position_y][self.agent_position_x] = 'P'
 
