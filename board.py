@@ -22,17 +22,10 @@ class Board:
         
         else: 
             self.agent_position_y, self.agent_position_x = 0, 0
-
-        self.agent_starting_state = (self.agent_position_y, self.agent_position_x)
-        self.previous_state = self.agent_starting_state
         
-        self.finish_pos = (self.course_length_y-1, self.course_length_x-1)
+        self.finish_position = (self.course_length_y-1, self.course_length_x-1)
 
         self.grid[self.agent_position_y][self.agent_position_x] = 'P'
-
-        self.penalty = -1
-
-        self.reward = 0
 
         self.trajectories = {'state' : [], 'action' : [], 'reward' : []}
 
@@ -41,6 +34,8 @@ class Board:
 
         self.chosen_action = None
 
+        self.penalty = -1
+        
         self.move_number = 0
 
         self.current_state_q_table = {}
@@ -63,10 +58,7 @@ class Board:
         self.previous_state = (self.agent_position_y, self.agent_position_x)
         self.update_cur_position()
 
-        self.reward += self.penalty
-        self.move_number += 1
-
-        if (self.agent_position_y, self.agent_position_x) == self.finish_pos:
+        if (self.agent_position_y, self.agent_position_x) == self.finish_position:
             return 'finished course'
         else: 
             return 'continue'
@@ -115,8 +107,6 @@ class Board:
         self.set_available_moves()
 
     def get_next_move(self):
-        self.get_next_move_prep()
-
         if self.epsilon == 0:
             return self.max_reward_move_for_state
         

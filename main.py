@@ -16,13 +16,13 @@ def main(y_max, x_max, learning_methods):
     return methods_accuracy_percentage_dict
 
 if __name__ == '__main__':
-    y_max = 5
-    x_max = 5
+    y_max = 3
+    x_max = 4
 
     profiler = cProfile.Profile()
     
     profiler.enable()
-    methods_accuracy_percentage_dict = main(y_max, x_max, LEARNING_METHODS)
+    methods_accuracy_percentage_dict = main(y_max, x_max, ['expected-sarsa'])
     profiler.disable()
     
     for method, accuracy in methods_accuracy_percentage_dict.items():
@@ -30,4 +30,4 @@ if __name__ == '__main__':
     
 
     stats = pstats.Stats(profiler).sort_stats("cumulative")
-    stats.print_stats()
+    #stats.print_stats()
