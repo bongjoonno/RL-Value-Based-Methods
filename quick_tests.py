@@ -1,4 +1,10 @@
-dic = {'monte-carlo': [True, True, True, True, True, True]}
+def add(x, y):
+    return x + y
 
-for method, accuracy in dic.items():
-    print(method, sum(accuracy) / len(accuracy))
+
+
+def multiply(func: add):
+    print(add) * 2
+
+
+print(multiply(add(3, 4)))

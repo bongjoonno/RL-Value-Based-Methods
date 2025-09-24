@@ -1,14 +1,11 @@
 # normal imports
 from imports import np
 
-# constants
-from constants import LEARNING_METHODS
-
 # all course_lengths
 from test_different_course_lengths import test_different_course_lengths
 
 def test_learning_methods(methods: list[str], y_max, x_max):
-    method_accuracies = {method:None for method in methods}
+    method_accuracies = {}
 
     for method in methods:
         accuracies = test_different_course_lengths(y_max, x_max, method, display_episode_path = False)
