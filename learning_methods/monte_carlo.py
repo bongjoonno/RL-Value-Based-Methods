@@ -1,15 +1,15 @@
 from board import Board
 from utils.discounted_reward import get_discounted_reward
-from constants import TRAINING_TRIAL_LIMIT, ALPHA, GAMMA
+from constants import ALPHA, GAMMA
 
 def monte_carlo(
     board: Board, 
-    trial_limit = TRAINING_TRIAL_LIMIT, 
+    train_trial_limit:int , 
     alpha = ALPHA, 
     gamma = GAMMA
 ) -> None:
     
-    for _ in range(trial_limit):
+    for _ in range(train_trial_limit):
         cur_state = (board.agent_position_y, board.agent_position_x)
         outcome = board.perform_move()
         cur_action = board.chosen_action

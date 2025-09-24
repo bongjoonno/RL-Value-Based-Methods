@@ -1,14 +1,14 @@
 from board import Board
-from constants import TRAINING_TRIAL_LIMIT, ALPHA, GAMMA
+from constants import ALPHA, GAMMA
 
 def sarsa(
     board: Board, 
-    trial_limit = TRAINING_TRIAL_LIMIT, 
+    train_trial_limit: int, 
     alpha = ALPHA, 
     gamma = GAMMA
 ) -> None:
     
-    for _ in range(trial_limit):
+    for _ in range(train_trial_limit):
         previous_state = board.previous_state
         previous_action = board.chosen_action
 

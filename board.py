@@ -1,7 +1,9 @@
-from imports import pd, np, sleep
+from imports import np, time
 
 class Board:
     def __init__(self, course_length_y, course_length_x, q_table, epsilon=1, randomized=True):
+        self.init_start = time.monotonic()
+
         self.q_table = q_table
         self.epsilon = epsilon 
         
@@ -44,6 +46,8 @@ class Board:
         self.current_moves_probabilities = []
 
         self.current_state_q_scores = []
+
+        self.init_total_time = time.monotonic() - self.init_start
 
     def perform_move(self):
         if self.agent_starting_state == self.finish_pos:

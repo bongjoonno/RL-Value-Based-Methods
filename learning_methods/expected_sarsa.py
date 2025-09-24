@@ -1,21 +1,19 @@
 from board import Board
-from constants import TRAINING_TRIAL_LIMIT, ALPHA, GAMMA
+from constants import ALPHA, GAMMA
 from imports import np
 
 def expected_sarsa(
     board: Board, 
-    trial_limit = TRAINING_TRIAL_LIMIT, 
+    train_trial_limit: int, 
     alpha = ALPHA, 
     gamma = GAMMA
 ) -> None:
     
-    for _ in range(trial_limit):
+    for _ in range(train_trial_limit):
         previous_state = board.previous_state
         previous_action = board.chosen_action
 
-        current_state = (board.agent_position_y, board.agent_position_x)
         outcome = board.perform_move()
-        current_action = board.chosen_action
 
         if outcome == 'finished course': 
             break
