@@ -1,5 +1,5 @@
 # normal imports
-from imports import time
+from imports import time, tqdm
 
 # board
 from board import Board
@@ -25,7 +25,7 @@ def train(course_length_y, course_length_x, train_trial_limit, epochs, q_table: 
     if chosen_learning_method is None:
         raise NonexistentLearningMethod()
     
-    for _ in range(epochs):
+    for _ in tqdm(range(epochs)):
         board = Board(course_length_y, course_length_x, q_table = q_table, epsilon = epsilon, randomized=True)
 
         start_training_time = time.monotonic()

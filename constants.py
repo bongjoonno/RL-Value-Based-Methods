@@ -9,3 +9,4 @@ GAMMA = 0.9
 
 # learning-methods
 LEARNING_METHODS = ['monte-carlo', 'q-learning', 'sarsa', 'expected-sarsa']
+TEMPORAL_DIFFERENCE_LEARNING_METHODS = ['q-learning', 'sarsa', 'expected-sarsa']
