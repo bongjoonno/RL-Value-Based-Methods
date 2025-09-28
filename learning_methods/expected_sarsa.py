@@ -13,7 +13,9 @@ def expected_sarsa(
     
     for _ in range(train_trial_limit):
         current_state = (board.agent_position_y, board.agent_position_x)
+        
         board.get_next_move_prep()
+        board.policy()
         
         current_state_q_scores = board.current_state_q_scores
         current_state_move_probabilities = board.current_moves_probabilities
