@@ -10,12 +10,13 @@ def q_learning(
 
     for _ in range(train_trial_limit):
         cur_state = (board.agent_position_y, board.agent_position_x)
-        none = board.get_next_move_prep()
+        
         outcome = board.perform_move()
+
         cur_action = board.chosen_action
 
         if outcome == 'finished course': break
-
+        
         board.get_next_move_prep()
         
         max_move_q_score = board.current_state_q_table[board.max_reward_move_for_state]

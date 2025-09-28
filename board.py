@@ -23,6 +23,8 @@ class Board:
         else: 
             self.agent_position_y, self.agent_position_x = 0, 0
         
+        self.get_next_move_prep()
+        
         self.finish_position = (self.course_length_y-1, self.course_length_x-1)
 
         self.grid[self.agent_position_y][self.agent_position_x] = 'P'
@@ -58,6 +60,8 @@ class Board:
         self.previous_state = (self.agent_position_y, self.agent_position_x)
         self.update_cur_position()
 
+        self.get_next_move_prep()
+        
         if (self.agent_position_y, self.agent_position_x) == self.finish_position:
             return 'finished course'
         else: 
