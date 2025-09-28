@@ -18,3 +18,6 @@ if __name__ == '__main__':
 
     methods_accuracy_percentage_dict = main(['q-learning'], 25, 25)
     print(methods_accuracy_percentage_dict)
+    
+    # 25 x 25 : 0.835
+    
