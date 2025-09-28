@@ -48,7 +48,7 @@ class Board:
 
         self.init_total_time = time.monotonic() - self.init_start
 
-    def perform_move(self):        
+    def perform_move(self):     
         self.grid[self.agent_position_y][self.agent_position_x] = 0
 
         self.chosen_action = self.get_next_move()
@@ -78,14 +78,14 @@ class Board:
             print(row)
         print('\n')
 
-    def set_current_state_q_score(self):
+    def update_current_state_q_table(self):
         self.current_state_q_table = self.q_table[(self.agent_position_y, self.agent_position_x)]
         self.current_state_q_scores = np.array(list(self.current_state_q_table.values()))
     
-    def set_max_reward_move_for_state(self):
+    def update_max_reward_move(self):
         self.max_reward_move_for_state = max(self.current_state_q_table, key = self.current_state_q_table.get)
 
-    def set_available_moves(self):
+    def update_available_moves(self):
         self.available_moves = list(self.current_state_q_table.keys())
 
     def policy(self):
@@ -102,13 +102,11 @@ class Board:
         self.current_moves_probabilities = np.array(self.current_moves_probabilities)
 
     def get_next_move_prep(self):
-        self.set_current_state_q_score()
-        self.set_max_reward_move_for_state()
-        self.set_available_moves()
+        self.update_current_state_q_table()
+        self.update_max_reward_move()
+        self.update_available_moves()
 
     def get_next_move(self):
-        self.get_next_move_prep()
-        
         if self.epsilon == 0:
             return self.max_reward_move_for_state
         
