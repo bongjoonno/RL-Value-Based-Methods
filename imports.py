@@ -4,3 +4,4 @@ import time
 import pickle
 import time
 import matplotlib.pyplot as plt
+from tqdm import tqdm
