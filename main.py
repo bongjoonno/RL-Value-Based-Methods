@@ -16,5 +16,5 @@ def main(learning_methods):
 
 if __name__ == '__main__':
 
-    methods_accuracy_percentage_dict = main(['q-learning'])
+    methods_accuracy_percentage_dict = main(['sarsa'])
     print(methods_accuracy_percentage_dict)

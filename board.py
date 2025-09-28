@@ -59,8 +59,6 @@ class Board:
 
         self.previous_state = (self.agent_position_y, self.agent_position_x)
         self.update_cur_position()
-
-        self.get_next_move_prep()
         
         if (self.agent_position_y, self.agent_position_x) == self.finish_position:
             return 'finished course'
@@ -111,6 +109,8 @@ class Board:
         self.update_available_moves()
 
     def get_next_move(self):
+        self.get_next_move_prep()
+        
         if self.epsilon == 0:
             return self.max_reward_move_for_state
         
