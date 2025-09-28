@@ -2,13 +2,16 @@
 from imports import np
 
 # all course_lengths
-from test_different_course_lengths import test_different_course_lengths
+from train_test import train_test
 
-def test_learning_methods(methods: list[str], y_max, x_max):
+def test_learning_methods(learning_methods: list[str], course_lengths: list[int, int]):
     method_accuracies = {}
 
-    for method in methods:
-        accuracies = test_different_course_lengths(y_max, x_max, method, display_episode_path = False)
-        method_accuracies[method] = accuracies
+    for method in learning_methods:
+        current_method_accuracies = []
+        for course_length in course_lengths:
+            accuracy = train_test(course_length[0], course_length[1], method, display_episode_path = True)
+            current_method_accuracies.append(accuracy)
+        method_accuracies[method] = current_method_accuracies
 
     return method_accuracies

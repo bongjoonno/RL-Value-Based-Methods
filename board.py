@@ -107,6 +107,8 @@ class Board:
         self.set_available_moves()
 
     def get_next_move(self):
+        self.get_next_move_prep()
+        
         if self.epsilon == 0:
             return self.max_reward_move_for_state
         
