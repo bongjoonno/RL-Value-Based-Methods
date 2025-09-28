@@ -12,7 +12,6 @@ def sarsa(
 
     for _ in range(train_trial_limit):
         current_state = (board.agent_position_y, board.agent_position_x)
-        board.get_next_move_prep()
         outcome = board.perform_move()
         current_action = board.chosen_action
 
