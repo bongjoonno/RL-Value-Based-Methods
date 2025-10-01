@@ -4,8 +4,8 @@ from test_learning_methods import test_learning_methods
 from generate_course_dims import generate_course_dims
 
 def main(learning_methods, course_max_y, course_max_x):
-    course_dims = generate_course_dims(course_max_y, course_max_x)
-    methods_perfect_accuracy_dict = test_learning_methods(learning_methods, course_dims)
+   #course_dims = generate_course_dims(course_max_y, course_max_x)
+    methods_perfect_accuracy_dict = test_learning_methods(learning_methods, [[18, 18]])
 
     methods_accuracy_percentage_dict = {}
 
@@ -16,8 +16,7 @@ def main(learning_methods, course_max_y, course_max_x):
 
 if __name__ == '__main__':
 
-    methods_accuracy_percentage_dict = main(['q-learning'], 25, 25)
+    methods_accuracy_percentage_dict = main(['q-learning'], 50, 50)
     print(methods_accuracy_percentage_dict)
     
-    # 25 x 25 : 0.835
-    
+    # 18 x 18 : 1
