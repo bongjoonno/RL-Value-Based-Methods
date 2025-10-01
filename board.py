@@ -77,7 +77,6 @@ class Board:
     def display_grid(self):
         for row in self.grid:
             print(row)
-        print('\n')
 
     def update_current_state_q_table(self):
         self.current_state_q_table = self.q_table[(self.agent_position_y, self.agent_position_x)]
