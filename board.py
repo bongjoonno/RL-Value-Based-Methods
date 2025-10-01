@@ -11,6 +11,7 @@ class Board:
         self.course_length_x = course_length_x
         
         self.grid = [[0 for i in range(course_length_x)] for j in range(self.course_length_y)]
+        self.grid[-1][-1] = 1
 
         if randomized:
             try:
