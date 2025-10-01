@@ -1,10 +1,5 @@
-def add(x, y):
-    return x + y
+from constants import LEARNING_METHODS_LIST
+from test_learning_methods import test_learning_methods
 
-
-
-def multiply(func: add):
-    print(add) * 2
-
-
-print(multiply(add(3, 4)))
+res = test_learning_methods(LEARNING_METHODS_LIST, 25, 25)
+print(res)

@@ -1,5 +1,5 @@
 # course related
-TRAIN_FACTOR = 3
+TRAIN_FACTOR = 4
 
 # hyper-parameters
 EPOCHS = 20_000
