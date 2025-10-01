@@ -1,7 +1,4 @@
-from constants import LEARNING_METHODS_LIST
-
 from train_test import train_test
-from generate_course_dims import generate_course_dims
 from get_inputs import get_dimensions_input, get_learning_methods
 
 def main(learning_method, course_length_y, course_length_x):
