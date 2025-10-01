@@ -12,7 +12,7 @@ def input_validation(prompt_message, error_message):
         try:
             num = int(input(prompt_message))
             
-            if num < 1 or num > 15:
+            if num < 1 or num > 10:
                 print(error_message)
                 continue
             else:
