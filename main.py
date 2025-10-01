@@ -2,11 +2,10 @@ from constants import LEARNING_METHODS, TEMPORAL_DIFFERENCE_LEARNING_METHODS
 
 from test_learning_methods import test_learning_methods
 from generate_course_dims import generate_course_dims
-from get_dimensions_input import get_dimensions_input
+from get_inputs import get_dimensions_input
 
-def main(learning_methods, course_max_y, course_max_x):
-   #course_dims = generate_course_dims(course_max_y, course_max_x)
-    methods_perfect_accuracy_dict = test_learning_methods(learning_methods, [[18, 18]])
+def main(learning_methods, course_y_dim, course_x_dim):
+    methods_perfect_accuracy_dict = test_learning_methods(learning_methods, course_y_dim, course_x_dim)
 
     methods_accuracy_percentage_dict = {}
 
@@ -16,8 +15,7 @@ def main(learning_methods, course_max_y, course_max_x):
     return methods_accuracy_percentage_dict
 
 if __name__ == '__main__':
-    x, y = get_dimensions_input()
-    methods_accuracy_percentage_dict = main(['q-learning'], 50, 50)
+    y, x = get_dimensions_input()
+    learning_methods = get_learning_methods()
+    methods_accuracy_percentage_dict = main(['q-learning'], y, x)
     print(methods_accuracy_percentage_dict)
-    
-    # 18 x 18 : 1
