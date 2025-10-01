@@ -1,4 +1,4 @@
-from constants import LEARNING_METHODS_SET
+from constants import MAX_COURSE_LENGTH, LEARNING_METHODS_SET
 
 def get_dimensions_input():
     error_message = "Please enter a number between 1 and 25"
@@ -12,7 +12,7 @@ def input_validation(prompt_message, error_message):
         try:
             num = int(input(prompt_message))
             
-            if num < 1 or num > 25:
+            if num < 1 or num > MAX_COURSE_LENGTH:
                 print(error_message)
                 continue
             else:

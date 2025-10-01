@@ -1,4 +1,5 @@
 # course related
+MAX_COURSE_LENGTH = 10
 TRAIN_FACTOR = 4
 
 # hyper-parameters
