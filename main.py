@@ -1,22 +1,20 @@
-from constants import LEARNING_METHODS, TEMPORAL_DIFFERENCE_LEARNING_METHODS
+from train_test import train_test
+from utils.get_inputs import get_dimensions_input, get_learning_methods
+from visuals import welcome_message
 
-from test_learning_methods import test_learning_methods
-from generate_course_dims import generate_course_dims
+def main(learning_method, course_length_y, course_length_x):
+    has_perfect_accuracy = train_test(course_length_y, course_length_x, learning_method, display_episode_path = True)
 
-def main(learning_methods, course_max_y, course_max_x):
-   #course_dims = generate_course_dims(course_max_y, course_max_x)
-    methods_perfect_accuracy_dict = test_learning_methods(learning_methods, [[18, 18]])
-
-    methods_accuracy_percentage_dict = {}
-
-    for method, accuracy in methods_perfect_accuracy_dict.items():
-        methods_accuracy_percentage_dict[method] =  sum(accuracy) / len(accuracy)
-
-    return methods_accuracy_percentage_dict
+    return "Perfect path found!" if has_perfect_accuracy else "Perfect path not found..."
 
 if __name__ == '__main__':
-
-    methods_accuracy_percentage_dict = main(['q-learning'], 50, 50)
+    welcome_message()
+    y, x = get_dimensions_input()
+    learning_method = get_learning_methods()
+    methods_accuracy_percentage_dict = main(learning_method, y, x)
     print(methods_accuracy_percentage_dict)
     
-    # 18 x 18 : 1
+    # TO DO
+    # input validation for x < 2 
+    # make into executable
+    # only count used epochs

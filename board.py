@@ -11,6 +11,7 @@ class Board:
         self.course_length_x = course_length_x
         
         self.grid = [[0 for i in range(course_length_x)] for j in range(self.course_length_y)]
+        self.grid[-1][-1] = 1
 
         if randomized:
             try:
@@ -22,8 +23,6 @@ class Board:
         
         else: 
             self.agent_position_y, self.agent_position_x = 0, 0
-        
-        self.get_next_move_prep()
         
         self.finish_position = (self.course_length_y-1, self.course_length_x-1)
 
@@ -78,7 +77,6 @@ class Board:
     def display_grid(self):
         for row in self.grid:
             print(row)
-        print('\n')
 
     def update_current_state_q_table(self):
         self.current_state_q_table = self.q_table[(self.agent_position_y, self.agent_position_x)]
