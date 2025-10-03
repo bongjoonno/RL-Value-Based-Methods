@@ -4,6 +4,10 @@ def get_dimensions_input():
     error_message = f"Please enter a number between 1 and {MAX_COURSE_LENGTH}"
     y = input_validation("Enter how tall you want the course to be: ", error_message)
     x = input_validation("Enter how wide you want the course to be: ", error_message)
+    
+    if x < 2: 
+        raise ValueError("Width of course cannot be less than 2")
+    
     return (y, x)
 
 
