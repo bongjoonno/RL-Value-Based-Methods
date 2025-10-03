@@ -33,7 +33,7 @@ def get_learning_methods():
     print("1. Monte Carlo")
     print("2. Q-Learning")
     print("3. Sarsa")
-    print("4. Expected-Sarsa")
+    print("4. Expected Sarsa")
     print('\n')
     
     learning_method = ""
