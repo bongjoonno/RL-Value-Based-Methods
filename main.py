@@ -5,7 +5,7 @@ from visuals import welcome_message
 def main(learning_method, course_length_y, course_length_x):
     has_perfect_accuracy = train_test(course_length_y, course_length_x, learning_method, display_episode_path = True)
 
-    return "Perfect path found!" if has_perfect_accuracy else "Perfect path not found..."
+    return "\nPerfect path found!" if has_perfect_accuracy else "\nPerfect path not found..."
 
 if __name__ == '__main__':
     welcome_message()
