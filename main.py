@@ -15,6 +15,5 @@ if __name__ == '__main__':
     print(methods_accuracy_percentage_dict)
     
     # TO DO
-    # input validation for x < 2 
     # make into executable
     # only count used epochs
