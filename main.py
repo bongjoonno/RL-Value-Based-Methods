@@ -19,5 +19,7 @@ if __name__ == '__main__':
         methods_accuracy_percentage_dict = main(learning_method, y, x)
         print(methods_accuracy_percentage_dict)
         continue_playing = input('\nWould you like to play again??!! (Y): ')
-        print('\nokayyy byyeee!')
-        time.sleep(2)
+        print('\n')
+    
+    print('okayyy byyeee!\n')
+    time.sleep(1)

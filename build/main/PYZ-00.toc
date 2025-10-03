@@ -1,13 +1,386 @@
 ('D:\\code\\repos\\RL Value Based '
  'Methods\\RL-Value-Based-Methods\\build\\main\\PYZ-00.pyz',
- [('__future__', 'C:\\Python313\\Lib\\__future__.py', 'PYMODULE'),
+ [('PIL',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\__init__.py',
+   'PYMODULE'),
+  ('PIL.AvifImagePlugin',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\AvifImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.BlpImagePlugin',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\BlpImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.BmpImagePlugin',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\BmpImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.BufrStubImagePlugin',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\BufrStubImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.CurImagePlugin',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\CurImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.DcxImagePlugin',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\DcxImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.DdsImagePlugin',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\DdsImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.EpsImagePlugin',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\EpsImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.ExifTags',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\ExifTags.py',
+   'PYMODULE'),
+  ('PIL.FitsImagePlugin',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\FitsImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.FliImagePlugin',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\FliImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.FpxImagePlugin',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\FpxImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.FtexImagePlugin',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\FtexImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.GbrImagePlugin',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\GbrImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.GifImagePlugin',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\GifImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.GimpGradientFile',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\GimpGradientFile.py',
+   'PYMODULE'),
+  ('PIL.GimpPaletteFile',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\GimpPaletteFile.py',
+   'PYMODULE'),
+  ('PIL.GribStubImagePlugin',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\GribStubImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.Hdf5StubImagePlugin',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\Hdf5StubImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.IcnsImagePlugin',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\IcnsImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.IcoImagePlugin',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\IcoImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.ImImagePlugin',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\ImImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.Image',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\Image.py',
+   'PYMODULE'),
+  ('PIL.ImageChops',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\ImageChops.py',
+   'PYMODULE'),
+  ('PIL.ImageCms',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\ImageCms.py',
+   'PYMODULE'),
+  ('PIL.ImageColor',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\ImageColor.py',
+   'PYMODULE'),
+  ('PIL.ImageFile',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\ImageFile.py',
+   'PYMODULE'),
+  ('PIL.ImageFilter',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\ImageFilter.py',
+   'PYMODULE'),
+  ('PIL.ImageMath',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\ImageMath.py',
+   'PYMODULE'),
+  ('PIL.ImageMode',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\ImageMode.py',
+   'PYMODULE'),
+  ('PIL.ImageOps',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\ImageOps.py',
+   'PYMODULE'),
+  ('PIL.ImagePalette',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\ImagePalette.py',
+   'PYMODULE'),
+  ('PIL.ImageQt',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\ImageQt.py',
+   'PYMODULE'),
+  ('PIL.ImageSequence',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\ImageSequence.py',
+   'PYMODULE'),
+  ('PIL.ImageShow',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\ImageShow.py',
+   'PYMODULE'),
+  ('PIL.ImageTk',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\ImageTk.py',
+   'PYMODULE'),
+  ('PIL.ImageWin',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\ImageWin.py',
+   'PYMODULE'),
+  ('PIL.ImtImagePlugin',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\ImtImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.IptcImagePlugin',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\IptcImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.Jpeg2KImagePlugin',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\Jpeg2KImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.JpegImagePlugin',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\JpegImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.JpegPresets',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\JpegPresets.py',
+   'PYMODULE'),
+  ('PIL.McIdasImagePlugin',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\McIdasImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.MicImagePlugin',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\MicImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.MpegImagePlugin',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\MpegImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.MpoImagePlugin',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\MpoImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.MspImagePlugin',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\MspImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PaletteFile',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\PaletteFile.py',
+   'PYMODULE'),
+  ('PIL.PalmImagePlugin',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\PalmImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PcdImagePlugin',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\PcdImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PcxImagePlugin',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\PcxImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PdfImagePlugin',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\PdfImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PdfParser',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\PdfParser.py',
+   'PYMODULE'),
+  ('PIL.PixarImagePlugin',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\PixarImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PngImagePlugin',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\PngImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PpmImagePlugin',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\PpmImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.PsdImagePlugin',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\PsdImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.QoiImagePlugin',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\QoiImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.SgiImagePlugin',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\SgiImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.SpiderImagePlugin',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\SpiderImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.SunImagePlugin',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\SunImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.TgaImagePlugin',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\TgaImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.TiffImagePlugin',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\TiffImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.TiffTags',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\TiffTags.py',
+   'PYMODULE'),
+  ('PIL.WebPImagePlugin',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\WebPImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.WmfImagePlugin',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\WmfImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.XVThumbImagePlugin',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\XVThumbImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.XbmImagePlugin',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\XbmImagePlugin.py',
+   'PYMODULE'),
+  ('PIL.XpmImagePlugin',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\XpmImagePlugin.py',
+   'PYMODULE'),
+  ('PIL._binary',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\_binary.py',
+   'PYMODULE'),
+  ('PIL._deprecate',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\_deprecate.py',
+   'PYMODULE'),
+  ('PIL._typing',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\_typing.py',
+   'PYMODULE'),
+  ('PIL._util',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\_util.py',
+   'PYMODULE'),
+  ('PIL._version',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\_version.py',
+   'PYMODULE'),
+  ('PIL.features',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PIL\\features.py',
+   'PYMODULE'),
+  ('__future__', 'C:\\Python313\\Lib\\__future__.py', 'PYMODULE'),
+  ('_aix_support', 'C:\\Python313\\Lib\\_aix_support.py', 'PYMODULE'),
   ('_colorize', 'C:\\Python313\\Lib\\_colorize.py', 'PYMODULE'),
   ('_compat_pickle', 'C:\\Python313\\Lib\\_compat_pickle.py', 'PYMODULE'),
   ('_compression', 'C:\\Python313\\Lib\\_compression.py', 'PYMODULE'),
+  ('_distutils_hack',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\_distutils_hack\\__init__.py',
+   'PYMODULE'),
+  ('_distutils_hack.override',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\_distutils_hack\\override.py',
+   'PYMODULE'),
+  ('_ios_support', 'C:\\Python313\\Lib\\_ios_support.py', 'PYMODULE'),
   ('_opcode_metadata', 'C:\\Python313\\Lib\\_opcode_metadata.py', 'PYMODULE'),
   ('_py_abc', 'C:\\Python313\\Lib\\_py_abc.py', 'PYMODULE'),
   ('_pydatetime', 'C:\\Python313\\Lib\\_pydatetime.py', 'PYMODULE'),
   ('_pydecimal', 'C:\\Python313\\Lib\\_pydecimal.py', 'PYMODULE'),
+  ('_pyi_rth_utils',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PyInstaller\\fake-modules\\_pyi_rth_utils\\__init__.py',
+   'PYMODULE'),
+  ('_pyi_rth_utils._win32',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PyInstaller\\fake-modules\\_pyi_rth_utils\\_win32.py',
+   'PYMODULE'),
+  ('_pyi_rth_utils.tempfile',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\PyInstaller\\fake-modules\\_pyi_rth_utils\\tempfile.py',
+   'PYMODULE'),
+  ('_pyrepl', 'C:\\Python313\\Lib\\_pyrepl\\__init__.py', 'PYMODULE'),
+  ('_pyrepl._minimal_curses',
+   'C:\\Python313\\Lib\\_pyrepl\\_minimal_curses.py',
+   'PYMODULE'),
+  ('_pyrepl._threading_handler',
+   'C:\\Python313\\Lib\\_pyrepl\\_threading_handler.py',
+   'PYMODULE'),
+  ('_pyrepl.base_eventqueue',
+   'C:\\Python313\\Lib\\_pyrepl\\base_eventqueue.py',
+   'PYMODULE'),
+  ('_pyrepl.commands', 'C:\\Python313\\Lib\\_pyrepl\\commands.py', 'PYMODULE'),
+  ('_pyrepl.completing_reader',
+   'C:\\Python313\\Lib\\_pyrepl\\completing_reader.py',
+   'PYMODULE'),
+  ('_pyrepl.console', 'C:\\Python313\\Lib\\_pyrepl\\console.py', 'PYMODULE'),
+  ('_pyrepl.curses', 'C:\\Python313\\Lib\\_pyrepl\\curses.py', 'PYMODULE'),
+  ('_pyrepl.fancy_termios',
+   'C:\\Python313\\Lib\\_pyrepl\\fancy_termios.py',
+   'PYMODULE'),
+  ('_pyrepl.historical_reader',
+   'C:\\Python313\\Lib\\_pyrepl\\historical_reader.py',
+   'PYMODULE'),
+  ('_pyrepl.input', 'C:\\Python313\\Lib\\_pyrepl\\input.py', 'PYMODULE'),
+  ('_pyrepl.keymap', 'C:\\Python313\\Lib\\_pyrepl\\keymap.py', 'PYMODULE'),
+  ('_pyrepl.main', 'C:\\Python313\\Lib\\_pyrepl\\main.py', 'PYMODULE'),
+  ('_pyrepl.pager', 'C:\\Python313\\Lib\\_pyrepl\\pager.py', 'PYMODULE'),
+  ('_pyrepl.reader', 'C:\\Python313\\Lib\\_pyrepl\\reader.py', 'PYMODULE'),
+  ('_pyrepl.readline', 'C:\\Python313\\Lib\\_pyrepl\\readline.py', 'PYMODULE'),
+  ('_pyrepl.simple_interact',
+   'C:\\Python313\\Lib\\_pyrepl\\simple_interact.py',
+   'PYMODULE'),
+  ('_pyrepl.trace', 'C:\\Python313\\Lib\\_pyrepl\\trace.py', 'PYMODULE'),
+  ('_pyrepl.types', 'C:\\Python313\\Lib\\_pyrepl\\types.py', 'PYMODULE'),
+  ('_pyrepl.unix_console',
+   'C:\\Python313\\Lib\\_pyrepl\\unix_console.py',
+   'PYMODULE'),
+  ('_pyrepl.unix_eventqueue',
+   'C:\\Python313\\Lib\\_pyrepl\\unix_eventqueue.py',
+   'PYMODULE'),
+  ('_pyrepl.utils', 'C:\\Python313\\Lib\\_pyrepl\\utils.py', 'PYMODULE'),
+  ('_pyrepl.windows_console',
+   'C:\\Python313\\Lib\\_pyrepl\\windows_console.py',
+   'PYMODULE'),
+  ('_pyrepl.windows_eventqueue',
+   'C:\\Python313\\Lib\\_pyrepl\\windows_eventqueue.py',
+   'PYMODULE'),
+  ('_sitebuiltins', 'C:\\Python313\\Lib\\_sitebuiltins.py', 'PYMODULE'),
   ('_strptime', 'C:\\Python313\\Lib\\_strptime.py', 'PYMODULE'),
   ('_threading_local', 'C:\\Python313\\Lib\\_threading_local.py', 'PYMODULE'),
   ('agent_accuracy',
@@ -16,29 +389,265 @@
    'PYMODULE'),
   ('argparse', 'C:\\Python313\\Lib\\argparse.py', 'PYMODULE'),
   ('ast', 'C:\\Python313\\Lib\\ast.py', 'PYMODULE'),
+  ('asyncio', 'C:\\Python313\\Lib\\asyncio\\__init__.py', 'PYMODULE'),
+  ('asyncio.base_events',
+   'C:\\Python313\\Lib\\asyncio\\base_events.py',
+   'PYMODULE'),
+  ('asyncio.base_futures',
+   'C:\\Python313\\Lib\\asyncio\\base_futures.py',
+   'PYMODULE'),
+  ('asyncio.base_subprocess',
+   'C:\\Python313\\Lib\\asyncio\\base_subprocess.py',
+   'PYMODULE'),
+  ('asyncio.base_tasks',
+   'C:\\Python313\\Lib\\asyncio\\base_tasks.py',
+   'PYMODULE'),
+  ('asyncio.constants',
+   'C:\\Python313\\Lib\\asyncio\\constants.py',
+   'PYMODULE'),
+  ('asyncio.coroutines',
+   'C:\\Python313\\Lib\\asyncio\\coroutines.py',
+   'PYMODULE'),
+  ('asyncio.events', 'C:\\Python313\\Lib\\asyncio\\events.py', 'PYMODULE'),
+  ('asyncio.exceptions',
+   'C:\\Python313\\Lib\\asyncio\\exceptions.py',
+   'PYMODULE'),
+  ('asyncio.format_helpers',
+   'C:\\Python313\\Lib\\asyncio\\format_helpers.py',
+   'PYMODULE'),
+  ('asyncio.futures', 'C:\\Python313\\Lib\\asyncio\\futures.py', 'PYMODULE'),
+  ('asyncio.locks', 'C:\\Python313\\Lib\\asyncio\\locks.py', 'PYMODULE'),
+  ('asyncio.log', 'C:\\Python313\\Lib\\asyncio\\log.py', 'PYMODULE'),
+  ('asyncio.mixins', 'C:\\Python313\\Lib\\asyncio\\mixins.py', 'PYMODULE'),
+  ('asyncio.proactor_events',
+   'C:\\Python313\\Lib\\asyncio\\proactor_events.py',
+   'PYMODULE'),
+  ('asyncio.protocols',
+   'C:\\Python313\\Lib\\asyncio\\protocols.py',
+   'PYMODULE'),
+  ('asyncio.queues', 'C:\\Python313\\Lib\\asyncio\\queues.py', 'PYMODULE'),
+  ('asyncio.runners', 'C:\\Python313\\Lib\\asyncio\\runners.py', 'PYMODULE'),
+  ('asyncio.selector_events',
+   'C:\\Python313\\Lib\\asyncio\\selector_events.py',
+   'PYMODULE'),
+  ('asyncio.sslproto', 'C:\\Python313\\Lib\\asyncio\\sslproto.py', 'PYMODULE'),
+  ('asyncio.staggered',
+   'C:\\Python313\\Lib\\asyncio\\staggered.py',
+   'PYMODULE'),
+  ('asyncio.streams', 'C:\\Python313\\Lib\\asyncio\\streams.py', 'PYMODULE'),
+  ('asyncio.subprocess',
+   'C:\\Python313\\Lib\\asyncio\\subprocess.py',
+   'PYMODULE'),
+  ('asyncio.taskgroups',
+   'C:\\Python313\\Lib\\asyncio\\taskgroups.py',
+   'PYMODULE'),
+  ('asyncio.tasks', 'C:\\Python313\\Lib\\asyncio\\tasks.py', 'PYMODULE'),
+  ('asyncio.threads', 'C:\\Python313\\Lib\\asyncio\\threads.py', 'PYMODULE'),
+  ('asyncio.timeouts', 'C:\\Python313\\Lib\\asyncio\\timeouts.py', 'PYMODULE'),
+  ('asyncio.transports',
+   'C:\\Python313\\Lib\\asyncio\\transports.py',
+   'PYMODULE'),
+  ('asyncio.trsock', 'C:\\Python313\\Lib\\asyncio\\trsock.py', 'PYMODULE'),
+  ('asyncio.unix_events',
+   'C:\\Python313\\Lib\\asyncio\\unix_events.py',
+   'PYMODULE'),
+  ('asyncio.windows_events',
+   'C:\\Python313\\Lib\\asyncio\\windows_events.py',
+   'PYMODULE'),
+  ('asyncio.windows_utils',
+   'C:\\Python313\\Lib\\asyncio\\windows_utils.py',
+   'PYMODULE'),
+  ('backports',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\backports\\__init__.py',
+   'PYMODULE'),
   ('base64', 'C:\\Python313\\Lib\\base64.py', 'PYMODULE'),
+  ('bdb', 'C:\\Python313\\Lib\\bdb.py', 'PYMODULE'),
   ('bisect', 'C:\\Python313\\Lib\\bisect.py', 'PYMODULE'),
   ('board',
    'D:\\code\\repos\\RL Value Based Methods\\RL-Value-Based-Methods\\board.py',
    'PYMODULE'),
   ('bz2', 'C:\\Python313\\Lib\\bz2.py', 'PYMODULE'),
   ('calendar', 'C:\\Python313\\Lib\\calendar.py', 'PYMODULE'),
+  ('cmd', 'C:\\Python313\\Lib\\cmd.py', 'PYMODULE'),
+  ('code', 'C:\\Python313\\Lib\\code.py', 'PYMODULE'),
+  ('codeop', 'C:\\Python313\\Lib\\codeop.py', 'PYMODULE'),
+  ('colorama',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\colorama\\__init__.py',
+   'PYMODULE'),
+  ('colorama.ansi',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\colorama\\ansi.py',
+   'PYMODULE'),
+  ('colorama.ansitowin32',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\colorama\\ansitowin32.py',
+   'PYMODULE'),
+  ('colorama.initialise',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\colorama\\initialise.py',
+   'PYMODULE'),
+  ('colorama.win32',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\colorama\\win32.py',
+   'PYMODULE'),
+  ('colorama.winterm',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\colorama\\winterm.py',
+   'PYMODULE'),
+  ('colorsys', 'C:\\Python313\\Lib\\colorsys.py', 'PYMODULE'),
+  ('concurrent', 'C:\\Python313\\Lib\\concurrent\\__init__.py', 'PYMODULE'),
+  ('concurrent.futures',
+   'C:\\Python313\\Lib\\concurrent\\futures\\__init__.py',
+   'PYMODULE'),
+  ('concurrent.futures._base',
+   'C:\\Python313\\Lib\\concurrent\\futures\\_base.py',
+   'PYMODULE'),
+  ('concurrent.futures.process',
+   'C:\\Python313\\Lib\\concurrent\\futures\\process.py',
+   'PYMODULE'),
+  ('concurrent.futures.thread',
+   'C:\\Python313\\Lib\\concurrent\\futures\\thread.py',
+   'PYMODULE'),
+  ('configparser', 'C:\\Python313\\Lib\\configparser.py', 'PYMODULE'),
   ('constants',
    'D:\\code\\repos\\RL Value Based '
    'Methods\\RL-Value-Based-Methods\\constants.py',
    'PYMODULE'),
   ('contextlib', 'C:\\Python313\\Lib\\contextlib.py', 'PYMODULE'),
   ('contextvars', 'C:\\Python313\\Lib\\contextvars.py', 'PYMODULE'),
+  ('contourpy',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\contourpy\\__init__.py',
+   'PYMODULE'),
+  ('contourpy._version',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\contourpy\\_version.py',
+   'PYMODULE'),
+  ('contourpy.array',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\contourpy\\array.py',
+   'PYMODULE'),
+  ('contourpy.chunk',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\contourpy\\chunk.py',
+   'PYMODULE'),
+  ('contourpy.convert',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\contourpy\\convert.py',
+   'PYMODULE'),
+  ('contourpy.dechunk',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\contourpy\\dechunk.py',
+   'PYMODULE'),
+  ('contourpy.enum_util',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\contourpy\\enum_util.py',
+   'PYMODULE'),
+  ('contourpy.typecheck',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\contourpy\\typecheck.py',
+   'PYMODULE'),
+  ('contourpy.types',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\contourpy\\types.py',
+   'PYMODULE'),
   ('copy', 'C:\\Python313\\Lib\\copy.py', 'PYMODULE'),
   ('csv', 'C:\\Python313\\Lib\\csv.py', 'PYMODULE'),
+  ('ctypes', 'C:\\Python313\\Lib\\ctypes\\__init__.py', 'PYMODULE'),
+  ('ctypes._aix', 'C:\\Python313\\Lib\\ctypes\\_aix.py', 'PYMODULE'),
+  ('ctypes._endian', 'C:\\Python313\\Lib\\ctypes\\_endian.py', 'PYMODULE'),
+  ('ctypes.macholib',
+   'C:\\Python313\\Lib\\ctypes\\macholib\\__init__.py',
+   'PYMODULE'),
+  ('ctypes.macholib.dyld',
+   'C:\\Python313\\Lib\\ctypes\\macholib\\dyld.py',
+   'PYMODULE'),
+  ('ctypes.macholib.dylib',
+   'C:\\Python313\\Lib\\ctypes\\macholib\\dylib.py',
+   'PYMODULE'),
+  ('ctypes.macholib.framework',
+   'C:\\Python313\\Lib\\ctypes\\macholib\\framework.py',
+   'PYMODULE'),
+  ('ctypes.util', 'C:\\Python313\\Lib\\ctypes\\util.py', 'PYMODULE'),
+  ('ctypes.wintypes', 'C:\\Python313\\Lib\\ctypes\\wintypes.py', 'PYMODULE'),
+  ('curses', 'C:\\Python313\\Lib\\curses\\__init__.py', 'PYMODULE'),
+  ('curses.has_key', 'C:\\Python313\\Lib\\curses\\has_key.py', 'PYMODULE'),
   ('custom_errors',
    'D:\\code\\repos\\RL Value Based '
    'Methods\\RL-Value-Based-Methods\\custom_errors.py',
    'PYMODULE'),
+  ('cycler',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\cycler\\__init__.py',
+   'PYMODULE'),
   ('dataclasses', 'C:\\Python313\\Lib\\dataclasses.py', 'PYMODULE'),
   ('datetime', 'C:\\Python313\\Lib\\datetime.py', 'PYMODULE'),
+  ('dateutil',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\dateutil\\__init__.py',
+   'PYMODULE'),
+  ('dateutil._common',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\dateutil\\_common.py',
+   'PYMODULE'),
+  ('dateutil._version',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\dateutil\\_version.py',
+   'PYMODULE'),
+  ('dateutil.easter',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\dateutil\\easter.py',
+   'PYMODULE'),
+  ('dateutil.parser',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\dateutil\\parser\\__init__.py',
+   'PYMODULE'),
+  ('dateutil.parser._parser',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\dateutil\\parser\\_parser.py',
+   'PYMODULE'),
+  ('dateutil.parser.isoparser',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\dateutil\\parser\\isoparser.py',
+   'PYMODULE'),
+  ('dateutil.relativedelta',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\dateutil\\relativedelta.py',
+   'PYMODULE'),
+  ('dateutil.rrule',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\dateutil\\rrule.py',
+   'PYMODULE'),
+  ('dateutil.tz',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\dateutil\\tz\\__init__.py',
+   'PYMODULE'),
+  ('dateutil.tz._common',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\dateutil\\tz\\_common.py',
+   'PYMODULE'),
+  ('dateutil.tz._factories',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\dateutil\\tz\\_factories.py',
+   'PYMODULE'),
+  ('dateutil.tz.tz',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\dateutil\\tz\\tz.py',
+   'PYMODULE'),
+  ('dateutil.tz.win',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\dateutil\\tz\\win.py',
+   'PYMODULE'),
+  ('dateutil.zoneinfo',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\dateutil\\zoneinfo\\__init__.py',
+   'PYMODULE'),
   ('decimal', 'C:\\Python313\\Lib\\decimal.py', 'PYMODULE'),
+  ('difflib', 'C:\\Python313\\Lib\\difflib.py', 'PYMODULE'),
   ('dis', 'C:\\Python313\\Lib\\dis.py', 'PYMODULE'),
+  ('doctest', 'C:\\Python313\\Lib\\doctest.py', 'PYMODULE'),
   ('email', 'C:\\Python313\\Lib\\email\\__init__.py', 'PYMODULE'),
   ('email._encoded_words',
    'C:\\Python313\\Lib\\email\\_encoded_words.py',
@@ -69,17 +678,27 @@
   ('email.policy', 'C:\\Python313\\Lib\\email\\policy.py', 'PYMODULE'),
   ('email.quoprimime', 'C:\\Python313\\Lib\\email\\quoprimime.py', 'PYMODULE'),
   ('email.utils', 'C:\\Python313\\Lib\\email\\utils.py', 'PYMODULE'),
+  ('fileinput', 'C:\\Python313\\Lib\\fileinput.py', 'PYMODULE'),
   ('fnmatch', 'C:\\Python313\\Lib\\fnmatch.py', 'PYMODULE'),
   ('fractions', 'C:\\Python313\\Lib\\fractions.py', 'PYMODULE'),
+  ('ftplib', 'C:\\Python313\\Lib\\ftplib.py', 'PYMODULE'),
   ('get_inputs',
    'D:\\code\\repos\\RL Value Based '
    'Methods\\RL-Value-Based-Methods\\get_inputs.py',
    'PYMODULE'),
   ('getopt', 'C:\\Python313\\Lib\\getopt.py', 'PYMODULE'),
+  ('getpass', 'C:\\Python313\\Lib\\getpass.py', 'PYMODULE'),
   ('gettext', 'C:\\Python313\\Lib\\gettext.py', 'PYMODULE'),
   ('glob', 'C:\\Python313\\Lib\\glob.py', 'PYMODULE'),
   ('gzip', 'C:\\Python313\\Lib\\gzip.py', 'PYMODULE'),
   ('hashlib', 'C:\\Python313\\Lib\\hashlib.py', 'PYMODULE'),
+  ('hmac', 'C:\\Python313\\Lib\\hmac.py', 'PYMODULE'),
+  ('html', 'C:\\Python313\\Lib\\html\\__init__.py', 'PYMODULE'),
+  ('html.entities', 'C:\\Python313\\Lib\\html\\entities.py', 'PYMODULE'),
+  ('http', 'C:\\Python313\\Lib\\http\\__init__.py', 'PYMODULE'),
+  ('http.client', 'C:\\Python313\\Lib\\http\\client.py', 'PYMODULE'),
+  ('http.cookiejar', 'C:\\Python313\\Lib\\http\\cookiejar.py', 'PYMODULE'),
+  ('http.server', 'C:\\Python313\\Lib\\http\\server.py', 'PYMODULE'),
   ('importlib', 'C:\\Python313\\Lib\\importlib\\__init__.py', 'PYMODULE'),
   ('importlib._abc', 'C:\\Python313\\Lib\\importlib\\_abc.py', 'PYMODULE'),
   ('importlib._bootstrap',
@@ -144,10 +763,19 @@
    'PYMODULE'),
   ('inspect', 'C:\\Python313\\Lib\\inspect.py', 'PYMODULE'),
   ('ipaddress', 'C:\\Python313\\Lib\\ipaddress.py', 'PYMODULE'),
+  ('jaraco', '-', 'PYMODULE'),
   ('json', 'C:\\Python313\\Lib\\json\\__init__.py', 'PYMODULE'),
   ('json.decoder', 'C:\\Python313\\Lib\\json\\decoder.py', 'PYMODULE'),
   ('json.encoder', 'C:\\Python313\\Lib\\json\\encoder.py', 'PYMODULE'),
   ('json.scanner', 'C:\\Python313\\Lib\\json\\scanner.py', 'PYMODULE'),
+  ('kiwisolver',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\kiwisolver\\__init__.py',
+   'PYMODULE'),
+  ('kiwisolver.exceptions',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\kiwisolver\\exceptions.py',
+   'PYMODULE'),
   ('learning_methods', '-', 'PYMODULE'),
   ('learning_methods.expected_sarsa',
    'D:\\code\\repos\\RL Value Based '
@@ -167,30 +795,3076 @@
    'PYMODULE'),
   ('logging', 'C:\\Python313\\Lib\\logging\\__init__.py', 'PYMODULE'),
   ('lzma', 'C:\\Python313\\Lib\\lzma.py', 'PYMODULE'),
+  ('matplotlib',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\__init__.py',
+   'PYMODULE'),
+  ('matplotlib._afm',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\_afm.py',
+   'PYMODULE'),
+  ('matplotlib._api',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\_api\\__init__.py',
+   'PYMODULE'),
+  ('matplotlib._api.deprecation',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\_api\\deprecation.py',
+   'PYMODULE'),
+  ('matplotlib._blocking_input',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\_blocking_input.py',
+   'PYMODULE'),
+  ('matplotlib._cm',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\_cm.py',
+   'PYMODULE'),
+  ('matplotlib._cm_bivar',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\_cm_bivar.py',
+   'PYMODULE'),
+  ('matplotlib._cm_listed',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\_cm_listed.py',
+   'PYMODULE'),
+  ('matplotlib._cm_multivar',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\_cm_multivar.py',
+   'PYMODULE'),
+  ('matplotlib._color_data',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\_color_data.py',
+   'PYMODULE'),
+  ('matplotlib._constrained_layout',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\_constrained_layout.py',
+   'PYMODULE'),
+  ('matplotlib._docstring',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\_docstring.py',
+   'PYMODULE'),
+  ('matplotlib._enums',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\_enums.py',
+   'PYMODULE'),
+  ('matplotlib._fontconfig_pattern',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\_fontconfig_pattern.py',
+   'PYMODULE'),
+  ('matplotlib._layoutgrid',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\_layoutgrid.py',
+   'PYMODULE'),
+  ('matplotlib._mathtext',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\_mathtext.py',
+   'PYMODULE'),
+  ('matplotlib._mathtext_data',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\_mathtext_data.py',
+   'PYMODULE'),
+  ('matplotlib._pylab_helpers',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\_pylab_helpers.py',
+   'PYMODULE'),
+  ('matplotlib._text_helpers',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\_text_helpers.py',
+   'PYMODULE'),
+  ('matplotlib._tight_bbox',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\_tight_bbox.py',
+   'PYMODULE'),
+  ('matplotlib._tight_layout',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\_tight_layout.py',
+   'PYMODULE'),
+  ('matplotlib._version',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\_version.py',
+   'PYMODULE'),
+  ('matplotlib.artist',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\artist.py',
+   'PYMODULE'),
+  ('matplotlib.axes',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\axes\\__init__.py',
+   'PYMODULE'),
+  ('matplotlib.axes._axes',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\axes\\_axes.py',
+   'PYMODULE'),
+  ('matplotlib.axes._base',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\axes\\_base.py',
+   'PYMODULE'),
+  ('matplotlib.axes._secondary_axes',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\axes\\_secondary_axes.py',
+   'PYMODULE'),
+  ('matplotlib.axis',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\axis.py',
+   'PYMODULE'),
+  ('matplotlib.backend_bases',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\backend_bases.py',
+   'PYMODULE'),
+  ('matplotlib.backend_managers',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\backend_managers.py',
+   'PYMODULE'),
+  ('matplotlib.backend_tools',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\backend_tools.py',
+   'PYMODULE'),
+  ('matplotlib.backends',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\backends\\__init__.py',
+   'PYMODULE'),
+  ('matplotlib.backends._backend_tk',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\backends\\_backend_tk.py',
+   'PYMODULE'),
+  ('matplotlib.backends.backend_agg',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\backends\\backend_agg.py',
+   'PYMODULE'),
+  ('matplotlib.backends.backend_tkagg',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\backends\\backend_tkagg.py',
+   'PYMODULE'),
+  ('matplotlib.backends.backend_webagg',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\backends\\backend_webagg.py',
+   'PYMODULE'),
+  ('matplotlib.backends.backend_webagg_core',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\backends\\backend_webagg_core.py',
+   'PYMODULE'),
+  ('matplotlib.backends.registry',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\backends\\registry.py',
+   'PYMODULE'),
+  ('matplotlib.bezier',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\bezier.py',
+   'PYMODULE'),
+  ('matplotlib.category',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\category.py',
+   'PYMODULE'),
+  ('matplotlib.cbook',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\cbook.py',
+   'PYMODULE'),
+  ('matplotlib.cm',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\cm.py',
+   'PYMODULE'),
+  ('matplotlib.collections',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\collections.py',
+   'PYMODULE'),
+  ('matplotlib.colorbar',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\colorbar.py',
+   'PYMODULE'),
+  ('matplotlib.colorizer',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\colorizer.py',
+   'PYMODULE'),
+  ('matplotlib.colors',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\colors.py',
+   'PYMODULE'),
+  ('matplotlib.container',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\container.py',
+   'PYMODULE'),
+  ('matplotlib.contour',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\contour.py',
+   'PYMODULE'),
+  ('matplotlib.dates',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\dates.py',
+   'PYMODULE'),
+  ('matplotlib.dviread',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\dviread.py',
+   'PYMODULE'),
+  ('matplotlib.figure',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\figure.py',
+   'PYMODULE'),
+  ('matplotlib.font_manager',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\font_manager.py',
+   'PYMODULE'),
+  ('matplotlib.gridspec',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\gridspec.py',
+   'PYMODULE'),
+  ('matplotlib.hatch',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\hatch.py',
+   'PYMODULE'),
+  ('matplotlib.image',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\image.py',
+   'PYMODULE'),
+  ('matplotlib.inset',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\inset.py',
+   'PYMODULE'),
+  ('matplotlib.layout_engine',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\layout_engine.py',
+   'PYMODULE'),
+  ('matplotlib.legend',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\legend.py',
+   'PYMODULE'),
+  ('matplotlib.legend_handler',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\legend_handler.py',
+   'PYMODULE'),
+  ('matplotlib.lines',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\lines.py',
+   'PYMODULE'),
+  ('matplotlib.markers',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\markers.py',
+   'PYMODULE'),
+  ('matplotlib.mathtext',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\mathtext.py',
+   'PYMODULE'),
+  ('matplotlib.mlab',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\mlab.py',
+   'PYMODULE'),
+  ('matplotlib.offsetbox',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\offsetbox.py',
+   'PYMODULE'),
+  ('matplotlib.patches',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\patches.py',
+   'PYMODULE'),
+  ('matplotlib.path',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\path.py',
+   'PYMODULE'),
+  ('matplotlib.patheffects',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\patheffects.py',
+   'PYMODULE'),
+  ('matplotlib.projections',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\projections\\__init__.py',
+   'PYMODULE'),
+  ('matplotlib.projections.geo',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\projections\\geo.py',
+   'PYMODULE'),
+  ('matplotlib.projections.polar',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\projections\\polar.py',
+   'PYMODULE'),
+  ('matplotlib.pylab',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\pylab.py',
+   'PYMODULE'),
+  ('matplotlib.pyplot',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\pyplot.py',
+   'PYMODULE'),
+  ('matplotlib.quiver',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\quiver.py',
+   'PYMODULE'),
+  ('matplotlib.rcsetup',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\rcsetup.py',
+   'PYMODULE'),
+  ('matplotlib.scale',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\scale.py',
+   'PYMODULE'),
+  ('matplotlib.spines',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\spines.py',
+   'PYMODULE'),
+  ('matplotlib.stackplot',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\stackplot.py',
+   'PYMODULE'),
+  ('matplotlib.streamplot',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\streamplot.py',
+   'PYMODULE'),
+  ('matplotlib.style',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\style\\__init__.py',
+   'PYMODULE'),
+  ('matplotlib.style.core',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\style\\core.py',
+   'PYMODULE'),
+  ('matplotlib.table',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\table.py',
+   'PYMODULE'),
+  ('matplotlib.texmanager',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\texmanager.py',
+   'PYMODULE'),
+  ('matplotlib.text',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\text.py',
+   'PYMODULE'),
+  ('matplotlib.textpath',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\textpath.py',
+   'PYMODULE'),
+  ('matplotlib.ticker',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\ticker.py',
+   'PYMODULE'),
+  ('matplotlib.transforms',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\transforms.py',
+   'PYMODULE'),
+  ('matplotlib.tri',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\tri\\__init__.py',
+   'PYMODULE'),
+  ('matplotlib.tri._triangulation',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\tri\\_triangulation.py',
+   'PYMODULE'),
+  ('matplotlib.tri._tricontour',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\tri\\_tricontour.py',
+   'PYMODULE'),
+  ('matplotlib.tri._trifinder',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\tri\\_trifinder.py',
+   'PYMODULE'),
+  ('matplotlib.tri._triinterpolate',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\tri\\_triinterpolate.py',
+   'PYMODULE'),
+  ('matplotlib.tri._tripcolor',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\tri\\_tripcolor.py',
+   'PYMODULE'),
+  ('matplotlib.tri._triplot',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\tri\\_triplot.py',
+   'PYMODULE'),
+  ('matplotlib.tri._trirefine',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\tri\\_trirefine.py',
+   'PYMODULE'),
+  ('matplotlib.tri._tritools',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\tri\\_tritools.py',
+   'PYMODULE'),
+  ('matplotlib.typing',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\typing.py',
+   'PYMODULE'),
+  ('matplotlib.units',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\units.py',
+   'PYMODULE'),
+  ('matplotlib.widgets',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\matplotlib\\widgets.py',
+   'PYMODULE'),
+  ('mimetypes', 'C:\\Python313\\Lib\\mimetypes.py', 'PYMODULE'),
+  ('mpl_toolkits', '-', 'PYMODULE'),
+  ('mpl_toolkits.mplot3d',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\mpl_toolkits\\mplot3d\\__init__.py',
+   'PYMODULE'),
+  ('mpl_toolkits.mplot3d.art3d',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\mpl_toolkits\\mplot3d\\art3d.py',
+   'PYMODULE'),
+  ('mpl_toolkits.mplot3d.axes3d',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\mpl_toolkits\\mplot3d\\axes3d.py',
+   'PYMODULE'),
+  ('mpl_toolkits.mplot3d.axis3d',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\mpl_toolkits\\mplot3d\\axis3d.py',
+   'PYMODULE'),
+  ('mpl_toolkits.mplot3d.proj3d',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\mpl_toolkits\\mplot3d\\proj3d.py',
+   'PYMODULE'),
+  ('multiprocessing',
+   'C:\\Python313\\Lib\\multiprocessing\\__init__.py',
+   'PYMODULE'),
+  ('multiprocessing.connection',
+   'C:\\Python313\\Lib\\multiprocessing\\connection.py',
+   'PYMODULE'),
+  ('multiprocessing.context',
+   'C:\\Python313\\Lib\\multiprocessing\\context.py',
+   'PYMODULE'),
+  ('multiprocessing.dummy',
+   'C:\\Python313\\Lib\\multiprocessing\\dummy\\__init__.py',
+   'PYMODULE'),
+  ('multiprocessing.dummy.connection',
+   'C:\\Python313\\Lib\\multiprocessing\\dummy\\connection.py',
+   'PYMODULE'),
+  ('multiprocessing.forkserver',
+   'C:\\Python313\\Lib\\multiprocessing\\forkserver.py',
+   'PYMODULE'),
+  ('multiprocessing.heap',
+   'C:\\Python313\\Lib\\multiprocessing\\heap.py',
+   'PYMODULE'),
+  ('multiprocessing.managers',
+   'C:\\Python313\\Lib\\multiprocessing\\managers.py',
+   'PYMODULE'),
+  ('multiprocessing.pool',
+   'C:\\Python313\\Lib\\multiprocessing\\pool.py',
+   'PYMODULE'),
+  ('multiprocessing.popen_fork',
+   'C:\\Python313\\Lib\\multiprocessing\\popen_fork.py',
+   'PYMODULE'),
+  ('multiprocessing.popen_forkserver',
+   'C:\\Python313\\Lib\\multiprocessing\\popen_forkserver.py',
+   'PYMODULE'),
+  ('multiprocessing.popen_spawn_posix',
+   'C:\\Python313\\Lib\\multiprocessing\\popen_spawn_posix.py',
+   'PYMODULE'),
+  ('multiprocessing.popen_spawn_win32',
+   'C:\\Python313\\Lib\\multiprocessing\\popen_spawn_win32.py',
+   'PYMODULE'),
+  ('multiprocessing.process',
+   'C:\\Python313\\Lib\\multiprocessing\\process.py',
+   'PYMODULE'),
+  ('multiprocessing.queues',
+   'C:\\Python313\\Lib\\multiprocessing\\queues.py',
+   'PYMODULE'),
+  ('multiprocessing.reduction',
+   'C:\\Python313\\Lib\\multiprocessing\\reduction.py',
+   'PYMODULE'),
+  ('multiprocessing.resource_sharer',
+   'C:\\Python313\\Lib\\multiprocessing\\resource_sharer.py',
+   'PYMODULE'),
+  ('multiprocessing.resource_tracker',
+   'C:\\Python313\\Lib\\multiprocessing\\resource_tracker.py',
+   'PYMODULE'),
+  ('multiprocessing.shared_memory',
+   'C:\\Python313\\Lib\\multiprocessing\\shared_memory.py',
+   'PYMODULE'),
+  ('multiprocessing.sharedctypes',
+   'C:\\Python313\\Lib\\multiprocessing\\sharedctypes.py',
+   'PYMODULE'),
+  ('multiprocessing.spawn',
+   'C:\\Python313\\Lib\\multiprocessing\\spawn.py',
+   'PYMODULE'),
+  ('multiprocessing.synchronize',
+   'C:\\Python313\\Lib\\multiprocessing\\synchronize.py',
+   'PYMODULE'),
+  ('multiprocessing.util',
+   'C:\\Python313\\Lib\\multiprocessing\\util.py',
+   'PYMODULE'),
+  ('netrc', 'C:\\Python313\\Lib\\netrc.py', 'PYMODULE'),
+  ('nturl2path', 'C:\\Python313\\Lib\\nturl2path.py', 'PYMODULE'),
   ('numbers', 'C:\\Python313\\Lib\\numbers.py', 'PYMODULE'),
+  ('numpy',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\__init__.py',
+   'PYMODULE'),
+  ('numpy.__config__',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\__config__.py',
+   'PYMODULE'),
+  ('numpy._array_api_info',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\_array_api_info.py',
+   'PYMODULE'),
+  ('numpy._core',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\_core\\__init__.py',
+   'PYMODULE'),
+  ('numpy._core._add_newdocs',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\_core\\_add_newdocs.py',
+   'PYMODULE'),
+  ('numpy._core._add_newdocs_scalars',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\_core\\_add_newdocs_scalars.py',
+   'PYMODULE'),
+  ('numpy._core._asarray',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\_core\\_asarray.py',
+   'PYMODULE'),
+  ('numpy._core._dtype',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\_core\\_dtype.py',
+   'PYMODULE'),
+  ('numpy._core._dtype_ctypes',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\_core\\_dtype_ctypes.py',
+   'PYMODULE'),
+  ('numpy._core._exceptions',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\_core\\_exceptions.py',
+   'PYMODULE'),
+  ('numpy._core._internal',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\_core\\_internal.py',
+   'PYMODULE'),
+  ('numpy._core._machar',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\_core\\_machar.py',
+   'PYMODULE'),
+  ('numpy._core._methods',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\_core\\_methods.py',
+   'PYMODULE'),
+  ('numpy._core._string_helpers',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\_core\\_string_helpers.py',
+   'PYMODULE'),
+  ('numpy._core._type_aliases',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\_core\\_type_aliases.py',
+   'PYMODULE'),
+  ('numpy._core._ufunc_config',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\_core\\_ufunc_config.py',
+   'PYMODULE'),
+  ('numpy._core.arrayprint',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\_core\\arrayprint.py',
+   'PYMODULE'),
+  ('numpy._core.defchararray',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\_core\\defchararray.py',
+   'PYMODULE'),
+  ('numpy._core.einsumfunc',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\_core\\einsumfunc.py',
+   'PYMODULE'),
+  ('numpy._core.fromnumeric',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\_core\\fromnumeric.py',
+   'PYMODULE'),
+  ('numpy._core.function_base',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\_core\\function_base.py',
+   'PYMODULE'),
+  ('numpy._core.getlimits',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\_core\\getlimits.py',
+   'PYMODULE'),
+  ('numpy._core.memmap',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\_core\\memmap.py',
+   'PYMODULE'),
+  ('numpy._core.multiarray',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\_core\\multiarray.py',
+   'PYMODULE'),
+  ('numpy._core.numeric',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\_core\\numeric.py',
+   'PYMODULE'),
+  ('numpy._core.numerictypes',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\_core\\numerictypes.py',
+   'PYMODULE'),
+  ('numpy._core.overrides',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\_core\\overrides.py',
+   'PYMODULE'),
+  ('numpy._core.printoptions',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\_core\\printoptions.py',
+   'PYMODULE'),
+  ('numpy._core.records',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\_core\\records.py',
+   'PYMODULE'),
+  ('numpy._core.shape_base',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\_core\\shape_base.py',
+   'PYMODULE'),
+  ('numpy._core.strings',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\_core\\strings.py',
+   'PYMODULE'),
+  ('numpy._core.umath',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\_core\\umath.py',
+   'PYMODULE'),
+  ('numpy._distributor_init',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\_distributor_init.py',
+   'PYMODULE'),
+  ('numpy._expired_attrs_2_0',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\_expired_attrs_2_0.py',
+   'PYMODULE'),
+  ('numpy._globals',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\_globals.py',
+   'PYMODULE'),
+  ('numpy._pytesttester',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\_pytesttester.py',
+   'PYMODULE'),
+  ('numpy._typing',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\_typing\\__init__.py',
+   'PYMODULE'),
+  ('numpy._typing._add_docstring',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\_typing\\_add_docstring.py',
+   'PYMODULE'),
+  ('numpy._typing._array_like',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\_typing\\_array_like.py',
+   'PYMODULE'),
+  ('numpy._typing._char_codes',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\_typing\\_char_codes.py',
+   'PYMODULE'),
+  ('numpy._typing._dtype_like',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\_typing\\_dtype_like.py',
+   'PYMODULE'),
+  ('numpy._typing._nbit',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\_typing\\_nbit.py',
+   'PYMODULE'),
+  ('numpy._typing._nbit_base',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\_typing\\_nbit_base.py',
+   'PYMODULE'),
+  ('numpy._typing._nested_sequence',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\_typing\\_nested_sequence.py',
+   'PYMODULE'),
+  ('numpy._typing._scalars',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\_typing\\_scalars.py',
+   'PYMODULE'),
+  ('numpy._typing._shape',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\_typing\\_shape.py',
+   'PYMODULE'),
+  ('numpy._typing._ufunc',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\_typing\\_ufunc.py',
+   'PYMODULE'),
+  ('numpy._utils',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\_utils\\__init__.py',
+   'PYMODULE'),
+  ('numpy._utils._convertions',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\_utils\\_convertions.py',
+   'PYMODULE'),
+  ('numpy._utils._inspect',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\_utils\\_inspect.py',
+   'PYMODULE'),
+  ('numpy.char',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\char\\__init__.py',
+   'PYMODULE'),
+  ('numpy.core',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\core\\__init__.py',
+   'PYMODULE'),
+  ('numpy.core._utils',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\core\\_utils.py',
+   'PYMODULE'),
+  ('numpy.ctypeslib',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\ctypeslib\\__init__.py',
+   'PYMODULE'),
+  ('numpy.ctypeslib._ctypeslib',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\ctypeslib\\_ctypeslib.py',
+   'PYMODULE'),
+  ('numpy.dtypes',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\dtypes.py',
+   'PYMODULE'),
+  ('numpy.exceptions',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\exceptions.py',
+   'PYMODULE'),
+  ('numpy.f2py',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\f2py\\__init__.py',
+   'PYMODULE'),
+  ('numpy.f2py.__version__',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\f2py\\__version__.py',
+   'PYMODULE'),
+  ('numpy.f2py._backends',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\f2py\\_backends\\__init__.py',
+   'PYMODULE'),
+  ('numpy.f2py._backends._backend',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\f2py\\_backends\\_backend.py',
+   'PYMODULE'),
+  ('numpy.f2py._backends._distutils',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\f2py\\_backends\\_distutils.py',
+   'PYMODULE'),
+  ('numpy.f2py._backends._meson',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\f2py\\_backends\\_meson.py',
+   'PYMODULE'),
+  ('numpy.f2py._isocbind',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\f2py\\_isocbind.py',
+   'PYMODULE'),
+  ('numpy.f2py.auxfuncs',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\f2py\\auxfuncs.py',
+   'PYMODULE'),
+  ('numpy.f2py.capi_maps',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\f2py\\capi_maps.py',
+   'PYMODULE'),
+  ('numpy.f2py.cb_rules',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\f2py\\cb_rules.py',
+   'PYMODULE'),
+  ('numpy.f2py.cfuncs',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\f2py\\cfuncs.py',
+   'PYMODULE'),
+  ('numpy.f2py.common_rules',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\f2py\\common_rules.py',
+   'PYMODULE'),
+  ('numpy.f2py.crackfortran',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\f2py\\crackfortran.py',
+   'PYMODULE'),
+  ('numpy.f2py.diagnose',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\f2py\\diagnose.py',
+   'PYMODULE'),
+  ('numpy.f2py.f2py2e',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\f2py\\f2py2e.py',
+   'PYMODULE'),
+  ('numpy.f2py.f90mod_rules',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\f2py\\f90mod_rules.py',
+   'PYMODULE'),
+  ('numpy.f2py.func2subr',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\f2py\\func2subr.py',
+   'PYMODULE'),
+  ('numpy.f2py.rules',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\f2py\\rules.py',
+   'PYMODULE'),
+  ('numpy.f2py.symbolic',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\f2py\\symbolic.py',
+   'PYMODULE'),
+  ('numpy.f2py.use_rules',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\f2py\\use_rules.py',
+   'PYMODULE'),
+  ('numpy.fft',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\fft\\__init__.py',
+   'PYMODULE'),
+  ('numpy.fft._helper',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\fft\\_helper.py',
+   'PYMODULE'),
+  ('numpy.fft._pocketfft',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\fft\\_pocketfft.py',
+   'PYMODULE'),
+  ('numpy.fft.helper',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\fft\\helper.py',
+   'PYMODULE'),
+  ('numpy.lib',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\lib\\__init__.py',
+   'PYMODULE'),
+  ('numpy.lib._array_utils_impl',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\lib\\_array_utils_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._arraypad_impl',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\lib\\_arraypad_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._arraysetops_impl',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\lib\\_arraysetops_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._arrayterator_impl',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\lib\\_arrayterator_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._datasource',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\lib\\_datasource.py',
+   'PYMODULE'),
+  ('numpy.lib._format_impl',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\lib\\_format_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._function_base_impl',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\lib\\_function_base_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._histograms_impl',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\lib\\_histograms_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._index_tricks_impl',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\lib\\_index_tricks_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._iotools',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\lib\\_iotools.py',
+   'PYMODULE'),
+  ('numpy.lib._nanfunctions_impl',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\lib\\_nanfunctions_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._npyio_impl',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\lib\\_npyio_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._polynomial_impl',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\lib\\_polynomial_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._scimath_impl',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\lib\\_scimath_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._shape_base_impl',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\lib\\_shape_base_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._stride_tricks_impl',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\lib\\_stride_tricks_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._twodim_base_impl',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\lib\\_twodim_base_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._type_check_impl',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\lib\\_type_check_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._ufunclike_impl',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\lib\\_ufunclike_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._utils_impl',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\lib\\_utils_impl.py',
+   'PYMODULE'),
+  ('numpy.lib._version',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\lib\\_version.py',
+   'PYMODULE'),
+  ('numpy.lib.array_utils',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\lib\\array_utils.py',
+   'PYMODULE'),
+  ('numpy.lib.format',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\lib\\format.py',
+   'PYMODULE'),
+  ('numpy.lib.introspect',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\lib\\introspect.py',
+   'PYMODULE'),
+  ('numpy.lib.mixins',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\lib\\mixins.py',
+   'PYMODULE'),
+  ('numpy.lib.npyio',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\lib\\npyio.py',
+   'PYMODULE'),
+  ('numpy.lib.recfunctions',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\lib\\recfunctions.py',
+   'PYMODULE'),
+  ('numpy.lib.scimath',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\lib\\scimath.py',
+   'PYMODULE'),
+  ('numpy.lib.stride_tricks',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\lib\\stride_tricks.py',
+   'PYMODULE'),
+  ('numpy.linalg',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\linalg\\__init__.py',
+   'PYMODULE'),
+  ('numpy.linalg._linalg',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\linalg\\_linalg.py',
+   'PYMODULE'),
+  ('numpy.linalg.linalg',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\linalg\\linalg.py',
+   'PYMODULE'),
+  ('numpy.ma',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\ma\\__init__.py',
+   'PYMODULE'),
+  ('numpy.ma.core',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\ma\\core.py',
+   'PYMODULE'),
+  ('numpy.ma.extras',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\ma\\extras.py',
+   'PYMODULE'),
+  ('numpy.ma.mrecords',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\ma\\mrecords.py',
+   'PYMODULE'),
+  ('numpy.matlib',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\matlib.py',
+   'PYMODULE'),
+  ('numpy.matrixlib',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\matrixlib\\__init__.py',
+   'PYMODULE'),
+  ('numpy.matrixlib.defmatrix',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\matrixlib\\defmatrix.py',
+   'PYMODULE'),
+  ('numpy.polynomial',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\polynomial\\__init__.py',
+   'PYMODULE'),
+  ('numpy.polynomial._polybase',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\polynomial\\_polybase.py',
+   'PYMODULE'),
+  ('numpy.polynomial.chebyshev',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\polynomial\\chebyshev.py',
+   'PYMODULE'),
+  ('numpy.polynomial.hermite',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\polynomial\\hermite.py',
+   'PYMODULE'),
+  ('numpy.polynomial.hermite_e',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\polynomial\\hermite_e.py',
+   'PYMODULE'),
+  ('numpy.polynomial.laguerre',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\polynomial\\laguerre.py',
+   'PYMODULE'),
+  ('numpy.polynomial.legendre',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\polynomial\\legendre.py',
+   'PYMODULE'),
+  ('numpy.polynomial.polynomial',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\polynomial\\polynomial.py',
+   'PYMODULE'),
+  ('numpy.polynomial.polyutils',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\polynomial\\polyutils.py',
+   'PYMODULE'),
+  ('numpy.random',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\random\\__init__.py',
+   'PYMODULE'),
+  ('numpy.random._pickle',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\random\\_pickle.py',
+   'PYMODULE'),
+  ('numpy.rec',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\rec\\__init__.py',
+   'PYMODULE'),
+  ('numpy.strings',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\strings\\__init__.py',
+   'PYMODULE'),
+  ('numpy.testing',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\testing\\__init__.py',
+   'PYMODULE'),
+  ('numpy.testing._private',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\testing\\_private\\__init__.py',
+   'PYMODULE'),
+  ('numpy.testing._private.extbuild',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\testing\\_private\\extbuild.py',
+   'PYMODULE'),
+  ('numpy.testing._private.utils',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\testing\\_private\\utils.py',
+   'PYMODULE'),
+  ('numpy.testing.overrides',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\testing\\overrides.py',
+   'PYMODULE'),
+  ('numpy.typing',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\typing\\__init__.py',
+   'PYMODULE'),
+  ('numpy.version',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\numpy\\version.py',
+   'PYMODULE'),
   ('opcode', 'C:\\Python313\\Lib\\opcode.py', 'PYMODULE'),
+  ('packaging',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\packaging\\__init__.py',
+   'PYMODULE'),
+  ('packaging._elffile',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\packaging\\_elffile.py',
+   'PYMODULE'),
+  ('packaging._manylinux',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\packaging\\_manylinux.py',
+   'PYMODULE'),
+  ('packaging._musllinux',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\packaging\\_musllinux.py',
+   'PYMODULE'),
+  ('packaging._parser',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\packaging\\_parser.py',
+   'PYMODULE'),
+  ('packaging._structures',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\packaging\\_structures.py',
+   'PYMODULE'),
+  ('packaging._tokenizer',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\packaging\\_tokenizer.py',
+   'PYMODULE'),
+  ('packaging.licenses',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\packaging\\licenses\\__init__.py',
+   'PYMODULE'),
+  ('packaging.licenses._spdx',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\packaging\\licenses\\_spdx.py',
+   'PYMODULE'),
+  ('packaging.markers',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\packaging\\markers.py',
+   'PYMODULE'),
+  ('packaging.requirements',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\packaging\\requirements.py',
+   'PYMODULE'),
+  ('packaging.specifiers',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\packaging\\specifiers.py',
+   'PYMODULE'),
+  ('packaging.tags',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\packaging\\tags.py',
+   'PYMODULE'),
+  ('packaging.utils',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\packaging\\utils.py',
+   'PYMODULE'),
+  ('packaging.version',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\packaging\\version.py',
+   'PYMODULE'),
+  ('pandas',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\__init__.py',
+   'PYMODULE'),
+  ('pandas._config',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\_config\\__init__.py',
+   'PYMODULE'),
+  ('pandas._config.config',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\_config\\config.py',
+   'PYMODULE'),
+  ('pandas._config.dates',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\_config\\dates.py',
+   'PYMODULE'),
+  ('pandas._config.display',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\_config\\display.py',
+   'PYMODULE'),
+  ('pandas._config.localization',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\_config\\localization.py',
+   'PYMODULE'),
+  ('pandas._libs',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\_libs\\__init__.py',
+   'PYMODULE'),
+  ('pandas._libs.tslibs',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\_libs\\tslibs\\__init__.py',
+   'PYMODULE'),
+  ('pandas._libs.window',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\_libs\\window\\__init__.py',
+   'PYMODULE'),
+  ('pandas._testing',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\_testing\\__init__.py',
+   'PYMODULE'),
+  ('pandas._testing._io',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\_testing\\_io.py',
+   'PYMODULE'),
+  ('pandas._testing._warnings',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\_testing\\_warnings.py',
+   'PYMODULE'),
+  ('pandas._testing.asserters',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\_testing\\asserters.py',
+   'PYMODULE'),
+  ('pandas._testing.compat',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\_testing\\compat.py',
+   'PYMODULE'),
+  ('pandas._testing.contexts',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\_testing\\contexts.py',
+   'PYMODULE'),
+  ('pandas._typing',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\_typing.py',
+   'PYMODULE'),
+  ('pandas._version',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\_version.py',
+   'PYMODULE'),
+  ('pandas._version_meson',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\_version_meson.py',
+   'PYMODULE'),
+  ('pandas.api',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\api\\__init__.py',
+   'PYMODULE'),
+  ('pandas.api.extensions',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\api\\extensions\\__init__.py',
+   'PYMODULE'),
+  ('pandas.api.indexers',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\api\\indexers\\__init__.py',
+   'PYMODULE'),
+  ('pandas.api.interchange',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\api\\interchange\\__init__.py',
+   'PYMODULE'),
+  ('pandas.api.types',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\api\\types\\__init__.py',
+   'PYMODULE'),
+  ('pandas.api.typing',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\api\\typing\\__init__.py',
+   'PYMODULE'),
+  ('pandas.arrays',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\arrays\\__init__.py',
+   'PYMODULE'),
+  ('pandas.compat',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\compat\\__init__.py',
+   'PYMODULE'),
+  ('pandas.compat._constants',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\compat\\_constants.py',
+   'PYMODULE'),
+  ('pandas.compat._optional',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\compat\\_optional.py',
+   'PYMODULE'),
+  ('pandas.compat.compressors',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\compat\\compressors.py',
+   'PYMODULE'),
+  ('pandas.compat.numpy',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\compat\\numpy\\__init__.py',
+   'PYMODULE'),
+  ('pandas.compat.numpy.function',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\compat\\numpy\\function.py',
+   'PYMODULE'),
+  ('pandas.compat.pickle_compat',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\compat\\pickle_compat.py',
+   'PYMODULE'),
+  ('pandas.compat.pyarrow',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\compat\\pyarrow.py',
+   'PYMODULE'),
+  ('pandas.core',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core._numba',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\_numba\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core._numba.executor',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\_numba\\executor.py',
+   'PYMODULE'),
+  ('pandas.core._numba.extensions',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\_numba\\extensions.py',
+   'PYMODULE'),
+  ('pandas.core._numba.kernels',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\_numba\\kernels\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core._numba.kernels.mean_',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\_numba\\kernels\\mean_.py',
+   'PYMODULE'),
+  ('pandas.core._numba.kernels.min_max_',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\_numba\\kernels\\min_max_.py',
+   'PYMODULE'),
+  ('pandas.core._numba.kernels.shared',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\_numba\\kernels\\shared.py',
+   'PYMODULE'),
+  ('pandas.core._numba.kernels.sum_',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\_numba\\kernels\\sum_.py',
+   'PYMODULE'),
+  ('pandas.core._numba.kernels.var_',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\_numba\\kernels\\var_.py',
+   'PYMODULE'),
+  ('pandas.core.accessor',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\accessor.py',
+   'PYMODULE'),
+  ('pandas.core.algorithms',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\algorithms.py',
+   'PYMODULE'),
+  ('pandas.core.api',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\api.py',
+   'PYMODULE'),
+  ('pandas.core.apply',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\apply.py',
+   'PYMODULE'),
+  ('pandas.core.array_algos',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\array_algos\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.array_algos.datetimelike_accumulations',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\array_algos\\datetimelike_accumulations.py',
+   'PYMODULE'),
+  ('pandas.core.array_algos.masked_accumulations',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\array_algos\\masked_accumulations.py',
+   'PYMODULE'),
+  ('pandas.core.array_algos.masked_reductions',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\array_algos\\masked_reductions.py',
+   'PYMODULE'),
+  ('pandas.core.array_algos.putmask',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\array_algos\\putmask.py',
+   'PYMODULE'),
+  ('pandas.core.array_algos.quantile',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\array_algos\\quantile.py',
+   'PYMODULE'),
+  ('pandas.core.array_algos.replace',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\array_algos\\replace.py',
+   'PYMODULE'),
+  ('pandas.core.array_algos.take',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\array_algos\\take.py',
+   'PYMODULE'),
+  ('pandas.core.array_algos.transforms',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\array_algos\\transforms.py',
+   'PYMODULE'),
+  ('pandas.core.arraylike',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\arraylike.py',
+   'PYMODULE'),
+  ('pandas.core.arrays',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\arrays\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.arrays._arrow_string_mixins',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\arrays\\_arrow_string_mixins.py',
+   'PYMODULE'),
+  ('pandas.core.arrays._mixins',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\arrays\\_mixins.py',
+   'PYMODULE'),
+  ('pandas.core.arrays._ranges',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\arrays\\_ranges.py',
+   'PYMODULE'),
+  ('pandas.core.arrays._utils',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\arrays\\_utils.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.arrow',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\arrays\\arrow\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.arrow._arrow_utils',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\arrays\\arrow\\_arrow_utils.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.arrow.accessors',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\arrays\\arrow\\accessors.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.arrow.array',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\arrays\\arrow\\array.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.arrow.extension_types',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\arrays\\arrow\\extension_types.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.base',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\arrays\\base.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.boolean',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\arrays\\boolean.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.categorical',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\arrays\\categorical.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.datetimelike',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\arrays\\datetimelike.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.datetimes',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\arrays\\datetimes.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.floating',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\arrays\\floating.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.integer',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\arrays\\integer.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.interval',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\arrays\\interval.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.masked',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\arrays\\masked.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.numeric',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\arrays\\numeric.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.numpy_',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\arrays\\numpy_.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.period',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\arrays\\period.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.sparse',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\arrays\\sparse\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.sparse.accessor',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\arrays\\sparse\\accessor.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.sparse.array',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\arrays\\sparse\\array.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.sparse.scipy_sparse',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\arrays\\sparse\\scipy_sparse.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.string_',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\arrays\\string_.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.string_arrow',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\arrays\\string_arrow.py',
+   'PYMODULE'),
+  ('pandas.core.arrays.timedeltas',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\arrays\\timedeltas.py',
+   'PYMODULE'),
+  ('pandas.core.base',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\base.py',
+   'PYMODULE'),
+  ('pandas.core.common',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\common.py',
+   'PYMODULE'),
+  ('pandas.core.computation',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\computation\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.computation.align',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\computation\\align.py',
+   'PYMODULE'),
+  ('pandas.core.computation.api',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\computation\\api.py',
+   'PYMODULE'),
+  ('pandas.core.computation.check',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\computation\\check.py',
+   'PYMODULE'),
+  ('pandas.core.computation.common',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\computation\\common.py',
+   'PYMODULE'),
+  ('pandas.core.computation.engines',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\computation\\engines.py',
+   'PYMODULE'),
+  ('pandas.core.computation.eval',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\computation\\eval.py',
+   'PYMODULE'),
+  ('pandas.core.computation.expr',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\computation\\expr.py',
+   'PYMODULE'),
+  ('pandas.core.computation.expressions',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\computation\\expressions.py',
+   'PYMODULE'),
+  ('pandas.core.computation.ops',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\computation\\ops.py',
+   'PYMODULE'),
+  ('pandas.core.computation.parsing',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\computation\\parsing.py',
+   'PYMODULE'),
+  ('pandas.core.computation.pytables',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\computation\\pytables.py',
+   'PYMODULE'),
+  ('pandas.core.computation.scope',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\computation\\scope.py',
+   'PYMODULE'),
+  ('pandas.core.config_init',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\config_init.py',
+   'PYMODULE'),
+  ('pandas.core.construction',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\construction.py',
+   'PYMODULE'),
+  ('pandas.core.dtypes',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\dtypes\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.dtypes.api',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\dtypes\\api.py',
+   'PYMODULE'),
+  ('pandas.core.dtypes.astype',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\dtypes\\astype.py',
+   'PYMODULE'),
+  ('pandas.core.dtypes.base',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\dtypes\\base.py',
+   'PYMODULE'),
+  ('pandas.core.dtypes.cast',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\dtypes\\cast.py',
+   'PYMODULE'),
+  ('pandas.core.dtypes.common',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\dtypes\\common.py',
+   'PYMODULE'),
+  ('pandas.core.dtypes.concat',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\dtypes\\concat.py',
+   'PYMODULE'),
+  ('pandas.core.dtypes.dtypes',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\dtypes\\dtypes.py',
+   'PYMODULE'),
+  ('pandas.core.dtypes.generic',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\dtypes\\generic.py',
+   'PYMODULE'),
+  ('pandas.core.dtypes.inference',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\dtypes\\inference.py',
+   'PYMODULE'),
+  ('pandas.core.dtypes.missing',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\dtypes\\missing.py',
+   'PYMODULE'),
+  ('pandas.core.flags',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\flags.py',
+   'PYMODULE'),
+  ('pandas.core.frame',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\frame.py',
+   'PYMODULE'),
+  ('pandas.core.generic',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\generic.py',
+   'PYMODULE'),
+  ('pandas.core.groupby',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\groupby\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.groupby.base',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\groupby\\base.py',
+   'PYMODULE'),
+  ('pandas.core.groupby.categorical',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\groupby\\categorical.py',
+   'PYMODULE'),
+  ('pandas.core.groupby.generic',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\groupby\\generic.py',
+   'PYMODULE'),
+  ('pandas.core.groupby.groupby',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\groupby\\groupby.py',
+   'PYMODULE'),
+  ('pandas.core.groupby.grouper',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\groupby\\grouper.py',
+   'PYMODULE'),
+  ('pandas.core.groupby.indexing',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\groupby\\indexing.py',
+   'PYMODULE'),
+  ('pandas.core.groupby.numba_',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\groupby\\numba_.py',
+   'PYMODULE'),
+  ('pandas.core.groupby.ops',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\groupby\\ops.py',
+   'PYMODULE'),
+  ('pandas.core.indexers',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\indexers\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.indexers.objects',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\indexers\\objects.py',
+   'PYMODULE'),
+  ('pandas.core.indexers.utils',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\indexers\\utils.py',
+   'PYMODULE'),
+  ('pandas.core.indexes',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\indexes\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.accessors',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\indexes\\accessors.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.api',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\indexes\\api.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.base',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\indexes\\base.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.category',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\indexes\\category.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.datetimelike',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\indexes\\datetimelike.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.datetimes',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\indexes\\datetimes.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.extension',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\indexes\\extension.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.frozen',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\indexes\\frozen.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.interval',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\indexes\\interval.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.multi',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\indexes\\multi.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.period',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\indexes\\period.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.range',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\indexes\\range.py',
+   'PYMODULE'),
+  ('pandas.core.indexes.timedeltas',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\indexes\\timedeltas.py',
+   'PYMODULE'),
+  ('pandas.core.indexing',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\indexing.py',
+   'PYMODULE'),
+  ('pandas.core.interchange',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\interchange\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.interchange.buffer',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\interchange\\buffer.py',
+   'PYMODULE'),
+  ('pandas.core.interchange.column',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\interchange\\column.py',
+   'PYMODULE'),
+  ('pandas.core.interchange.dataframe',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\interchange\\dataframe.py',
+   'PYMODULE'),
+  ('pandas.core.interchange.dataframe_protocol',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\interchange\\dataframe_protocol.py',
+   'PYMODULE'),
+  ('pandas.core.interchange.from_dataframe',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\interchange\\from_dataframe.py',
+   'PYMODULE'),
+  ('pandas.core.interchange.utils',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\interchange\\utils.py',
+   'PYMODULE'),
+  ('pandas.core.internals',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\internals\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.internals.api',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\internals\\api.py',
+   'PYMODULE'),
+  ('pandas.core.internals.array_manager',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\internals\\array_manager.py',
+   'PYMODULE'),
+  ('pandas.core.internals.base',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\internals\\base.py',
+   'PYMODULE'),
+  ('pandas.core.internals.blocks',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\internals\\blocks.py',
+   'PYMODULE'),
+  ('pandas.core.internals.concat',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\internals\\concat.py',
+   'PYMODULE'),
+  ('pandas.core.internals.construction',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\internals\\construction.py',
+   'PYMODULE'),
+  ('pandas.core.internals.managers',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\internals\\managers.py',
+   'PYMODULE'),
+  ('pandas.core.internals.ops',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\internals\\ops.py',
+   'PYMODULE'),
+  ('pandas.core.methods',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\methods\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.methods.describe',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\methods\\describe.py',
+   'PYMODULE'),
+  ('pandas.core.methods.selectn',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\methods\\selectn.py',
+   'PYMODULE'),
+  ('pandas.core.methods.to_dict',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\methods\\to_dict.py',
+   'PYMODULE'),
+  ('pandas.core.missing',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\missing.py',
+   'PYMODULE'),
+  ('pandas.core.nanops',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\nanops.py',
+   'PYMODULE'),
+  ('pandas.core.ops',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\ops\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.ops.array_ops',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\ops\\array_ops.py',
+   'PYMODULE'),
+  ('pandas.core.ops.common',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\ops\\common.py',
+   'PYMODULE'),
+  ('pandas.core.ops.dispatch',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\ops\\dispatch.py',
+   'PYMODULE'),
+  ('pandas.core.ops.docstrings',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\ops\\docstrings.py',
+   'PYMODULE'),
+  ('pandas.core.ops.invalid',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\ops\\invalid.py',
+   'PYMODULE'),
+  ('pandas.core.ops.mask_ops',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\ops\\mask_ops.py',
+   'PYMODULE'),
+  ('pandas.core.ops.missing',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\ops\\missing.py',
+   'PYMODULE'),
+  ('pandas.core.resample',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\resample.py',
+   'PYMODULE'),
+  ('pandas.core.reshape',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\reshape\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.reshape.api',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\reshape\\api.py',
+   'PYMODULE'),
+  ('pandas.core.reshape.concat',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\reshape\\concat.py',
+   'PYMODULE'),
+  ('pandas.core.reshape.encoding',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\reshape\\encoding.py',
+   'PYMODULE'),
+  ('pandas.core.reshape.melt',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\reshape\\melt.py',
+   'PYMODULE'),
+  ('pandas.core.reshape.merge',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\reshape\\merge.py',
+   'PYMODULE'),
+  ('pandas.core.reshape.pivot',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\reshape\\pivot.py',
+   'PYMODULE'),
+  ('pandas.core.reshape.reshape',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\reshape\\reshape.py',
+   'PYMODULE'),
+  ('pandas.core.reshape.tile',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\reshape\\tile.py',
+   'PYMODULE'),
+  ('pandas.core.reshape.util',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\reshape\\util.py',
+   'PYMODULE'),
+  ('pandas.core.roperator',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\roperator.py',
+   'PYMODULE'),
+  ('pandas.core.sample',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\sample.py',
+   'PYMODULE'),
+  ('pandas.core.series',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\series.py',
+   'PYMODULE'),
+  ('pandas.core.shared_docs',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\shared_docs.py',
+   'PYMODULE'),
+  ('pandas.core.sorting',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\sorting.py',
+   'PYMODULE'),
+  ('pandas.core.strings',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\strings\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.strings.accessor',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\strings\\accessor.py',
+   'PYMODULE'),
+  ('pandas.core.strings.base',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\strings\\base.py',
+   'PYMODULE'),
+  ('pandas.core.strings.object_array',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\strings\\object_array.py',
+   'PYMODULE'),
+  ('pandas.core.tools',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\tools\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.tools.datetimes',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\tools\\datetimes.py',
+   'PYMODULE'),
+  ('pandas.core.tools.numeric',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\tools\\numeric.py',
+   'PYMODULE'),
+  ('pandas.core.tools.timedeltas',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\tools\\timedeltas.py',
+   'PYMODULE'),
+  ('pandas.core.tools.times',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\tools\\times.py',
+   'PYMODULE'),
+  ('pandas.core.util',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\util\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.util.hashing',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\util\\hashing.py',
+   'PYMODULE'),
+  ('pandas.core.util.numba_',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\util\\numba_.py',
+   'PYMODULE'),
+  ('pandas.core.window',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\window\\__init__.py',
+   'PYMODULE'),
+  ('pandas.core.window.common',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\window\\common.py',
+   'PYMODULE'),
+  ('pandas.core.window.doc',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\window\\doc.py',
+   'PYMODULE'),
+  ('pandas.core.window.ewm',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\window\\ewm.py',
+   'PYMODULE'),
+  ('pandas.core.window.expanding',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\window\\expanding.py',
+   'PYMODULE'),
+  ('pandas.core.window.numba_',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\window\\numba_.py',
+   'PYMODULE'),
+  ('pandas.core.window.online',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\window\\online.py',
+   'PYMODULE'),
+  ('pandas.core.window.rolling',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\core\\window\\rolling.py',
+   'PYMODULE'),
+  ('pandas.errors',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\errors\\__init__.py',
+   'PYMODULE'),
+  ('pandas.io',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\io\\__init__.py',
+   'PYMODULE'),
+  ('pandas.io._util',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\io\\_util.py',
+   'PYMODULE'),
+  ('pandas.io.api',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\io\\api.py',
+   'PYMODULE'),
+  ('pandas.io.clipboard',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\io\\clipboard\\__init__.py',
+   'PYMODULE'),
+  ('pandas.io.clipboards',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\io\\clipboards.py',
+   'PYMODULE'),
+  ('pandas.io.common',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\io\\common.py',
+   'PYMODULE'),
+  ('pandas.io.excel',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\io\\excel\\__init__.py',
+   'PYMODULE'),
+  ('pandas.io.excel._base',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\io\\excel\\_base.py',
+   'PYMODULE'),
+  ('pandas.io.excel._calamine',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\io\\excel\\_calamine.py',
+   'PYMODULE'),
+  ('pandas.io.excel._odfreader',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\io\\excel\\_odfreader.py',
+   'PYMODULE'),
+  ('pandas.io.excel._odswriter',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\io\\excel\\_odswriter.py',
+   'PYMODULE'),
+  ('pandas.io.excel._openpyxl',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\io\\excel\\_openpyxl.py',
+   'PYMODULE'),
+  ('pandas.io.excel._pyxlsb',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\io\\excel\\_pyxlsb.py',
+   'PYMODULE'),
+  ('pandas.io.excel._util',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\io\\excel\\_util.py',
+   'PYMODULE'),
+  ('pandas.io.excel._xlrd',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\io\\excel\\_xlrd.py',
+   'PYMODULE'),
+  ('pandas.io.excel._xlsxwriter',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\io\\excel\\_xlsxwriter.py',
+   'PYMODULE'),
+  ('pandas.io.feather_format',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\io\\feather_format.py',
+   'PYMODULE'),
+  ('pandas.io.formats',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\io\\formats\\__init__.py',
+   'PYMODULE'),
+  ('pandas.io.formats._color_data',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\io\\formats\\_color_data.py',
+   'PYMODULE'),
+  ('pandas.io.formats.console',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\io\\formats\\console.py',
+   'PYMODULE'),
+  ('pandas.io.formats.css',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\io\\formats\\css.py',
+   'PYMODULE'),
+  ('pandas.io.formats.csvs',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\io\\formats\\csvs.py',
+   'PYMODULE'),
+  ('pandas.io.formats.excel',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\io\\formats\\excel.py',
+   'PYMODULE'),
+  ('pandas.io.formats.format',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\io\\formats\\format.py',
+   'PYMODULE'),
+  ('pandas.io.formats.html',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\io\\formats\\html.py',
+   'PYMODULE'),
+  ('pandas.io.formats.info',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\io\\formats\\info.py',
+   'PYMODULE'),
+  ('pandas.io.formats.printing',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\io\\formats\\printing.py',
+   'PYMODULE'),
+  ('pandas.io.formats.string',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\io\\formats\\string.py',
+   'PYMODULE'),
+  ('pandas.io.formats.style',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\io\\formats\\style.py',
+   'PYMODULE'),
+  ('pandas.io.formats.style_render',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\io\\formats\\style_render.py',
+   'PYMODULE'),
+  ('pandas.io.formats.xml',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\io\\formats\\xml.py',
+   'PYMODULE'),
+  ('pandas.io.gbq',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\io\\gbq.py',
+   'PYMODULE'),
+  ('pandas.io.html',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\io\\html.py',
+   'PYMODULE'),
+  ('pandas.io.json',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\io\\json\\__init__.py',
+   'PYMODULE'),
+  ('pandas.io.json._json',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\io\\json\\_json.py',
+   'PYMODULE'),
+  ('pandas.io.json._normalize',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\io\\json\\_normalize.py',
+   'PYMODULE'),
+  ('pandas.io.json._table_schema',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\io\\json\\_table_schema.py',
+   'PYMODULE'),
+  ('pandas.io.orc',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\io\\orc.py',
+   'PYMODULE'),
+  ('pandas.io.parquet',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\io\\parquet.py',
+   'PYMODULE'),
+  ('pandas.io.parsers',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\io\\parsers\\__init__.py',
+   'PYMODULE'),
+  ('pandas.io.parsers.arrow_parser_wrapper',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\io\\parsers\\arrow_parser_wrapper.py',
+   'PYMODULE'),
+  ('pandas.io.parsers.base_parser',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\io\\parsers\\base_parser.py',
+   'PYMODULE'),
+  ('pandas.io.parsers.c_parser_wrapper',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\io\\parsers\\c_parser_wrapper.py',
+   'PYMODULE'),
+  ('pandas.io.parsers.python_parser',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\io\\parsers\\python_parser.py',
+   'PYMODULE'),
+  ('pandas.io.parsers.readers',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\io\\parsers\\readers.py',
+   'PYMODULE'),
+  ('pandas.io.pickle',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\io\\pickle.py',
+   'PYMODULE'),
+  ('pandas.io.pytables',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\io\\pytables.py',
+   'PYMODULE'),
+  ('pandas.io.sas',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\io\\sas\\__init__.py',
+   'PYMODULE'),
+  ('pandas.io.sas.sas7bdat',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\io\\sas\\sas7bdat.py',
+   'PYMODULE'),
+  ('pandas.io.sas.sas_constants',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\io\\sas\\sas_constants.py',
+   'PYMODULE'),
+  ('pandas.io.sas.sas_xport',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\io\\sas\\sas_xport.py',
+   'PYMODULE'),
+  ('pandas.io.sas.sasreader',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\io\\sas\\sasreader.py',
+   'PYMODULE'),
+  ('pandas.io.spss',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\io\\spss.py',
+   'PYMODULE'),
+  ('pandas.io.sql',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\io\\sql.py',
+   'PYMODULE'),
+  ('pandas.io.stata',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\io\\stata.py',
+   'PYMODULE'),
+  ('pandas.io.xml',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\io\\xml.py',
+   'PYMODULE'),
+  ('pandas.plotting',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\plotting\\__init__.py',
+   'PYMODULE'),
+  ('pandas.plotting._core',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\plotting\\_core.py',
+   'PYMODULE'),
+  ('pandas.plotting._matplotlib',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\plotting\\_matplotlib\\__init__.py',
+   'PYMODULE'),
+  ('pandas.plotting._matplotlib.boxplot',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\plotting\\_matplotlib\\boxplot.py',
+   'PYMODULE'),
+  ('pandas.plotting._matplotlib.converter',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\plotting\\_matplotlib\\converter.py',
+   'PYMODULE'),
+  ('pandas.plotting._matplotlib.core',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\plotting\\_matplotlib\\core.py',
+   'PYMODULE'),
+  ('pandas.plotting._matplotlib.groupby',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\plotting\\_matplotlib\\groupby.py',
+   'PYMODULE'),
+  ('pandas.plotting._matplotlib.hist',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\plotting\\_matplotlib\\hist.py',
+   'PYMODULE'),
+  ('pandas.plotting._matplotlib.misc',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\plotting\\_matplotlib\\misc.py',
+   'PYMODULE'),
+  ('pandas.plotting._matplotlib.style',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\plotting\\_matplotlib\\style.py',
+   'PYMODULE'),
+  ('pandas.plotting._matplotlib.timeseries',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\plotting\\_matplotlib\\timeseries.py',
+   'PYMODULE'),
+  ('pandas.plotting._matplotlib.tools',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\plotting\\_matplotlib\\tools.py',
+   'PYMODULE'),
+  ('pandas.plotting._misc',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\plotting\\_misc.py',
+   'PYMODULE'),
+  ('pandas.testing',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\testing.py',
+   'PYMODULE'),
+  ('pandas.tseries',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\tseries\\__init__.py',
+   'PYMODULE'),
+  ('pandas.tseries.api',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\tseries\\api.py',
+   'PYMODULE'),
+  ('pandas.tseries.frequencies',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\tseries\\frequencies.py',
+   'PYMODULE'),
+  ('pandas.tseries.holiday',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\tseries\\holiday.py',
+   'PYMODULE'),
+  ('pandas.tseries.offsets',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\tseries\\offsets.py',
+   'PYMODULE'),
+  ('pandas.util',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\util\\__init__.py',
+   'PYMODULE'),
+  ('pandas.util._decorators',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\util\\_decorators.py',
+   'PYMODULE'),
+  ('pandas.util._exceptions',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\util\\_exceptions.py',
+   'PYMODULE'),
+  ('pandas.util._print_versions',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\util\\_print_versions.py',
+   'PYMODULE'),
+  ('pandas.util._tester',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\util\\_tester.py',
+   'PYMODULE'),
+  ('pandas.util._validators',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\util\\_validators.py',
+   'PYMODULE'),
+  ('pandas.util.version',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pandas\\util\\version\\__init__.py',
+   'PYMODULE'),
   ('pathlib', 'C:\\Python313\\Lib\\pathlib\\__init__.py', 'PYMODULE'),
   ('pathlib._abc', 'C:\\Python313\\Lib\\pathlib\\_abc.py', 'PYMODULE'),
   ('pathlib._local', 'C:\\Python313\\Lib\\pathlib\\_local.py', 'PYMODULE'),
+  ('pdb', 'C:\\Python313\\Lib\\pdb.py', 'PYMODULE'),
   ('pickle', 'C:\\Python313\\Lib\\pickle.py', 'PYMODULE'),
+  ('pickletools', 'C:\\Python313\\Lib\\pickletools.py', 'PYMODULE'),
+  ('pkgutil', 'C:\\Python313\\Lib\\pkgutil.py', 'PYMODULE'),
+  ('platform', 'C:\\Python313\\Lib\\platform.py', 'PYMODULE'),
+  ('plistlib', 'C:\\Python313\\Lib\\plistlib.py', 'PYMODULE'),
   ('pprint', 'C:\\Python313\\Lib\\pprint.py', 'PYMODULE'),
   ('py_compile', 'C:\\Python313\\Lib\\py_compile.py', 'PYMODULE'),
+  ('pydoc', 'C:\\Python313\\Lib\\pydoc.py', 'PYMODULE'),
+  ('pydoc_data', 'C:\\Python313\\Lib\\pydoc_data\\__init__.py', 'PYMODULE'),
+  ('pydoc_data.topics',
+   'C:\\Python313\\Lib\\pydoc_data\\topics.py',
+   'PYMODULE'),
+  ('pyparsing',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pyparsing\\__init__.py',
+   'PYMODULE'),
+  ('pyparsing.actions',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pyparsing\\actions.py',
+   'PYMODULE'),
+  ('pyparsing.common',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pyparsing\\common.py',
+   'PYMODULE'),
+  ('pyparsing.core',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pyparsing\\core.py',
+   'PYMODULE'),
+  ('pyparsing.diagram',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pyparsing\\diagram\\__init__.py',
+   'PYMODULE'),
+  ('pyparsing.exceptions',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pyparsing\\exceptions.py',
+   'PYMODULE'),
+  ('pyparsing.helpers',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pyparsing\\helpers.py',
+   'PYMODULE'),
+  ('pyparsing.results',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pyparsing\\results.py',
+   'PYMODULE'),
+  ('pyparsing.testing',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pyparsing\\testing.py',
+   'PYMODULE'),
+  ('pyparsing.unicode',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pyparsing\\unicode.py',
+   'PYMODULE'),
+  ('pyparsing.util',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pyparsing\\util.py',
+   'PYMODULE'),
+  ('pytz',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pytz\\__init__.py',
+   'PYMODULE'),
+  ('pytz.exceptions',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pytz\\exceptions.py',
+   'PYMODULE'),
+  ('pytz.lazy',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pytz\\lazy.py',
+   'PYMODULE'),
+  ('pytz.tzfile',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pytz\\tzfile.py',
+   'PYMODULE'),
+  ('pytz.tzinfo',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\pytz\\tzinfo.py',
+   'PYMODULE'),
+  ('queue', 'C:\\Python313\\Lib\\queue.py', 'PYMODULE'),
   ('quopri', 'C:\\Python313\\Lib\\quopri.py', 'PYMODULE'),
   ('random', 'C:\\Python313\\Lib\\random.py', 'PYMODULE'),
+  ('rlcompleter', 'C:\\Python313\\Lib\\rlcompleter.py', 'PYMODULE'),
+  ('runpy', 'C:\\Python313\\Lib\\runpy.py', 'PYMODULE'),
+  ('secrets', 'C:\\Python313\\Lib\\secrets.py', 'PYMODULE'),
   ('selectors', 'C:\\Python313\\Lib\\selectors.py', 'PYMODULE'),
+  ('setuptools',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._core_metadata',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_core_metadata.py',
+   'PYMODULE'),
+  ('setuptools._discovery',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_discovery.py',
+   'PYMODULE'),
+  ('setuptools._distutils',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_distutils\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._distutils._log',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_distutils\\_log.py',
+   'PYMODULE'),
+  ('setuptools._distutils._modified',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_distutils\\_modified.py',
+   'PYMODULE'),
+  ('setuptools._distutils._msvccompiler',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_distutils\\_msvccompiler.py',
+   'PYMODULE'),
+  ('setuptools._distutils.archive_util',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_distutils\\archive_util.py',
+   'PYMODULE'),
+  ('setuptools._distutils.ccompiler',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_distutils\\ccompiler.py',
+   'PYMODULE'),
+  ('setuptools._distutils.cmd',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_distutils\\cmd.py',
+   'PYMODULE'),
+  ('setuptools._distutils.command',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_distutils\\command\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._distutils.command.bdist',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_distutils\\command\\bdist.py',
+   'PYMODULE'),
+  ('setuptools._distutils.command.build',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_distutils\\command\\build.py',
+   'PYMODULE'),
+  ('setuptools._distutils.command.build_ext',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_distutils\\command\\build_ext.py',
+   'PYMODULE'),
+  ('setuptools._distutils.command.sdist',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_distutils\\command\\sdist.py',
+   'PYMODULE'),
+  ('setuptools._distutils.compat',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_distutils\\compat\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._distutils.compat.numpy',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_distutils\\compat\\numpy.py',
+   'PYMODULE'),
+  ('setuptools._distutils.compat.py39',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_distutils\\compat\\py39.py',
+   'PYMODULE'),
+  ('setuptools._distutils.compilers', '-', 'PYMODULE'),
+  ('setuptools._distutils.compilers.C', '-', 'PYMODULE'),
+  ('setuptools._distutils.compilers.C.base',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_distutils\\compilers\\C\\base.py',
+   'PYMODULE'),
+  ('setuptools._distutils.compilers.C.errors',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_distutils\\compilers\\C\\errors.py',
+   'PYMODULE'),
+  ('setuptools._distutils.compilers.C.msvc',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_distutils\\compilers\\C\\msvc.py',
+   'PYMODULE'),
+  ('setuptools._distutils.core',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_distutils\\core.py',
+   'PYMODULE'),
+  ('setuptools._distutils.debug',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_distutils\\debug.py',
+   'PYMODULE'),
+  ('setuptools._distutils.dir_util',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_distutils\\dir_util.py',
+   'PYMODULE'),
+  ('setuptools._distutils.dist',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_distutils\\dist.py',
+   'PYMODULE'),
+  ('setuptools._distutils.errors',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_distutils\\errors.py',
+   'PYMODULE'),
+  ('setuptools._distutils.extension',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_distutils\\extension.py',
+   'PYMODULE'),
+  ('setuptools._distutils.fancy_getopt',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_distutils\\fancy_getopt.py',
+   'PYMODULE'),
+  ('setuptools._distutils.file_util',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_distutils\\file_util.py',
+   'PYMODULE'),
+  ('setuptools._distutils.filelist',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_distutils\\filelist.py',
+   'PYMODULE'),
+  ('setuptools._distutils.log',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_distutils\\log.py',
+   'PYMODULE'),
+  ('setuptools._distutils.spawn',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_distutils\\spawn.py',
+   'PYMODULE'),
+  ('setuptools._distutils.sysconfig',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_distutils\\sysconfig.py',
+   'PYMODULE'),
+  ('setuptools._distutils.text_file',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_distutils\\text_file.py',
+   'PYMODULE'),
+  ('setuptools._distutils.util',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_distutils\\util.py',
+   'PYMODULE'),
+  ('setuptools._distutils.version',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_distutils\\version.py',
+   'PYMODULE'),
+  ('setuptools._distutils.versionpredicate',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_distutils\\versionpredicate.py',
+   'PYMODULE'),
+  ('setuptools._entry_points',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_entry_points.py',
+   'PYMODULE'),
+  ('setuptools._imp',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_imp.py',
+   'PYMODULE'),
+  ('setuptools._importlib',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_importlib.py',
+   'PYMODULE'),
+  ('setuptools._itertools',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_itertools.py',
+   'PYMODULE'),
+  ('setuptools._normalization',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_normalization.py',
+   'PYMODULE'),
+  ('setuptools._path',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_path.py',
+   'PYMODULE'),
+  ('setuptools._reqs',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_reqs.py',
+   'PYMODULE'),
+  ('setuptools._shutil',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_shutil.py',
+   'PYMODULE'),
+  ('setuptools._static',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_static.py',
+   'PYMODULE'),
+  ('setuptools._vendor', '-', 'PYMODULE'),
+  ('setuptools._vendor.backports',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\backports\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._vendor.backports.tarfile',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\backports\\tarfile\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._vendor.backports.tarfile.compat',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\backports\\tarfile\\compat\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._vendor.backports.tarfile.compat.py38',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\backports\\tarfile\\compat\\py38.py',
+   'PYMODULE'),
+  ('setuptools._vendor.importlib_metadata',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._vendor.importlib_metadata._adapters',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata\\_adapters.py',
+   'PYMODULE'),
+  ('setuptools._vendor.importlib_metadata._collections',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata\\_collections.py',
+   'PYMODULE'),
+  ('setuptools._vendor.importlib_metadata._compat',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata\\_compat.py',
+   'PYMODULE'),
+  ('setuptools._vendor.importlib_metadata._functools',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata\\_functools.py',
+   'PYMODULE'),
+  ('setuptools._vendor.importlib_metadata._itertools',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata\\_itertools.py',
+   'PYMODULE'),
+  ('setuptools._vendor.importlib_metadata._meta',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata\\_meta.py',
+   'PYMODULE'),
+  ('setuptools._vendor.importlib_metadata._text',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata\\_text.py',
+   'PYMODULE'),
+  ('setuptools._vendor.importlib_metadata.compat',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata\\compat\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._vendor.importlib_metadata.compat.py311',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata\\compat\\py311.py',
+   'PYMODULE'),
+  ('setuptools._vendor.importlib_metadata.compat.py39',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\importlib_metadata\\compat\\py39.py',
+   'PYMODULE'),
+  ('setuptools._vendor.jaraco', '-', 'PYMODULE'),
+  ('setuptools._vendor.jaraco.context',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\jaraco\\context.py',
+   'PYMODULE'),
+  ('setuptools._vendor.jaraco.functools',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\jaraco\\functools\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._vendor.jaraco.text',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\jaraco\\text\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._vendor.more_itertools',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\more_itertools\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._vendor.more_itertools.more',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\more_itertools\\more.py',
+   'PYMODULE'),
+  ('setuptools._vendor.more_itertools.recipes',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\more_itertools\\recipes.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging._elffile',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\_elffile.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging._manylinux',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\_manylinux.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging._musllinux',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\_musllinux.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging._parser',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\_parser.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging._structures',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\_structures.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging._tokenizer',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\_tokenizer.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging.markers',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\markers.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging.requirements',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\requirements.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging.specifiers',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\specifiers.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging.tags',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\tags.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging.utils',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\utils.py',
+   'PYMODULE'),
+  ('setuptools._vendor.packaging.version',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\packaging\\version.py',
+   'PYMODULE'),
+  ('setuptools._vendor.tomli',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\tomli\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._vendor.tomli._parser',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\tomli\\_parser.py',
+   'PYMODULE'),
+  ('setuptools._vendor.tomli._re',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\tomli\\_re.py',
+   'PYMODULE'),
+  ('setuptools._vendor.tomli._types',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\tomli\\_types.py',
+   'PYMODULE'),
+  ('setuptools._vendor.typing_extensions',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\typing_extensions.py',
+   'PYMODULE'),
+  ('setuptools._vendor.wheel',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._vendor.wheel.cli',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\cli\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._vendor.wheel.cli.convert',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\cli\\convert.py',
+   'PYMODULE'),
+  ('setuptools._vendor.wheel.cli.pack',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\cli\\pack.py',
+   'PYMODULE'),
+  ('setuptools._vendor.wheel.cli.tags',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\cli\\tags.py',
+   'PYMODULE'),
+  ('setuptools._vendor.wheel.cli.unpack',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\cli\\unpack.py',
+   'PYMODULE'),
+  ('setuptools._vendor.wheel.macosx_libfile',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\macosx_libfile.py',
+   'PYMODULE'),
+  ('setuptools._vendor.wheel.metadata',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\metadata.py',
+   'PYMODULE'),
+  ('setuptools._vendor.wheel.util',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\util.py',
+   'PYMODULE'),
+  ('setuptools._vendor.wheel.vendored',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\vendored\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._vendor.wheel.vendored.packaging',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\vendored\\packaging\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._vendor.wheel.vendored.packaging._elffile',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\vendored\\packaging\\_elffile.py',
+   'PYMODULE'),
+  ('setuptools._vendor.wheel.vendored.packaging._manylinux',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\vendored\\packaging\\_manylinux.py',
+   'PYMODULE'),
+  ('setuptools._vendor.wheel.vendored.packaging._musllinux',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\vendored\\packaging\\_musllinux.py',
+   'PYMODULE'),
+  ('setuptools._vendor.wheel.vendored.packaging._parser',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\vendored\\packaging\\_parser.py',
+   'PYMODULE'),
+  ('setuptools._vendor.wheel.vendored.packaging._structures',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\vendored\\packaging\\_structures.py',
+   'PYMODULE'),
+  ('setuptools._vendor.wheel.vendored.packaging._tokenizer',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\vendored\\packaging\\_tokenizer.py',
+   'PYMODULE'),
+  ('setuptools._vendor.wheel.vendored.packaging.markers',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\vendored\\packaging\\markers.py',
+   'PYMODULE'),
+  ('setuptools._vendor.wheel.vendored.packaging.requirements',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\vendored\\packaging\\requirements.py',
+   'PYMODULE'),
+  ('setuptools._vendor.wheel.vendored.packaging.specifiers',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\vendored\\packaging\\specifiers.py',
+   'PYMODULE'),
+  ('setuptools._vendor.wheel.vendored.packaging.tags',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\vendored\\packaging\\tags.py',
+   'PYMODULE'),
+  ('setuptools._vendor.wheel.vendored.packaging.utils',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\vendored\\packaging\\utils.py',
+   'PYMODULE'),
+  ('setuptools._vendor.wheel.vendored.packaging.version',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\vendored\\packaging\\version.py',
+   'PYMODULE'),
+  ('setuptools._vendor.wheel.wheelfile',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\wheel\\wheelfile.py',
+   'PYMODULE'),
+  ('setuptools._vendor.zipp',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\zipp\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._vendor.zipp.compat',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\zipp\\compat\\__init__.py',
+   'PYMODULE'),
+  ('setuptools._vendor.zipp.compat.py310',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\zipp\\compat\\py310.py',
+   'PYMODULE'),
+  ('setuptools._vendor.zipp.glob',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\_vendor\\zipp\\glob.py',
+   'PYMODULE'),
+  ('setuptools.archive_util',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\archive_util.py',
+   'PYMODULE'),
+  ('setuptools.command',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\command\\__init__.py',
+   'PYMODULE'),
+  ('setuptools.command._requirestxt',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\command\\_requirestxt.py',
+   'PYMODULE'),
+  ('setuptools.command.bdist_egg',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\command\\bdist_egg.py',
+   'PYMODULE'),
+  ('setuptools.command.bdist_wheel',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\command\\bdist_wheel.py',
+   'PYMODULE'),
+  ('setuptools.command.build',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\command\\build.py',
+   'PYMODULE'),
+  ('setuptools.command.egg_info',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\command\\egg_info.py',
+   'PYMODULE'),
+  ('setuptools.command.sdist',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\command\\sdist.py',
+   'PYMODULE'),
+  ('setuptools.command.setopt',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\command\\setopt.py',
+   'PYMODULE'),
+  ('setuptools.compat',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\compat\\__init__.py',
+   'PYMODULE'),
+  ('setuptools.compat.py310',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\compat\\py310.py',
+   'PYMODULE'),
+  ('setuptools.compat.py311',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\compat\\py311.py',
+   'PYMODULE'),
+  ('setuptools.compat.py39',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\compat\\py39.py',
+   'PYMODULE'),
+  ('setuptools.config',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\config\\__init__.py',
+   'PYMODULE'),
+  ('setuptools.config._apply_pyprojecttoml',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\config\\_apply_pyprojecttoml.py',
+   'PYMODULE'),
+  ('setuptools.config._validate_pyproject',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\config\\_validate_pyproject\\__init__.py',
+   'PYMODULE'),
+  ('setuptools.config._validate_pyproject.error_reporting',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\config\\_validate_pyproject\\error_reporting.py',
+   'PYMODULE'),
+  ('setuptools.config._validate_pyproject.extra_validations',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\config\\_validate_pyproject\\extra_validations.py',
+   'PYMODULE'),
+  ('setuptools.config._validate_pyproject.fastjsonschema_exceptions',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\config\\_validate_pyproject\\fastjsonschema_exceptions.py',
+   'PYMODULE'),
+  ('setuptools.config._validate_pyproject.fastjsonschema_validations',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\config\\_validate_pyproject\\fastjsonschema_validations.py',
+   'PYMODULE'),
+  ('setuptools.config._validate_pyproject.formats',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\config\\_validate_pyproject\\formats.py',
+   'PYMODULE'),
+  ('setuptools.config.expand',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\config\\expand.py',
+   'PYMODULE'),
+  ('setuptools.config.pyprojecttoml',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\config\\pyprojecttoml.py',
+   'PYMODULE'),
+  ('setuptools.config.setupcfg',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\config\\setupcfg.py',
+   'PYMODULE'),
+  ('setuptools.depends',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\depends.py',
+   'PYMODULE'),
+  ('setuptools.discovery',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\discovery.py',
+   'PYMODULE'),
+  ('setuptools.dist',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\dist.py',
+   'PYMODULE'),
+  ('setuptools.errors',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\errors.py',
+   'PYMODULE'),
+  ('setuptools.extension',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\extension.py',
+   'PYMODULE'),
+  ('setuptools.glob',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\glob.py',
+   'PYMODULE'),
+  ('setuptools.installer',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\installer.py',
+   'PYMODULE'),
+  ('setuptools.logging',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\logging.py',
+   'PYMODULE'),
+  ('setuptools.monkey',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\monkey.py',
+   'PYMODULE'),
+  ('setuptools.msvc',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\msvc.py',
+   'PYMODULE'),
+  ('setuptools.unicode_utils',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\unicode_utils.py',
+   'PYMODULE'),
+  ('setuptools.version',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\version.py',
+   'PYMODULE'),
+  ('setuptools.warnings',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\warnings.py',
+   'PYMODULE'),
+  ('setuptools.wheel',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\wheel.py',
+   'PYMODULE'),
+  ('setuptools.windows_support',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\setuptools\\windows_support.py',
+   'PYMODULE'),
+  ('shlex', 'C:\\Python313\\Lib\\shlex.py', 'PYMODULE'),
   ('shutil', 'C:\\Python313\\Lib\\shutil.py', 'PYMODULE'),
   ('signal', 'C:\\Python313\\Lib\\signal.py', 'PYMODULE'),
+  ('site', 'C:\\Python313\\Lib\\site.py', 'PYMODULE'),
+  ('six',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\six.py',
+   'PYMODULE'),
   ('socket', 'C:\\Python313\\Lib\\socket.py', 'PYMODULE'),
+  ('socketserver', 'C:\\Python313\\Lib\\socketserver.py', 'PYMODULE'),
+  ('sqlite3', 'C:\\Python313\\Lib\\sqlite3\\__init__.py', 'PYMODULE'),
+  ('sqlite3.__main__', 'C:\\Python313\\Lib\\sqlite3\\__main__.py', 'PYMODULE'),
+  ('sqlite3.dbapi2', 'C:\\Python313\\Lib\\sqlite3\\dbapi2.py', 'PYMODULE'),
+  ('sqlite3.dump', 'C:\\Python313\\Lib\\sqlite3\\dump.py', 'PYMODULE'),
+  ('ssl', 'C:\\Python313\\Lib\\ssl.py', 'PYMODULE'),
   ('statistics', 'C:\\Python313\\Lib\\statistics.py', 'PYMODULE'),
   ('string', 'C:\\Python313\\Lib\\string.py', 'PYMODULE'),
   ('stringprep', 'C:\\Python313\\Lib\\stringprep.py', 'PYMODULE'),
   ('subprocess', 'C:\\Python313\\Lib\\subprocess.py', 'PYMODULE'),
+  ('sysconfig', 'C:\\Python313\\Lib\\sysconfig\\__init__.py', 'PYMODULE'),
   ('tarfile', 'C:\\Python313\\Lib\\tarfile.py', 'PYMODULE'),
   ('tempfile', 'C:\\Python313\\Lib\\tempfile.py', 'PYMODULE'),
   ('textwrap', 'C:\\Python313\\Lib\\textwrap.py', 'PYMODULE'),
   ('threading', 'C:\\Python313\\Lib\\threading.py', 'PYMODULE'),
+  ('tkinter', 'C:\\Python313\\Lib\\tkinter\\__init__.py', 'PYMODULE'),
+  ('tkinter.commondialog',
+   'C:\\Python313\\Lib\\tkinter\\commondialog.py',
+   'PYMODULE'),
+  ('tkinter.constants',
+   'C:\\Python313\\Lib\\tkinter\\constants.py',
+   'PYMODULE'),
+  ('tkinter.dialog', 'C:\\Python313\\Lib\\tkinter\\dialog.py', 'PYMODULE'),
+  ('tkinter.filedialog',
+   'C:\\Python313\\Lib\\tkinter\\filedialog.py',
+   'PYMODULE'),
+  ('tkinter.font', 'C:\\Python313\\Lib\\tkinter\\font.py', 'PYMODULE'),
+  ('tkinter.messagebox',
+   'C:\\Python313\\Lib\\tkinter\\messagebox.py',
+   'PYMODULE'),
+  ('tkinter.simpledialog',
+   'C:\\Python313\\Lib\\tkinter\\simpledialog.py',
+   'PYMODULE'),
   ('token', 'C:\\Python313\\Lib\\token.py', 'PYMODULE'),
   ('tokenize', 'C:\\Python313\\Lib\\tokenize.py', 'PYMODULE'),
+  ('tomllib', 'C:\\Python313\\Lib\\tomllib\\__init__.py', 'PYMODULE'),
+  ('tomllib._parser', 'C:\\Python313\\Lib\\tomllib\\_parser.py', 'PYMODULE'),
+  ('tomllib._re', 'C:\\Python313\\Lib\\tomllib\\_re.py', 'PYMODULE'),
+  ('tomllib._types', 'C:\\Python313\\Lib\\tomllib\\_types.py', 'PYMODULE'),
+  ('tqdm',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\tqdm\\__init__.py',
+   'PYMODULE'),
+  ('tqdm._dist_ver',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\tqdm\\_dist_ver.py',
+   'PYMODULE'),
+  ('tqdm._monitor',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\tqdm\\_monitor.py',
+   'PYMODULE'),
+  ('tqdm._tqdm_pandas',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\tqdm\\_tqdm_pandas.py',
+   'PYMODULE'),
+  ('tqdm.cli',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\tqdm\\cli.py',
+   'PYMODULE'),
+  ('tqdm.gui',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\tqdm\\gui.py',
+   'PYMODULE'),
+  ('tqdm.notebook',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\tqdm\\notebook.py',
+   'PYMODULE'),
+  ('tqdm.std',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\tqdm\\std.py',
+   'PYMODULE'),
+  ('tqdm.utils',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\tqdm\\utils.py',
+   'PYMODULE'),
+  ('tqdm.version',
+   'D:\\code\\repos\\RL Value Based '
+   'Methods\\RL-Value-Based-Methods\\myenv\\Lib\\site-packages\\tqdm\\version.py',
+   'PYMODULE'),
   ('tracemalloc', 'C:\\Python313\\Lib\\tracemalloc.py', 'PYMODULE'),
   ('train',
    'D:\\code\\repos\\RL Value Based Methods\\RL-Value-Based-Methods\\train.py',
@@ -199,9 +3873,27 @@
    'D:\\code\\repos\\RL Value Based '
    'Methods\\RL-Value-Based-Methods\\train_test.py',
    'PYMODULE'),
+  ('tty', 'C:\\Python313\\Lib\\tty.py', 'PYMODULE'),
   ('typing', 'C:\\Python313\\Lib\\typing.py', 'PYMODULE'),
+  ('unittest', 'C:\\Python313\\Lib\\unittest\\__init__.py', 'PYMODULE'),
+  ('unittest._log', 'C:\\Python313\\Lib\\unittest\\_log.py', 'PYMODULE'),
+  ('unittest.async_case',
+   'C:\\Python313\\Lib\\unittest\\async_case.py',
+   'PYMODULE'),
+  ('unittest.case', 'C:\\Python313\\Lib\\unittest\\case.py', 'PYMODULE'),
+  ('unittest.loader', 'C:\\Python313\\Lib\\unittest\\loader.py', 'PYMODULE'),
+  ('unittest.main', 'C:\\Python313\\Lib\\unittest\\main.py', 'PYMODULE'),
+  ('unittest.mock', 'C:\\Python313\\Lib\\unittest\\mock.py', 'PYMODULE'),
+  ('unittest.result', 'C:\\Python313\\Lib\\unittest\\result.py', 'PYMODULE'),
+  ('unittest.runner', 'C:\\Python313\\Lib\\unittest\\runner.py', 'PYMODULE'),
+  ('unittest.signals', 'C:\\Python313\\Lib\\unittest\\signals.py', 'PYMODULE'),
+  ('unittest.suite', 'C:\\Python313\\Lib\\unittest\\suite.py', 'PYMODULE'),
+  ('unittest.util', 'C:\\Python313\\Lib\\unittest\\util.py', 'PYMODULE'),
   ('urllib', 'C:\\Python313\\Lib\\urllib\\__init__.py', 'PYMODULE'),
+  ('urllib.error', 'C:\\Python313\\Lib\\urllib\\error.py', 'PYMODULE'),
   ('urllib.parse', 'C:\\Python313\\Lib\\urllib\\parse.py', 'PYMODULE'),
+  ('urllib.request', 'C:\\Python313\\Lib\\urllib\\request.py', 'PYMODULE'),
+  ('urllib.response', 'C:\\Python313\\Lib\\urllib\\response.py', 'PYMODULE'),
   ('utils', '-', 'PYMODULE'),
   ('utils.discounted_reward',
    'D:\\code\\repos\\RL Value Based '
@@ -211,14 +3903,65 @@
    'D:\\code\\repos\\RL Value Based '
    'Methods\\RL-Value-Based-Methods\\utils\\generate_q_table.py',
    'PYMODULE'),
+  ('uuid', 'C:\\Python313\\Lib\\uuid.py', 'PYMODULE'),
   ('visuals',
    'D:\\code\\repos\\RL Value Based '
    'Methods\\RL-Value-Based-Methods\\visuals.py',
    'PYMODULE'),
+  ('webbrowser', 'C:\\Python313\\Lib\\webbrowser.py', 'PYMODULE'),
+  ('xml', 'C:\\Python313\\Lib\\xml\\__init__.py', 'PYMODULE'),
+  ('xml.dom', 'C:\\Python313\\Lib\\xml\\dom\\__init__.py', 'PYMODULE'),
+  ('xml.dom.NodeFilter',
+   'C:\\Python313\\Lib\\xml\\dom\\NodeFilter.py',
+   'PYMODULE'),
+  ('xml.dom.domreg', 'C:\\Python313\\Lib\\xml\\dom\\domreg.py', 'PYMODULE'),
+  ('xml.dom.expatbuilder',
+   'C:\\Python313\\Lib\\xml\\dom\\expatbuilder.py',
+   'PYMODULE'),
+  ('xml.dom.minicompat',
+   'C:\\Python313\\Lib\\xml\\dom\\minicompat.py',
+   'PYMODULE'),
+  ('xml.dom.minidom', 'C:\\Python313\\Lib\\xml\\dom\\minidom.py', 'PYMODULE'),
+  ('xml.dom.pulldom', 'C:\\Python313\\Lib\\xml\\dom\\pulldom.py', 'PYMODULE'),
+  ('xml.dom.xmlbuilder',
+   'C:\\Python313\\Lib\\xml\\dom\\xmlbuilder.py',
+   'PYMODULE'),
+  ('xml.etree', 'C:\\Python313\\Lib\\xml\\etree\\__init__.py', 'PYMODULE'),
+  ('xml.etree.ElementInclude',
+   'C:\\Python313\\Lib\\xml\\etree\\ElementInclude.py',
+   'PYMODULE'),
+  ('xml.etree.ElementPath',
+   'C:\\Python313\\Lib\\xml\\etree\\ElementPath.py',
+   'PYMODULE'),
+  ('xml.etree.ElementTree',
+   'C:\\Python313\\Lib\\xml\\etree\\ElementTree.py',
+   'PYMODULE'),
+  ('xml.etree.cElementTree',
+   'C:\\Python313\\Lib\\xml\\etree\\cElementTree.py',
+   'PYMODULE'),
+  ('xml.parsers', 'C:\\Python313\\Lib\\xml\\parsers\\__init__.py', 'PYMODULE'),
+  ('xml.parsers.expat',
+   'C:\\Python313\\Lib\\xml\\parsers\\expat.py',
+   'PYMODULE'),
+  ('xml.sax', 'C:\\Python313\\Lib\\xml\\sax\\__init__.py', 'PYMODULE'),
+  ('xml.sax._exceptions',
+   'C:\\Python313\\Lib\\xml\\sax\\_exceptions.py',
+   'PYMODULE'),
+  ('xml.sax.expatreader',
+   'C:\\Python313\\Lib\\xml\\sax\\expatreader.py',
+   'PYMODULE'),
+  ('xml.sax.handler', 'C:\\Python313\\Lib\\xml\\sax\\handler.py', 'PYMODULE'),
+  ('xml.sax.saxutils', 'C:\\Python313\\Lib\\xml\\sax\\saxutils.py', 'PYMODULE'),
+  ('xml.sax.xmlreader',
+   'C:\\Python313\\Lib\\xml\\sax\\xmlreader.py',
+   'PYMODULE'),
+  ('xmlrpc', 'C:\\Python313\\Lib\\xmlrpc\\__init__.py', 'PYMODULE'),
+  ('xmlrpc.client', 'C:\\Python313\\Lib\\xmlrpc\\client.py', 'PYMODULE'),
   ('zipfile', 'C:\\Python313\\Lib\\zipfile\\__init__.py', 'PYMODULE'),
   ('zipfile._path',
    'C:\\Python313\\Lib\\zipfile\\_path\\__init__.py',
    'PYMODULE'),
   ('zipfile._path.glob',
    'C:\\Python313\\Lib\\zipfile\\_path\\glob.py',
-   'PYMODULE')])
+   'PYMODULE'),
+  ('zipimport', 'C:\\Python313\\Lib\\zipimport.py', 'PYMODULE')])
