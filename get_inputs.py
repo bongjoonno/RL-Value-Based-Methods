@@ -1,22 +1,23 @@
 from constants import MAX_COURSE_LENGTH, LEARNING_METHODS_SET
 
 def get_dimensions_input():
-    error_message = f"Please enter a number between 1 and {MAX_COURSE_LENGTH}"
-    y = input_validation("Enter how tall you want the course to be: ", error_message)
-    x = input_validation("Enter how wide you want the course to be: ", error_message)
+    error_message = "Please enter a number between {} and {}"
     
-    if x < 2: 
-        raise ValueError("Width of course cannot be less than 2")
+    minimum_height = 1
+    minimum_width = 2
+    
+    y = input_validation("Enter how tall you want the course to be: ", error_message.format(minimum_height, MAX_COURSE_LENGTH), minimum_dimension = minimum_height)
+    x = input_validation("Enter how wide you want the course to be: ", error_message.format(minimum_width, MAX_COURSE_LENGTH), minimum_dimension = minimum_width)
     
     return (y, x)
 
 
-def input_validation(prompt_message, error_message):
+def input_validation(prompt_message, error_message, minimum_dimension):
     while True:
         try:
             num = int(input(prompt_message))
             
-            if num < 1 or num > MAX_COURSE_LENGTH:
+            if num < minimum_dimension or num > MAX_COURSE_LENGTH:
                 print(error_message)
                 continue
             else:

@@ -1,5 +1,5 @@
 from train_test import train_test
-from utils.get_inputs import get_dimensions_input, get_learning_methods
+from get_inputs import get_dimensions_input, get_learning_methods
 from visuals import welcome_message
 
 def main(learning_method, course_length_y, course_length_x):
