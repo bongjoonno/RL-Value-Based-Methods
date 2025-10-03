@@ -13,7 +13,5 @@ if __name__ == '__main__':
     learning_method = get_learning_methods()
     methods_accuracy_percentage_dict = main(learning_method, y, x)
     print(methods_accuracy_percentage_dict)
-    
-    # TO DO
+
     # make into executable
-    # only count used epochs
