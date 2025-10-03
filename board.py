@@ -1,9 +1,8 @@
 from imports import np, time
+from constants import TRAIN_FACTOR
 
 class Board:
     def __init__(self, course_length_y, course_length_x, q_table, epsilon=1, randomized=True):
-        self.init_start = time.monotonic()
-
         self.q_table = q_table
         self.epsilon = epsilon 
         
@@ -12,6 +11,8 @@ class Board:
         
         self.grid = [[0 for i in range(course_length_x)] for j in range(self.course_length_y)]
         self.grid[-1][-1] = 1
+        
+        self.trial_limit = TRAIN_FACTOR * course_length_y * course_length_x
 
         if randomized:
             try:
@@ -47,9 +48,10 @@ class Board:
 
         self.current_state_q_scores = []
 
-        self.init_total_time = time.monotonic() - self.init_start
-
-    def perform_move(self):     
+    def perform_move(self):  
+        if self.move_number == self.trial_limit:
+            return 'Ran out of trials'
+        
         self.grid[self.agent_position_y][self.agent_position_x] = 0
 
         self.chosen_action = self.get_next_move()
@@ -58,6 +60,8 @@ class Board:
 
         self.previous_state = (self.agent_position_y, self.agent_position_x)
         self.update_cur_position()
+        
+        self.move_number += 1
         
         if (self.agent_position_y, self.agent_position_x) == self.finish_position:
             return 'finished course'

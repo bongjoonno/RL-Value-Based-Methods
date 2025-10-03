@@ -26,3 +26,4 @@ def q_learning(
         q = board.q_table[cur_state][cur_action]
 
         board.q_table[cur_state][cur_action] += alpha * (target - q)
+    
