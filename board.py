@@ -1,16 +1,13 @@
 from imports import np, time
-from constants import TRAIN_FACTOR
 
 class Board:
-    def __init__(self, course_length_y, course_length_x, q_table, trial_limit = None, epsilon=1, randomized=True):
+    def __init__(self, course_length_y, course_length_x, q_table, trial_limit, epsilon=1, randomized=True):
         self.course_length_y = course_length_y
         self.course_length_x = course_length_x
         
         self.q_table = q_table
         self.trial_limit = trial_limit
         
-        if self.trial_limit == None:
-            self.trial_limit = TRAIN_FACTOR * course_length_y * course_length_x
         
         
         self.epsilon = epsilon 

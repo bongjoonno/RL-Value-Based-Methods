@@ -26,13 +26,13 @@ def train(course_length_y, course_length_x, train_trial_limit, epochs, q_table: 
         raise NonexistentLearningMethod()
     
     print('\n')
-    board = Board(course_length_y, course_length_x, q_table = q_table, epsilon = epsilon, randomized=True)
+    board = Board(course_length_y, course_length_x, q_table, trial_limit = train_trial_limit, epsilon = epsilon, randomized = True)
     
     while epochs > 0:
         outcome = chosen_learning_method(board)
         
         if outcome == 'episode ended':
-            board = Board(course_length_y, course_length_x, q_table = q_table, epsilon = epsilon, randomized=True)
+            board = Board(course_length_y, course_length_x, q_table, trial_limit = train_trial_limit, epsilon = epsilon, randomized = True)
         
         epsilon = max(0.01, epsilon * 0.999)
         q_table = board.q_table
