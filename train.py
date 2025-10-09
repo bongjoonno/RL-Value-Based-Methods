@@ -26,13 +26,18 @@ def train(course_length_y, course_length_x, train_trial_limit, epochs, q_table: 
         raise NonexistentLearningMethod()
     
     print('\n')
+    board = Board(epochs, course_length_y, course_length_x, q_table = q_table, epsilon = epsilon, randomized=True)
     
-    for _ in tqdm(range(epochs)):
-        board = Board(course_length_y, course_length_x, q_table = q_table, epsilon = epsilon, randomized=True)
-
-        chosen_learning_method(board, train_trial_limit = train_trial_limit)
+    while True:
+        outcome = chosen_learning_method(board, train_trial_limit = train_trial_limit)
+        
+        if outcome == 'episode ended':
+            board = Board(course_length_y, course_length_x, q_table = q_table, epsilon = epsilon, randomized=True)
+        elif outcome == 'training ended':
+            break
         
         epsilon = max(0.01, epsilon * 0.999)
         q_table = board.q_table
+        epochs -= 1
 
     return q_table

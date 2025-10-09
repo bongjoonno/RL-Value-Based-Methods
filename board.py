@@ -2,12 +2,15 @@ from imports import np, time
 from constants import TRAIN_FACTOR
 
 class Board:
-    def __init__(self, course_length_y, course_length_x, q_table, epsilon=1, randomized=True):
-        self.q_table = q_table
-        self.epsilon = epsilon 
+    def __init__(self, epochs, course_length_y, course_length_x, q_table, epsilon=1, randomized=True):
+        self.epochs = epochs
         
         self.course_length_y = course_length_y
         self.course_length_x = course_length_x
+        
+        self.q_table = q_table
+        self.epsilon = epsilon 
+        
         
         self.grid = [[0 for i in range(course_length_x)] for j in range(self.course_length_y)]
         self.grid[-1][-1] = 1
@@ -64,9 +67,12 @@ class Board:
         self.update_cur_position()
         
         self.move_number += 1
+        self.epochs -= 1
         
         if (self.agent_position_y, self.agent_position_x) == self.finish_position:
             return 'finished course'
+        elif self.epochs == 0:
+            return 'finished training'
         else: 
             return 'continue'
     
