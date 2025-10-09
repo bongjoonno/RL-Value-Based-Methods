@@ -7,9 +7,6 @@ class Board:
         
         self.q_table = q_table
         self.trial_limit = trial_limit
-        
-        
-        
         self.epsilon = epsilon 
         
         
