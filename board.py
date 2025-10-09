@@ -12,7 +12,7 @@ class Board:
         self.grid = [[0 for i in range(course_length_x)] for j in range(self.course_length_y)]
         self.grid[-1][-1] = 1
         
-        self.trial_limit = TRAIN_FACTOR * course_length_y * course_length_x
+        self.trial_limit = 3
 
         if randomized:
             try:
@@ -52,6 +52,8 @@ class Board:
         if self.move_number == self.trial_limit:
             return 'Ran out of trials'
         
+        self.display_grid()
+        time.sleep(1)
         self.grid[self.agent_position_y][self.agent_position_x] = 0
 
         self.chosen_action = self.get_next_move()

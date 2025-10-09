@@ -15,7 +15,7 @@ def q_learning(
 
         cur_action = board.chosen_action
 
-        if outcome == 'finished course': break
+        if outcome in ['finished course', 'Ran out of trials']: break
         
         board.get_next_move_prep()
         
@@ -27,3 +27,4 @@ def q_learning(
 
         board.q_table[cur_state][cur_action] += alpha * (target - q)
     
+        print(board.move_number)

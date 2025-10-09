@@ -14,7 +14,7 @@ def monte_carlo(
         outcome = board.perform_move()
         cur_action = board.chosen_action
 
-        if outcome == 'finished course': break
+        if outcome in ['finished course', 'Ran out of trials']: break
 
     rewards = list(board.trajectories['reward'])
     discounted_rewards = get_discounted_reward(rewards, gamma, Gt_reward = 0, discounted_rewards = [])

@@ -23,7 +23,7 @@ def expected_sarsa(
         outcome = board.perform_move()
         current_action = board.chosen_action
 
-        if outcome == 'finished course': 
+        if outcome in ['finished course', 'Ran out of trials']: 
             break
         elif previous_state is None:
             previous_state, previous_action = current_state, current_action
