@@ -3,7 +3,17 @@ from imports import sys, time
 
 from visuals import clear_board_in_place
 def has_perfect_accuracy(course_length_y, course_length_x, q_scores, testing_trial_limit, display_episode_path: bool) -> bool:
-    board = Board(course_length_y, course_length_x, q_table = q_scores, epsilon = 0, randomized=False)
+    board = Board(course_length_y, course_length_x, q_scores, testing_trial_limit, epsilon = 1, randomized = False)
+    
+    print('\n')
+    
+    for _ in range(testing_trial_limit):
+        outcome = board.perform_move()
+    
+    if outcome == 'finished course':
+        print(f'Found perfect path in {(course_length_y)} steps!')
+        
+    board = Board(course_length_y, course_length_x, q_scores, testing_trial_limit, epsilon = 1, randomized = False)
     
     print('\n')
     
@@ -15,8 +25,8 @@ def has_perfect_accuracy(course_length_y, course_length_x, q_scores, testing_tri
             
             clear_board_in_place(board.course_length_y)
             
-        res = board.perform_move()
+        outcome = board.perform_move()
     
     board.display_grid()
         
-    return True if res == "finished course" else False
+    return True if outcome == "finished course" else False

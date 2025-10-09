@@ -2,20 +2,23 @@ from imports import np, time
 from constants import TRAIN_FACTOR
 
 class Board:
-    def __init__(self, epochs, course_length_y, course_length_x, q_table, epsilon=1, randomized=True):
-        self.epochs = epochs
-        
+    def __init__(self, course_length_y, course_length_x, q_table, trial_limit = None, epsilon=1, randomized=True):
         self.course_length_y = course_length_y
         self.course_length_x = course_length_x
         
         self.q_table = q_table
+        self.trial_limit = trial_limit
+        
+        if self.trial_limit == None:
+            self.trial_limit = TRAIN_FACTOR * course_length_y * course_length_x
+        
+        
         self.epsilon = epsilon 
         
         
         self.grid = [[0 for i in range(course_length_x)] for j in range(self.course_length_y)]
         self.grid[-1][-1] = 1
         
-        self.trial_limit = 3
 
         if randomized:
             try:
@@ -55,8 +58,8 @@ class Board:
         if self.move_number == self.trial_limit:
             return 'Ran out of trials'
         
-        self.display_grid()
-        time.sleep(1)
+        #self.display_grid()
+        #time.sleep(1)
         self.grid[self.agent_position_y][self.agent_position_x] = 0
 
         self.chosen_action = self.get_next_move()
@@ -67,12 +70,9 @@ class Board:
         self.update_cur_position()
         
         self.move_number += 1
-        self.epochs -= 1
         
         if (self.agent_position_y, self.agent_position_x) == self.finish_position:
             return 'finished course'
-        elif self.epochs == 0:
-            return 'finished training'
         else: 
             return 'continue'
     

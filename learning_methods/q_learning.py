@@ -15,8 +15,6 @@ def q_learning(
 
     if outcome in ['finished course', 'Ran out of trials']:
         return 'episode ended'
-    elif outcome == 'finished training':
-        return 'training ended'
     
     board.get_next_move_prep()
     
@@ -27,5 +25,3 @@ def q_learning(
     q = board.q_table[cur_state][cur_action]
 
     board.q_table[cur_state][cur_action] += alpha * (target - q)
-
-    print(board.move_number)
