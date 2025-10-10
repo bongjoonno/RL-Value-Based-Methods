@@ -1,12 +1,13 @@
 from board import Board
 from constants import ALPHA, GAMMA
 
-def q_learning(
+def q_learning_update(
     board: Board,
     alpha = ALPHA, 
     gamma = GAMMA
 ) -> None:
 
+    
     cur_state = (board.agent_position_y, board.agent_position_x)
     
     outcome = board.perform_move()
@@ -25,3 +26,18 @@ def q_learning(
     q = board.q_table[cur_state][cur_action]
 
     board.q_table[cur_state][cur_action] += alpha * (target - q)
+
+def q_learning_train(course_length_y, course_length_x, epochs, q_table, train_trial_limit, epsilon):
+    board = Board(course_length_y, course_length_x, q_table, trial_limit = train_trial_limit, epsilon = epsilon)
+    
+    while epochs > 0:
+        outcome = q_learning_update(board)
+        
+        if outcome == 'episode ended':
+            board = Board(course_length_y, course_length_x, q_table, trial_limit = train_trial_limit, epsilon = epsilon)
+        
+        epsilon = max(0.01, epsilon * 0.999)
+        q_table = board.q_table
+        epochs -= 1
+        
+    return q_table
