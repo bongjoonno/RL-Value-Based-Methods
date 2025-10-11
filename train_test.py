@@ -18,7 +18,7 @@ def train_test(
 ) -> bool:
 
     testing_trial_limit = (course_length_y - 1) + (course_length_x - 1)
-    training_trial_limit = TRAIN_FACTOR * (course_length_y * course_length_x)
+    training_trial_limit = int((course_length_y * course_length_x)** TRAIN_FACTOR)
     
     q_scores = gen_q_table(course_length_y, course_length_x)
 
