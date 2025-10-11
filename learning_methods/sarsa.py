@@ -13,7 +13,7 @@ def sarsa_update(
     outcome = board.perform_move()
     current_action = board.chosen_action
 
-    if outcome == 'finished course': 
+    if outcome in ['finished course', 'Ran out of trials']: 
         return 'episode ended'
 
     elif previous_state is None:

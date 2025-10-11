@@ -1,13 +1,13 @@
 # course related
-MAX_COURSE_LENGTH = 10
-TRAIN_FACTOR = 4
+MAX_COURSE_LENGTH = 7
+TRAIN_FACTOR = 1
 
 # hyper-parameters
-EPOCHS = 20_000
-ALPHA = 0.1
+EPOCHS = 800_000
+ALPHA = 0.5
 EPSILON = 1
-GAMMA = 0.9
+GAMMA = 1
 
 # learning-methods
 LEARNING_METHODS_LIST = ['Monte Carlo', 'Q-Learning', 'Sarsa', 'Expected Sarsa']
-LEARNING_METHODS_SET = {'Monte Carlo', 'Q-Learning', 'Sarsa', 'Expected Sarsa'}
+LEARNING_METHODS_SET = set(LEARNING_METHODS_LIST)

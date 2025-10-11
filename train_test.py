@@ -17,8 +17,8 @@ def train_test(
     display_episode_path: bool
 ) -> bool:
 
-    testing_trial_limit = ((course_length_y - 1) + (course_length_x - 1))
-    training_trial_limit = TRAIN_FACTOR * course_length_y * course_length_x
+    testing_trial_limit = (course_length_y - 1) + (course_length_x - 1)
+    training_trial_limit = TRAIN_FACTOR * (course_length_y * course_length_x)
     
     q_scores = gen_q_table(course_length_y, course_length_x)
 

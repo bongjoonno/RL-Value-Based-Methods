@@ -29,7 +29,7 @@ def monte_carlo_update(
 
         board.q_table[cur_state][cur_action] += alpha * (target - q)
     
-def monte_carlo(course_length_y, course_length_x, epochs, q_table, train_trial_limit, epsilon):
+def monte_carlo_train(course_length_y, course_length_x, epochs, q_table, train_trial_limit, epsilon):
     board = Board(course_length_y, course_length_x, q_table, trial_limit = train_trial_limit, epsilon = epsilon)
     
     while epochs > 0:
@@ -40,5 +40,4 @@ def monte_carlo(course_length_y, course_length_x, epochs, q_table, train_trial_l
         epochs -= board.move_number
         
         board = Board(course_length_y, course_length_x, q_table, trial_limit = train_trial_limit, epsilon = epsilon)
-        print(epochs)
     return q_table
