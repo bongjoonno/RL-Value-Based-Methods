@@ -1,6 +1,3 @@
-# normal imports
-from imports import tqdm
-
 # all course_lengths
 from train_test import train_test
 

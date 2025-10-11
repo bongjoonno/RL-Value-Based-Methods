@@ -1,5 +1,5 @@
 from board import Board
-from imports import sys, time
+from imports import time
 
 from visuals import clear_board_in_place
 def has_perfect_accuracy(course_length_y, course_length_x, q_scores, testing_trial_limit, display_episode_path: bool) -> bool:

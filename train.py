@@ -1,6 +1,3 @@
-# normal imports
-from imports import time, tqdm
-
 # board
 from board import Board
 

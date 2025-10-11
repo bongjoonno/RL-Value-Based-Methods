@@ -1,4 +1,4 @@
-from imports import np, time
+from imports import np
 
 class Board:
     def __init__(self, course_length_y, course_length_x, q_table, trial_limit, epsilon=1, randomized=True):
