@@ -1,18 +1,18 @@
 from imports import np, time
-from constants import TRAIN_FACTOR
 
 class Board:
-    def __init__(self, course_length_y, course_length_x, q_table, epsilon=1, randomized=True):
-        self.q_table = q_table
-        self.epsilon = epsilon 
-        
+    def __init__(self, course_length_y, course_length_x, q_table, trial_limit, epsilon=1, randomized=True):
         self.course_length_y = course_length_y
         self.course_length_x = course_length_x
+        
+        self.q_table = q_table
+        self.trial_limit = trial_limit
+        self.epsilon = epsilon 
+        
         
         self.grid = [[0 for i in range(course_length_x)] for j in range(self.course_length_y)]
         self.grid[-1][-1] = 1
         
-        self.trial_limit = 3
 
         if randomized:
             try:
@@ -52,8 +52,8 @@ class Board:
         if self.move_number == self.trial_limit:
             return 'Ran out of trials'
         
-        self.display_grid()
-        time.sleep(1)
+        #self.display_grid()
+        #time.sleep(1)
         self.grid[self.agent_position_y][self.agent_position_x] = 0
 
         self.chosen_action = self.get_next_move()
