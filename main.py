@@ -16,7 +16,7 @@ if __name__ == '__main__':
     while continue_playing.lower() == 'y':
         y, x = get_dimensions_input()
         #learning_method = get_learning_methods()
-        print("training...")
+        print("training with Q-Learning...")
         methods_accuracy_percentage_dict = main('Q-Learning', y, x)
         print(methods_accuracy_percentage_dict)
         continue_playing = input('\nWould you like to play again??!! (Y): ')

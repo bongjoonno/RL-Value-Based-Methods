@@ -1,5 +1,6 @@
 from board import Board
 from constants import ALPHA, GAMMA
+from imports import tqdm
 
 def q_learning_update(
     board: Board,
@@ -30,7 +31,7 @@ def q_learning_update(
 def q_learning_train(course_length_y, course_length_x, epochs, q_table, train_trial_limit, epsilon):
     board = Board(course_length_y, course_length_x, q_table, trial_limit = train_trial_limit, epsilon = epsilon)
     
-    while epochs > 0:
+    for _ in tqdm(range(epochs)):
         outcome = q_learning_update(board)
         
         if outcome == 'episode ended':
@@ -38,6 +39,5 @@ def q_learning_train(course_length_y, course_length_x, epochs, q_table, train_tr
         
         epsilon = max(0.01, epsilon * 0.999)
         q_table = board.q_table
-        epochs -= 1
         
     return q_table
