@@ -1,12 +1,12 @@
 # course related
 MAX_COURSE_LENGTH = 7
-TRAIN_FACTOR = 1
+TRAIN_FACTOR = 5
 
 # hyper-parameters
-EPOCHS = 800_000
-ALPHA = 0.5
+EPOCHS = 100_000
+ALPHA = 0.2
 EPSILON = 1
-GAMMA = 1
+GAMMA = 0.9999
 
 # learning-methods
 LEARNING_METHODS_LIST = ['Monte Carlo', 'Q-Learning', 'Sarsa', 'Expected Sarsa']
