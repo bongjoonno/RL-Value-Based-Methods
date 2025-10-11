@@ -12,6 +12,8 @@ def has_perfect_accuracy(course_length_y, course_length_x, q_scores, testing_tri
     
     if outcome == 'finished course':
         print(f'Found perfect path in {(course_length_y-1) + (course_length_x-1)} steps!')
+    else:
+        print('Perfect path not found... Displaying improperly learned path:')
         
     board = Board(course_length_y, course_length_x, q_scores, testing_trial_limit, epsilon = 0, randomized = False)
     
