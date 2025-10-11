@@ -1,2 +1,2 @@
 # RL Value-Based Methods
-An RL sim with Q-learning, Monte Carlo and SARSA
+An RL sim with Q-learning, Monte Carlo, Sarsa and Expected Sarsa

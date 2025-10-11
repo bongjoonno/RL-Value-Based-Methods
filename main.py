@@ -1,7 +1,7 @@
 from train_test import train_test
 from get_inputs import get_dimensions_input, get_learning_methods
 from visuals import welcome_message
-from imports import time
+from imports import time, sys 
 
 def main(learning_method, course_length_y, course_length_x):
     has_perfect_accuracy = train_test(course_length_y, course_length_x, learning_method, display_episode_path = True)
@@ -15,8 +15,9 @@ if __name__ == '__main__':
     
     while continue_playing.lower() == 'y':
         y, x = get_dimensions_input()
-        learning_method = get_learning_methods()
-        methods_accuracy_percentage_dict = main(learning_method, y, x)
+        #learning_method = get_learning_methods()
+        print("training...")
+        methods_accuracy_percentage_dict = main('Q-Learning', y, x)
         print(methods_accuracy_percentage_dict)
         continue_playing = input('\nWould you like to play again??!! (Y): ')
         print('\n')

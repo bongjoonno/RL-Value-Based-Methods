@@ -17,13 +17,13 @@ def train_test(
     display_episode_path: bool
 ) -> bool:
 
-    testing_trial_limit = ((course_length_y - 1) + (course_length_x - 1))
-    training_trial_limit = ((course_length_y - 1) + (course_length_x - 1)) * TRAIN_FACTOR
+    testing_trial_limit = (course_length_y - 1) + (course_length_x - 1)
+    training_trial_limit = int((course_length_y * course_length_x)** TRAIN_FACTOR)
     
     q_scores = gen_q_table(course_length_y, course_length_x)
 
     finished_q_scores = train(course_length_y, course_length_x, training_trial_limit, epochs = EPOCHS, q_table = q_scores, method = method, epsilon = EPSILON)
     
-    accuracy = has_perfect_accuracy(course_length_y, course_length_x, finished_q_scores, testing_trial_limit, display_episode_path = display_episode_path)
+    accuracy = has_perfect_accuracy(course_length_y, course_length_x, finished_q_scores, testing_trial_limit, display_episode_path)
 
     return accuracy
