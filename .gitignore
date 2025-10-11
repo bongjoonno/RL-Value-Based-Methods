@@ -7,3 +7,4 @@ dist/
 *.pyo
 *.pyd
 *.spec
+*.exe
