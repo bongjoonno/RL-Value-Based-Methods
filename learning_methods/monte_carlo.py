@@ -5,12 +5,11 @@ from constants import ALPHA, GAMMA
 
 def monte_carlo_update(
     board: Board,
-    train_trial_limit: int,
     alpha = ALPHA, 
     gamma = GAMMA
 ) -> None:
     
-    for _ in range(train_trial_limit):
+    for _ in range(board.trial_limit):
         cur_state = (board.agent_position_y, board.agent_position_x)
         outcome = board.perform_move()
         cur_action = board.chosen_action
