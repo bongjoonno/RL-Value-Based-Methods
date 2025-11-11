@@ -19,7 +19,7 @@ def train_test(
     Board.q_table = q_table
     Board.trial_limit = training_trial_limit
 
-    finished_q_scores = train(epochs = EPOCHS, method = method)
+    train(epochs = EPOCHS, method = method)
     
     accuracy = has_perfect_accuracy(testing_trial_limit, display_episode_path)
 

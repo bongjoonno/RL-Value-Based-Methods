@@ -6,8 +6,8 @@ class Board:
     x_step_mappings = {'D' : 1, 'A' : -1}
     penalty = -1
 
-    course_length_y, course_length_x = 3, 3
-    trial_limit = 18
+    course_length_y, course_length_x = 0, 0
+    trial_limit = 0
     q_table = {}
 
     def __init__(self, randomized=True):

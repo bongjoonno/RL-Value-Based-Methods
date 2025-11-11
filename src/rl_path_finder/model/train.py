@@ -7,7 +7,7 @@ from src.rl_path_finder.learning_methods import monte_carlo_train, q_learning_tr
 # constants
 from src.rl_path_finder.constants import LEARNING_METHODS_LIST
 
-def train(epochs, method: str):
+def train(method: str):
     learning_methods_functions = [monte_carlo_train, q_learning_train, sarsa_train, expected_sarsa_train]
     learning_methods_map = {learning_method: function for learning_method, function in zip(LEARNING_METHODS_LIST, learning_methods_functions)}
     
@@ -18,6 +18,6 @@ def train(epochs, method: str):
     
     print('\n')
     
-    q_table = chosen_learning_method(epochs)
+    q_table = chosen_learning_method()
     
     return q_table

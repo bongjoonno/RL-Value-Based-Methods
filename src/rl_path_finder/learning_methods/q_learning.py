@@ -1,5 +1,5 @@
 from src.rl_path_finder.model import Board
-from src.rl_path_finder.constants import ALPHA, GAMMA, EPSILON
+from src.rl_path_finder.constants import EPOCHS, ALPHA, GAMMA
 from src.rl_path_finder.imports import tqdm
 
 def q_learning_update(
@@ -28,15 +28,13 @@ def q_learning_update(
 
     board.q_table[cur_state][cur_action] += alpha * (target - q)
 
-def q_learning_train(epochs):
+def q_learning_train():
     board = Board()
     
-    for _ in range(epochs):
+    for _ in range(EPOCHS):
         outcome = q_learning_update(board)
         
         if outcome == 'episode ended':
             board = Board()
         
         Board.epsilon = max(0.01, Board.epsilon * 0.999)
-        
-    return Board.q_table

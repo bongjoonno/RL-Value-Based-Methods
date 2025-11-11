@@ -1,5 +1,5 @@
 from src.rl_path_finder.model import Board
-from src.rl_path_finder.constants import ALPHA, GAMMA, EPSILON
+from src.rl_path_finder.constants import EPOCHS, ALPHA, GAMMA
 
 def sarsa_update(
     board: Board, 
@@ -29,12 +29,12 @@ def sarsa_update(
 
     return current_state, current_action
 
-def sarsa_train(epochs):
+def sarsa_train():
     board = Board()
 
     previous_state, previous_action = None, None
     
-    for _ in range(epochs)
+    for _ in range(EPOCHS):
         outcome = sarsa_update(board, previous_state, previous_action)
         
         if outcome == 'episode ended':
@@ -43,5 +43,3 @@ def sarsa_train(epochs):
             previous_state, previous_action = outcome
         
         Board.epsilon = max(0.01, Board.epsilon * 0.999)
-        
-    return Board.q_table

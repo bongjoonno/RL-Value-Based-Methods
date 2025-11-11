@@ -1,6 +1,6 @@
 from src.rl_path_finder.model import Board
 from src.rl_path_finder.model import get_discounted_reward
-from src.rl_path_finder.constants import ALPHA, GAMMA, EPSILON
+from src.rl_path_finder.constants import EPOCHS, ALPHA, GAMMA
 
 
 def monte_carlo_update(
@@ -29,15 +29,13 @@ def monte_carlo_update(
 
         board.q_table[cur_state][cur_action] += alpha * (target - q)
     
-def monte_carlo_train(epochs):
+def monte_carlo_train():
     board = Board()
     
-    while epochs > 0:
+    while EPOCHS > 0:
         monte_carlo_update(board)
         
         Board.epsilon = max(0.01, Board.epsilon * 0.999)
-        epochs -= board.move_number
+        EPOCHS -= board.move_number
         
         board = Board()
-    
-    return Board.q_table
