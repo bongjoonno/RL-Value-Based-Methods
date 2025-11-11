@@ -10,9 +10,6 @@ from learning_methods.expected_sarsa import expected_sarsa_train
 # constants
 from constants import EPSILON, LEARNING_METHODS_LIST
 
-# custom errors
-from custom_errors import NonexistentLearningMethod
-
 def train(course_length_y, course_length_x, train_trial_limit, epochs, q_table: dict, method: str, epsilon = EPSILON):
     learning_methods_functions = [monte_carlo_train, q_learning_train, sarsa_train, expected_sarsa_train]
     learning_methods_map = {learning_method: function for learning_method, function in zip(LEARNING_METHODS_LIST, learning_methods_functions)}
