@@ -19,8 +19,8 @@ def train_test(
     Board.q_table = q_table
     Board.trial_limit = training_trial_limit
 
-    train(method = method)
+    train(method)
     
-    accuracy = has_perfect_accuracy(testing_trial_limit, display_episode_path)
+    perfect_accuracy = has_perfect_accuracy(testing_trial_limit, display_episode_path)
 
-    return accuracy
+    return perfect_accuracy

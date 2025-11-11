@@ -10,7 +10,7 @@ class Board:
     trial_limit = 0
     q_table = {}
 
-    def __init__(self, randomized=True):
+    def __init__(self, randomized: bool = True) -> None:
         
         self.grid = [[0 for i in range(Board.course_length_x)] for j in range(self.course_length_y)]
         self.grid[-1][-1] = 1
@@ -45,7 +45,7 @@ class Board:
 
         self.current_state_q_scores = []
 
-    def perform_move(self):  
+    def perform_move(self) -> None:  
         if self.move_number == self.trial_limit:
             return 'Ran out of trials'
         
@@ -65,31 +65,31 @@ class Board:
         else: 
             return 'continue'
     
-    def log_trajectory(self):
+    def log_trajectory(self) -> None:
         self.trajectories['state'].append((self.agent_position_y, self.agent_position_x))
         self.trajectories['action'].append(self.chosen_action)
         self.trajectories['reward'].append(Board.penalty)
 
-    def update_cur_position(self):
+    def update_cur_position(self) -> None:
         self.agent_position_y += Board.y_step_mappings.get(self.chosen_action, 0)
         self.agent_position_x += Board.x_step_mappings.get(self.chosen_action, 0)
         self.grid[self.agent_position_y][self.agent_position_x] = 'P'
 
-    def display_grid(self):
+    def display_grid(self) -> None:
         for row in self.grid:
             print(row)
 
-    def update_current_state_q_table(self):
+    def update_current_state_q_table(self) -> None:
         self.current_state_q_table = self.q_table[(self.agent_position_y, self.agent_position_x)]
         self.current_state_q_scores = np.array(list(self.current_state_q_table.values()))
     
-    def update_max_reward_move(self):
+    def update_max_reward_move(self) -> None:
         self.max_reward_move_for_state = max(self.current_state_q_table, key = self.current_state_q_table.get)
 
-    def update_available_moves(self):
+    def update_available_moves(self) -> None:
         self.available_moves = list(self.current_state_q_table.keys())
 
-    def policy(self):
+    def policy(self) -> None:
         self.current_moves_probabilities =  []
 
         random_move_prob = self.epsilon / len(self.available_moves)
@@ -102,12 +102,12 @@ class Board:
         
         self.current_moves_probabilities = np.array(self.current_moves_probabilities)
 
-    def get_next_move_prep(self):
+    def get_next_move_prep(self) -> None:
         self.update_current_state_q_table()
         self.update_max_reward_move()
         self.update_available_moves()
 
-    def get_next_move(self):
+    def get_next_move(self) -> None:
         self.get_next_move_prep()
         
         if self.epsilon == 0:
