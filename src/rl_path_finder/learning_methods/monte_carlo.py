@@ -16,7 +16,7 @@ def monte_carlo_update(
             break
 
     rewards = list(board.trajectories['reward'])
-    discounted_rewards = get_discounted_reward(rewards, Gt_reward = 0, discounted_rewards = [])
+    discounted_rewards = get_discounted_reward(rewards)
 
     for i in range(len(board.trajectories['state'])):
         cur_state = board.trajectories['state'][i]
