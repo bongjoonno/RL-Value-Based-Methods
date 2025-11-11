@@ -1,6 +1,6 @@
-from board import Board
-from constants import ALPHA, GAMMA
-from imports import np
+from src.rl_path_finder.model import Board
+from src.rl_path_finder.constants import ALPHA, GAMMA, EPSILON
+from src.rl_path_finder.imports import np
 
 def expected_sarsa_update(
     board: Board, 
@@ -37,20 +37,20 @@ def expected_sarsa_update(
 
     return current_state, current_action
 
-def expected_sarsa_train(course_length_y, course_length_x, epochs, q_table, train_trial_limit, epsilon):
+def expected_sarsa_train(epochs):
+    epsilon = EPSILON
+
     previous_state, previous_action = None, None
-    board = Board(course_length_y, course_length_x, q_table, trial_limit = train_trial_limit, epsilon = epsilon)
+    board = Board(epsilon = epsilon)
     
-    while epochs > 0:
+    for _ in range(epochs):
         outcome = expected_sarsa_update(board, previous_state, previous_action)
         
         if outcome == 'episode ended':
-            board = Board(course_length_y, course_length_x, q_table, trial_limit = train_trial_limit, epsilon = epsilon)
+            board = Board(epsilon = epsilon)
         else:
             previous_state, previous_action = outcome
         
         epsilon = max(0.01, epsilon * 0.999)
-        q_table = board.q_table
-        epochs -= 1
         
-    return q_table
+    return Board.q_table

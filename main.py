@@ -1,7 +1,6 @@
-from train_test import train_test
-from get_inputs import get_dimensions_input, get_learning_methods
-from visuals import welcome_message
-from imports import time
+from src.rl_path_finder.model import train_test
+from src.rl_path_finder.ui_io import welcome_message, get_dimensions_input, get_learning_methods
+from src.rl_path_finder.imports import time
 
 def main(learning_method, course_length_y, course_length_x):
     has_perfect_accuracy = train_test(course_length_y, course_length_x, learning_method, display_episode_path = True)

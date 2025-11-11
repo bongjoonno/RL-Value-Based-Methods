@@ -1,42 +1,40 @@
-from imports import np
+from src.rl_path_finder.imports import np
 
 class Board:
-    def __init__(self, course_length_y, course_length_x, q_table, trial_limit, epsilon=1, randomized=True):
-        self.course_length_y = course_length_y
-        self.course_length_x = course_length_x
-        
-        self.q_table = q_table
-        self.trial_limit = trial_limit
+    y_step_mappings = {'W' : -1, 'S' : 1}
+    x_step_mappings = {'D' : 1, 'A' : -1}
+    penalty = -1
+
+    course_length_y, course_length_x = 3, 3
+    trial_limit = 18
+    q_table = {}
+
+    def __init__(self, trial_limit, epsilon=1, randomized=True):
         self.epsilon = epsilon 
         
         
-        self.grid = [[0 for i in range(course_length_x)] for j in range(self.course_length_y)]
+        self.grid = [[0 for i in range(Board.course_length_x)] for j in range(self.course_length_y)]
         self.grid[-1][-1] = 1
         
 
         if randomized:
             try:
-                self.agent_position_y = np.random.randint(0, self.course_length_y-1)
+                self.agent_position_y = np.random.randint(0, Board.course_length_y-1)
             except ValueError:
                 self.agent_position_y = 0
             
-            self.agent_position_x = np.random.randint(0, self.course_length_x-1)
+            self.agent_position_x = np.random.randint(0, Board.course_length_x-1)
         
         else: 
             self.agent_position_y, self.agent_position_x = 0, 0
         
-        self.finish_position = (self.course_length_y-1, self.course_length_x-1)
+        self.finish_position = (Board.course_length_y-1, Board.course_length_x-1)
 
         self.grid[self.agent_position_y][self.agent_position_x] = 'P'
 
         self.trajectories = {'state' : [], 'action' : [], 'reward' : []}
 
-        self.y_step_mappings = {'W' : -1, 'S' : 1}
-        self.x_step_mappings = {'D' : 1, 'A' : -1}
-
         self.chosen_action = None
-
-        self.penalty = -1
         
         self.move_number = 0
 
@@ -52,8 +50,6 @@ class Board:
         if self.move_number == self.trial_limit:
             return 'Ran out of trials'
         
-        #self.display_grid()
-        #time.sleep(1)
         self.grid[self.agent_position_y][self.agent_position_x] = 0
 
         self.chosen_action = self.get_next_move()
@@ -73,11 +69,11 @@ class Board:
     def log_trajectory(self):
         self.trajectories['state'].append((self.agent_position_y, self.agent_position_x))
         self.trajectories['action'].append(self.chosen_action)
-        self.trajectories['reward'].append(self.penalty)
+        self.trajectories['reward'].append(Board.penalty)
 
     def update_cur_position(self):
-        self.agent_position_y += self.y_step_mappings.get(self.chosen_action, 0)
-        self.agent_position_x += self.x_step_mappings.get(self.chosen_action, 0)
+        self.agent_position_y += Board.y_step_mappings.get(self.chosen_action, 0)
+        self.agent_position_x += Board.x_step_mappings.get(self.chosen_action, 0)
         self.grid[self.agent_position_y][self.agent_position_x] = 'P'
 
     def display_grid(self):

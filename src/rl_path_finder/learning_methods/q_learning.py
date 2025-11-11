@@ -1,6 +1,6 @@
-from board import Board
-from constants import ALPHA, GAMMA
-from imports import tqdm
+from src.rl_path_finder.model import Board
+from src.rl_path_finder.constants import ALPHA, GAMMA, EPSILON
+from src.rl_path_finder.imports import tqdm
 
 def q_learning_update(
     board: Board,
@@ -28,16 +28,16 @@ def q_learning_update(
 
     board.q_table[cur_state][cur_action] += alpha * (target - q)
 
-def q_learning_train(course_length_y, course_length_x, epochs, q_table, train_trial_limit, epsilon):
-    board = Board(course_length_y, course_length_x, q_table, trial_limit = train_trial_limit, epsilon = epsilon)
+def q_learning_train(epochs):
+    epsilon = EPSILON
+    board = Board()
     
-    for _ in tqdm(range(epochs)):
+    for _ in range(epochs):
         outcome = q_learning_update(board)
         
         if outcome == 'episode ended':
-            board = Board(course_length_y, course_length_x, q_table, trial_limit = train_trial_limit, epsilon = epsilon)
+            board = Board(epsilon = epsilon)
         
         epsilon = max(0.01, epsilon * 0.999)
-        q_table = board.q_table
         
-    return q_table
+    return Board.q_table

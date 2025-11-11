@@ -1,7 +1,8 @@
-from board import Board
-from imports import time
+from src.rl_path_finder.model import Board
+from src.rl_path_finder.imports import time
 
-from visuals import clear_board_in_place
+from src.rl_path_finder.ui_io import clear_board_in_place
+
 def has_perfect_accuracy(course_length_y, course_length_x, q_scores, testing_trial_limit, display_episode_path: bool) -> bool:
     board = Board(course_length_y, course_length_x, q_scores, testing_trial_limit, epsilon = 0, randomized = False)
     
