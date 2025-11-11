@@ -20,7 +20,7 @@ def train(course_length_y, course_length_x, train_trial_limit, epochs, q_table: 
     chosen_learning_method = learning_methods_map.get(method, None)
 
     if chosen_learning_method is None:
-        raise NonexistentLearningMethod()
+        raise ValueError("Please pick from Monte Carlo, Q-Learning, Sarsa, or Expected Sarsa")
     
     print('\n')
     

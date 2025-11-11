@@ -9,5 +9,5 @@ EPSILON = 1
 GAMMA = 0.9999
 
 # learning-methods
-LEARNING_METHODS_LIST = ['Monte Carlo', 'Q-Learning']
+LEARNING_METHODS_LIST = ['Monte Carlo', 'Q-Learning', 'Sarsa', 'Expected Sarsa']
 LEARNING_METHODS_SET = set(LEARNING_METHODS_LIST)
