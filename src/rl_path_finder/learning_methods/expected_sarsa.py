@@ -5,9 +5,7 @@ from src.rl_path_finder.imports import np
 def expected_sarsa_update(
     board: Board, 
     previous_state = None,
-    previous_action = None, 
-    alpha = ALPHA, 
-    gamma = GAMMA
+    previous_action = None
 ) -> None:
     
     current_state = (board.agent_position_y, board.agent_position_x)
@@ -31,9 +29,9 @@ def expected_sarsa_update(
 
     expected_value_of_current_state = np.sum(current_state_q_scores * current_state_move_probabilities)
 
-    target = -1 + (gamma * expected_value_of_current_state)
+    target = -1 + (GAMMA * expected_value_of_current_state)
 
-    board.q_table[previous_state][previous_action] += alpha * (target - q)
+    board.q_table[previous_state][previous_action] += ALPHA * (target - q)
 
     return current_state, current_action
 

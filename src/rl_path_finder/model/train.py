@@ -15,9 +15,7 @@ def train(method: str):
 
     if chosen_learning_method is None:
         raise ValueError("Please pick from Monte Carlo, Q-Learning, Sarsa, or Expected Sarsa")
-    
-    print('\n')
-    
+
     q_table = chosen_learning_method()
     
     return q_table

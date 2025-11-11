@@ -1,12 +1,10 @@
 from src.rl_path_finder.model import Board
 from src.rl_path_finder.model import get_discounted_reward
-from src.rl_path_finder.constants import EPOCHS, ALPHA, GAMMA
+from src.rl_path_finder.constants import EPOCHS, ALPHA
 
 
 def monte_carlo_update(
-    board: Board,
-    alpha = ALPHA, 
-    gamma = GAMMA
+    board: Board
 ) -> None:
     
     for _ in range(board.trial_limit):
@@ -18,7 +16,7 @@ def monte_carlo_update(
             break
 
     rewards = list(board.trajectories['reward'])
-    discounted_rewards = get_discounted_reward(rewards, GAMMA, Gt_reward = 0, discounted_rewards = [])
+    discounted_rewards = get_discounted_reward(rewards, Gt_reward = 0, discounted_rewards = [])
 
     for i in range(len(board.trajectories['state'])):
         cur_state = board.trajectories['state'][i]
@@ -27,15 +25,17 @@ def monte_carlo_update(
 
         q = board.q_table[cur_state][cur_action]
 
-        board.q_table[cur_state][cur_action] += alpha * (target - q)
+        board.q_table[cur_state][cur_action] += ALPHA * (target - q)
     
 def monte_carlo_train():
     board = Board()
     
-    while EPOCHS > 0:
+    epochs = EPOCHS
+
+    while epochs > 0:
         monte_carlo_update(board)
         
         Board.epsilon = max(0.01, Board.epsilon * 0.999)
-        EPOCHS -= board.move_number
+        epochs -= board.move_number
         
         board = Board()
