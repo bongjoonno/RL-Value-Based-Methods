@@ -1,3 +1,4 @@
+from agent_accuracy import has_perfect_accuracy
 from discounted_reward import get_discounted_reward
 from generate_course_dims import generate_course_dims
 from generate_q_table import gen_q_table
