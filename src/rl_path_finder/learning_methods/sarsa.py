@@ -30,21 +30,18 @@ def sarsa_update(
     return current_state, current_action
 
 def sarsa_train(epochs):
-    epsilon = EPSILON
-
-    board = Board(epsilon = epsilon)
+    board = Board()
 
     previous_state, previous_action = None, None
     
-    while epochs > 0:
+    for _ in range(epochs)
         outcome = sarsa_update(board, previous_state, previous_action)
         
         if outcome == 'episode ended':
-            board = Board(epsilon = epsilon)
+            board = Board()
         else:
             previous_state, previous_action = outcome
         
-        epsilon = max(0.01, epsilon * 0.999)
-        epochs -= 1
+        Board.epsilon = max(0.01, Board.epsilon * 0.999)
         
     return Board.q_table

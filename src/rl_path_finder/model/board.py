@@ -1,6 +1,7 @@
 from src.rl_path_finder.imports import np
 
 class Board:
+    epsilon = 1
     y_step_mappings = {'W' : -1, 'S' : 1}
     x_step_mappings = {'D' : 1, 'A' : -1}
     penalty = -1
@@ -9,9 +10,7 @@ class Board:
     trial_limit = 18
     q_table = {}
 
-    def __init__(self, epsilon=1, randomized=True):
-        self.epsilon = epsilon 
-        
+    def __init__(self, randomized=True):
         
         self.grid = [[0 for i in range(Board.course_length_x)] for j in range(self.course_length_y)]
         self.grid[-1][-1] = 1

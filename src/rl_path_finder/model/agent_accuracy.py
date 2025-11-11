@@ -5,7 +5,9 @@ from src.rl_path_finder.ui_io import clear_board_in_place
 
 def has_perfect_accuracy(testing_trial_limit, display_episode_path: bool) -> bool:
     Board.trial_limit = testing_trial_limit
-    board = Board(epsilon = 0, randomized = False)
+    Board.epsilon = 0
+    
+    board = Board(randomized = False)
     
     print('\n')
     
@@ -17,7 +19,7 @@ def has_perfect_accuracy(testing_trial_limit, display_episode_path: bool) -> boo
     else:
         print('Perfect path not found... Displaying improperly learned path:')
         
-    board = Board(epsilon = 0, randomized = False)
+    board = Board(randomized = False)
     
     print('\n')
     

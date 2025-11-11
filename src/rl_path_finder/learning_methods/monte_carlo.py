@@ -30,15 +30,14 @@ def monte_carlo_update(
         board.q_table[cur_state][cur_action] += alpha * (target - q)
     
 def monte_carlo_train(epochs):
-    epsilon = EPSILON
-    board = Board(epsilon = epsilon)
+    board = Board()
     
     while epochs > 0:
         monte_carlo_update(board)
         
-        epsilon = max(0.01, epsilon * 0.999)
+        Board.epsilon = max(0.01, Board.epsilon * 0.999)
         epochs -= board.move_number
         
-        board = Board(epsilon = epsilon)
+        board = Board()
     
     return Board.q_table

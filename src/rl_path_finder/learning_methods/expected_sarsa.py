@@ -38,19 +38,17 @@ def expected_sarsa_update(
     return current_state, current_action
 
 def expected_sarsa_train(epochs):
-    epsilon = EPSILON
-
     previous_state, previous_action = None, None
-    board = Board(epsilon = epsilon)
+    board = Board()
     
     for _ in range(epochs):
         outcome = expected_sarsa_update(board, previous_state, previous_action)
         
         if outcome == 'episode ended':
-            board = Board(epsilon = epsilon)
+            board = Board()
         else:
             previous_state, previous_action = outcome
         
-        epsilon = max(0.01, epsilon * 0.999)
+        Board.epsilon = max(0.01, Board.epsilon * 0.999)
         
     return Board.q_table

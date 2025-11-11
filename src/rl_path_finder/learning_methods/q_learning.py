@@ -29,15 +29,14 @@ def q_learning_update(
     board.q_table[cur_state][cur_action] += alpha * (target - q)
 
 def q_learning_train(epochs):
-    epsilon = EPSILON
     board = Board()
     
     for _ in range(epochs):
         outcome = q_learning_update(board)
         
         if outcome == 'episode ended':
-            board = Board(epsilon = epsilon)
+            board = Board()
         
-        epsilon = max(0.01, epsilon * 0.999)
+        Board.epsilon = max(0.01, Board.epsilon * 0.999)
         
     return Board.q_table
