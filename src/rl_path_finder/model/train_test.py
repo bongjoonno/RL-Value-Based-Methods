@@ -19,8 +19,8 @@ def train_test(
     Board.q_table = q_table
     Board.trial_limit = training_trial_limit
 
-    finished_q_scores = train(training_trial_limit, epochs = EPOCHS, method = method, epsilon = EPSILON)
+    finished_q_scores = train(epochs = EPOCHS, method = method)
     
-    accuracy = has_perfect_accuracy(course_length_y, course_length_x, finished_q_scores, testing_trial_limit, display_episode_path)
+    accuracy = has_perfect_accuracy(testing_trial_limit, display_episode_path)
 
     return accuracy

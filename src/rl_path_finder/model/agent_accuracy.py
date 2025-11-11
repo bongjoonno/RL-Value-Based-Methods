@@ -3,8 +3,9 @@ from src.rl_path_finder.imports import time
 
 from src.rl_path_finder.ui_io import clear_board_in_place
 
-def has_perfect_accuracy(course_length_y, course_length_x, q_scores, testing_trial_limit, display_episode_path: bool) -> bool:
-    board = Board(course_length_y, course_length_x, q_scores, testing_trial_limit, epsilon = 0, randomized = False)
+def has_perfect_accuracy(testing_trial_limit, display_episode_path: bool) -> bool:
+    Board.trial_limit = testing_trial_limit
+    board = Board(epsilon = 0, randomized = False)
     
     print('\n')
     
@@ -12,11 +13,11 @@ def has_perfect_accuracy(course_length_y, course_length_x, q_scores, testing_tri
         outcome = board.perform_move()
     
     if outcome == 'finished course':
-        print(f'Found perfect path in {(course_length_y-1) + (course_length_x-1)} steps!')
+        print(f'Found perfect path in {(Board.course_length_y-1) + (Board.course_length_x-1)} steps!')
     else:
         print('Perfect path not found... Displaying improperly learned path:')
         
-    board = Board(course_length_y, course_length_x, q_scores, testing_trial_limit, epsilon = 0, randomized = False)
+    board = Board(epsilon = 0, randomized = False)
     
     print('\n')
     

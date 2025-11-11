@@ -9,7 +9,7 @@ class Board:
     trial_limit = 18
     q_table = {}
 
-    def __init__(self, trial_limit, epsilon=1, randomized=True):
+    def __init__(self, epsilon=1, randomized=True):
         self.epsilon = epsilon 
         
         
