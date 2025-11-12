@@ -6,9 +6,11 @@ class Board:
     x_step_mappings = {'D' : 1, 'A' : -1}
     penalty = -1
 
-    course_length_y, course_length_x = 0, 0
-    trial_limit = 0
-    q_table = {}
+    q_table: dict[tuple[int, int], dict[str, float]]
+
+    course_length_y: int
+    course_length_x: int
+    trial_limit: int
 
     def __init__(self, randomized: bool = True) -> None:
         
@@ -31,27 +33,27 @@ class Board:
 
         self.grid[self.agent_position_y][self.agent_position_x] = 'P'
 
-        self.trajectories = {'state' : [], 'action' : [], 'reward' : []}
+        self.trajectories: dict[str, list] = {'state' : [], 'action' : [], 'reward' : []}
 
         self.chosen_action = None
         
-        self.move_number = 0
+        self.move_number: int = 0
 
-        self.current_state_q_table = {}
+        self.current_state_q_table: dict[str, float] = {}
 
         self.max_reward_move_for_state = None
 
-        self.current_moves_probabilities = []
+        self.current_moves_probabilities: float = []
 
-        self.current_state_q_scores = []
+        self.current_state_q_scores: np.ndarray = np.array([])
 
-    def perform_move(self) -> None:  
+    def perform_move(self) -> str:  
         if self.move_number == self.trial_limit:
             return 'Ran out of trials'
         
         self.grid[self.agent_position_y][self.agent_position_x] = 0
 
-        self.chosen_action = self.get_next_move()
+        self.get_next_move()
 
         self.log_trajectory()
 
@@ -80,7 +82,7 @@ class Board:
             print(row)
 
     def update_current_state_q_table(self) -> None:
-        self.current_state_q_table = self.q_table[(self.agent_position_y, self.agent_position_x)]
+        self.current_state_q_table = Board.q_table[(self.agent_position_y, self.agent_position_x)]
         self.current_state_q_scores = np.array(list(self.current_state_q_table.values()))
     
     def update_max_reward_move(self) -> None:
@@ -111,17 +113,17 @@ class Board:
         self.get_next_move_prep()
         
         if self.epsilon == 0:
-            return self.max_reward_move_for_state
+            self.chosen_action = self.max_reward_move_for_state
         
         elif self.epsilon == 1:
-            return np.random.choice(self.available_moves)
+            self.chosen_action = np.random.choice(self.available_moves)
         
         elif len(self.available_moves) == 1:
-            return self.available_moves[0]
+            self.chosen_action = self.available_moves[0]
 
         elif all(x == 0 for x in self.current_state_q_scores):
-            return np.random.choice(self.available_moves)
+            self.chosen_action = np.random.choice(self.available_moves)
 
         self.policy()
 
-        return np.random.choice(self.available_moves, p = self.current_moves_probabilities)
+        self.chosen_action = np.random.choice(self.available_moves, p = self.current_moves_probabilities)

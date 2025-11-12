@@ -19,13 +19,13 @@ def sarsa_update(
     elif previous_state is None:
         return current_state, current_action
 
-    q = board.q_table[previous_state][previous_action]
+    q = Board.q_table[previous_state][previous_action]
 
-    current_state_action_q_score = board.q_table[current_state][current_action]
+    current_state_action_q_score = Board.q_table[current_state][current_action]
 
     target = -1 + (gamma * current_state_action_q_score)
 
-    board.q_table[previous_state][previous_action] += alpha * (target - q)
+    Board.q_table[previous_state][previous_action] += alpha * (target - q)
 
     return current_state, current_action
 
