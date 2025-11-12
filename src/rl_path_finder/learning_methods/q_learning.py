@@ -6,7 +6,7 @@ def q_learning_update(
     board: Board,
     alpha = ALPHA, 
     gamma = GAMMA
-) -> None:
+) -> None | str:
 
     
     cur_state = (board.agent_position_y, board.agent_position_x)
@@ -24,11 +24,11 @@ def q_learning_update(
 
     target = -1 + (gamma * max_move_q_score)
     
-    q = board.q_table[cur_state][cur_action]
+    q = Board.q_table[cur_state][cur_action]
 
-    board.q_table[cur_state][cur_action] += alpha * (target - q)
+    Board.q_table[cur_state][cur_action] += alpha * (target - q)
 
-def q_learning_train():
+def q_learning_train() -> None:
     board = Board()
     
     for _ in range(EPOCHS):

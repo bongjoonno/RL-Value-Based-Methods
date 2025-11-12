@@ -27,7 +27,7 @@ def monte_carlo_update(
 
         board.q_table[cur_state][cur_action] += ALPHA * (target - q)
     
-def monte_carlo_train():
+def monte_carlo_train() -> None:
     board = Board()
     
     epochs = EPOCHS

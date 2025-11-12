@@ -7,7 +7,7 @@ def sarsa_update(
     previous_action = None, 
     alpha = ALPHA, 
     gamma = GAMMA
-) -> None:
+) -> tuple[tuple[int, int], str] | str:
 
     current_state = (board.agent_position_y, board.agent_position_x)
     outcome = board.perform_move()
@@ -29,7 +29,7 @@ def sarsa_update(
 
     return current_state, current_action
 
-def sarsa_train():
+def sarsa_train() -> None:
     board = Board()
 
     previous_state, previous_action = None, None

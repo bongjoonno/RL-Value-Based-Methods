@@ -35,17 +35,17 @@ class Board:
 
         self.trajectories: dict[str, list] = {'state' : [], 'action' : [], 'reward' : []}
 
-        self.chosen_action = None
+        self.chosen_action: str | None = None
         
         self.move_number: int = 0
 
-        self.current_state_q_table: dict[str, float] = {}
+        self.current_state_q_table: dict[str, float]
 
-        self.max_reward_move_for_state = None
+        self.max_reward_move_for_state: str | None = None
 
-        self.current_moves_probabilities: float = []
+        self.current_moves_probabilities: np.ndarray | list[float]
 
-        self.current_state_q_scores: np.ndarray = np.array([])
+        self.current_state_q_scores: np.ndarray
 
     def perform_move(self) -> str:  
         if self.move_number == self.trial_limit:

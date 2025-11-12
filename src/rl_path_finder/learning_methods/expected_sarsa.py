@@ -6,7 +6,7 @@ def expected_sarsa_update(
     board: Board, 
     previous_state = None,
     previous_action = None
-) -> None:
+) -> tuple[tuple[int, int], str] | str:
     
     current_state = (board.agent_position_y, board.agent_position_x)
     
