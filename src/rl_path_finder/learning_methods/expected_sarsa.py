@@ -1,14 +1,12 @@
-from board import Board
-from constants import ALPHA, GAMMA
-from imports import np
+from src.rl_path_finder.model import Board
+from src.rl_path_finder.constants import EPOCHS, ALPHA, GAMMA
+from src.rl_path_finder.imports import np
 
 def expected_sarsa_update(
     board: Board, 
     previous_state = None,
-    previous_action = None, 
-    alpha = ALPHA, 
-    gamma = GAMMA
-) -> None:
+    previous_action = None
+) -> tuple[tuple[int, int], str] | str:
     
     current_state = (board.agent_position_y, board.agent_position_x)
     
@@ -31,26 +29,22 @@ def expected_sarsa_update(
 
     expected_value_of_current_state = np.sum(current_state_q_scores * current_state_move_probabilities)
 
-    target = -1 + (gamma * expected_value_of_current_state)
+    target = -1 + (GAMMA * expected_value_of_current_state)
 
-    board.q_table[previous_state][previous_action] += alpha * (target - q)
+    board.q_table[previous_state][previous_action] += ALPHA * (target - q)
 
     return current_state, current_action
 
-def expected_sarsa_train(course_length_y, course_length_x, epochs, q_table, train_trial_limit, epsilon):
+def expected_sarsa_train():
     previous_state, previous_action = None, None
-    board = Board(course_length_y, course_length_x, q_table, trial_limit = train_trial_limit, epsilon = epsilon)
+    board = Board()
     
-    while epochs > 0:
+    for _ in range(EPOCHS):
         outcome = expected_sarsa_update(board, previous_state, previous_action)
         
         if outcome == 'episode ended':
-            board = Board(course_length_y, course_length_x, q_table, trial_limit = train_trial_limit, epsilon = epsilon)
+            board = Board()
         else:
             previous_state, previous_action = outcome
         
-        epsilon = max(0.01, epsilon * 0.999)
-        q_table = board.q_table
-        epochs -= 1
-        
-    return q_table
+        Board.epsilon = max(0.01, Board.epsilon * 0.999)

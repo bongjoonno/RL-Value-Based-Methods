@@ -1,4 +1,4 @@
-from constants import MAX_COURSE_LENGTH, LEARNING_METHODS_SET
+from src.rl_path_finder.constants import MAX_COURSE_LENGTH, LEARNING_METHODS_SET
 
 def get_dimensions_input():
     error_message = "Please enter a number between {} and {}"
@@ -32,13 +32,13 @@ def get_learning_methods():
     print("Choose from a Learning Method")
     print("1. Monte Carlo")
     print("2. Q-Learning")
-    #print("3. Sarsa")
-    #print("4. Expected Sarsa")
+    print("3. Sarsa")
+    print("4. Expected Sarsa")
     print('\n')
     
     learning_method = ""
     
     while learning_method not in LEARNING_METHODS_SET:
-        learning_method = input("Learning Method: ")
+        learning_method = input("Learning Method (1, 2, 3, or 4): ")
     
     return learning_method
